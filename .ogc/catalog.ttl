@@ -6,9 +6,9 @@
 
 _:ad4gd-pilot1 a dcat:Catalog;
   dct:title "AD4GD Pilot 1 semantic catalog" ;
-  dcat:dataset _:properties ;
+  dcat:dataset _:properties, _:propertiesEntailments ;
   # Disabled for now
-  # dcat:dataset _:propertiesEntailments, _:procedures, _:sensors, _:manufacturers, _:platforms ;
+  # dcat:dataset _:procedures, _:sensors, _:manufacturers, _:platforms ;
   dcfg:hasProfileSource "sparql:http://defs-dev.opengis.net/fuseki/query" ;
   dcfg:ignoreProfileArtifactErrors true ;
 .

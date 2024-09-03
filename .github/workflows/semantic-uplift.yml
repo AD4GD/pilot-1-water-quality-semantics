@@ -35,8 +35,8 @@ jobs:
         run: |
           python -m ogc.na.ingest_json --batch --skip-on-missing-context --all \
             --ttl --work-dir . --domain-config .ogc/catalog.ttl
-          #python -m ogc.na.update_vocabs -w . .ogc/catalog.ttl --use-git-status \
-          #  --update --graph-store https://defs-dev.opengis.net/fuseki-hosted/data
+          python -m ogc.na.update_vocabs -w . .ogc/catalog.ttl --use-git-status \
+            --update --graph-store https://defs-dev.opengis.net/fuseki-hosted/data
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
         with:
