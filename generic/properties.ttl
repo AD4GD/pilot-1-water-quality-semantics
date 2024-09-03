@@ -14,21 +14,6 @@
     skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
     skos:prefLabel "AOX (Adsorbable Organic Halides)" .
 
-<https://w3id.org/ad4gd/water-quality/properties/B-boron> a skos:Concept,
-        sosa:ObservableProperty ;
-    rdfs:seeAlso <https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/doc/spec.md> ;
-    owl:sameAs <http://purl.org/bncf/tid/31249>,
-        <http://www.eionet.europa.eu/gemet/concept/965>,
-        <https://d-nb.info/gnd/4007709-3>,
-        <https://dbpedia.org/page/Boron>,
-        <https://lod.nal.usda.gov/nalt/18678>,
-        <https://saref.etsi.org/saref4watr/Boron>,
-        <https://sns.uba.de/umthes/de/concepts/_00005488.html>,
-        <https://vocabularyserver.com/cnr/ml/earth/en/xml.php?skosTema=52040> ;
-    skos:definition "Boron is a chemical element with the symbol B and atomic number 5. In its crystalline form it is a brittle, dark, lustrous metalloid; in its amorphous form it is a brown powder. As the lightest element of the boron group it has three valence electrons for forming covalent bonds, resulting in many compounds such as boric acid, the mineral sodium borate, and the ultra-hard crystals of boron carbide and boron nitride. [DBPedia]" ;
-    skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
-    skos:prefLabel "B (Boron)" .
-
 <https://w3id.org/ad4gd/water-quality/properties/COD-chemical-oxygen-demand> a skos:Concept,
         sosa:ObservableProperty ;
     rdfs:seeAlso <https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=chemical%20oxygen%20demand&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false> ;
@@ -42,50 +27,18 @@
     skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
     skos:prefLabel "COD (Chemical Oxygen Demand)" .
 
-<https://w3id.org/ad4gd/water-quality/properties/Cl-chloride> a skos:Concept,
-        sosa:ObservableProperty ;
-    rdfs:seeAlso <https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/doc/spec.md>,
-        <https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=Chloride&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false>,
-        <https://wq.moenv.gov.tw/EWQP/en/Encyclopedia/NounDefinition/Pedia_28.aspx> ;
-    owl:sameAs <http://www.eionet.europa.eu/gemet/concept/1366>,
-        <https://dbpedia.org/page/Chloride>,
-        <https://saref.etsi.org/saref4watr/Chloride>,
-        <https://sns.uba.de/umthes/de/concepts/_00028727.html> ;
-    skos:definition "The chloride ion /ˈklɔːraɪd/ is the anion (negatively charged ion) Cl−. It is formed when the element chlorine (a halogen) gains an electron or when a compound such as hydrogen chloride is dissolved in water or other polar solvents. Chloride salts such as sodium chloride are often very soluble in water. It is an essential electrolyte located in all body fluids responsible for maintaining acid/base balance, transmitting nerve impulses and regulating liquid flow in and out of cells. Less frequently, the word chloride may also form part of the \"common\" name of chemical compounds in which one or more chlorine atoms are covalently bonded. For example, methyl chloride, with the standard name chloromethane (see IUPAC books) is an organic compound with a covalent C−Cl bond in which the chlorine is not an anion. [DBPedia]" ;
-    skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
-    skos:prefLabel "Cl- (Chloride)" .
-
 <https://w3id.org/ad4gd/water-quality/properties/DOC-dissolved-organic-carbon> a skos:Concept,
         sosa:ObservableProperty ;
     rdfs:seeAlso <https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=Dissolved%20organic%20carbon&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false> ;
     owl:sameAs <http://aims.fao.org/aos/agrovoc/c_02b11638>,
         <http://vocabulary.worldbank.org/thesaurus/1644123>,
         <http://www.eionet.europa.eu/gemet/concept/2259>,
-        <https://dbpedia.org/page/Dissolved_organic_carbon>,
         <https://lod.nal.usda.gov/nalt/34079>,
         <https://sns.uba.de/umthes/de/concepts/_00500166.html> ;
-    skos:definition "Dissolved organic carbon (DOC) is the fraction of organic carbon operationally defined as that which can pass through a filter with a pore size typically between 0.22 and 0.7 micrometers. The fraction remaining on the filter is called particulate organic carbon (POC). The marine DOC pool is important for the functioning of marine ecosystems because they are at the interface between the chemical and the biological worlds. DOC fuels marine food webs, and is a major component of the Earth's carbon cycling. [DBPedia]" ;
+    skos:closeMatch "https://dbpedia.org/page/Dissolved_organic_carbon" ;
+    skos:definition "The fraction of total organic carbon (all carbon atoms covalently bonded in organic molecules) in water that passes through a 0.45 micron pore-diameter filter." ;
     skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
     skos:prefLabel "DOC (Dissolved Organic Carbon)" .
-
-<https://w3id.org/ad4gd/water-quality/properties/Fe-iron> a skos:Concept,
-        sosa:ObservableProperty ;
-    rdfs:seeAlso <https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/doc/spec.md>,
-        <https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=Iron&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false>,
-        <https://wq.moenv.gov.tw/EWQP/en/Encyclopedia/NounDefinition/Pedia_15.aspx> ;
-    owl:sameAs <http://aims.fao.org/aos/agrovoc/c_3950>,
-        <http://eurovoc.europa.eu/981>,
-        <http://purl.org/bncf/tid/474>,
-        <http://www.eionet.europa.eu/gemet/concept/4498>,
-        <https://d-nb.info/gnd/4014002-7>,
-        <https://dbpedia.org/page/Iron>,
-        <https://lod.nal.usda.gov/nalt/33434>,
-        <https://saref.etsi.org/saref4watr/Iron>,
-        <https://sns.uba.de/umthes/de/concepts/_00028823.html>,
-        <https://vocabularyserver.com/cnr/ml/earth/en/xml.php?skosTema=50410> ;
-    skos:definition [ ] ;
-    skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
-    skos:prefLabel "Fe (Iron)" .
 
 <https://w3id.org/ad4gd/water-quality/properties/H4O4Si-silicic-acid> a skos:Concept,
         sosa:ObservableProperty ;
@@ -93,23 +46,6 @@
     skos:definition "In chemistry, a silicic acid (/sɪˈlɪsɪk/) is any chemical compound containing the element silicon attached to oxide (=O) and hydroxyl (−OH) groups, with the general formula [H2xSiOx+2]n or, equivalently, [SiOx(OH)4-2x]n. Orthosilicic acid is a representative example. Silicic acids are rarely observed in isolation, but are thought to exist in aqueous solutions, including seawater, and play a role in biomineralization. They are typically colorless weak acids that are sparingly soluble in water. Like the silicate anions, which are their better known conjugate bases, silicic acids are proposed to be oligomeric or polymeric. No simple silicic acid has ever been identified, since these species being primarily of theoretical interest. [DBPedia]" ;
     skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
     skos:prefLabel "H4O4Si (Silicic Acid)" .
-
-<https://w3id.org/ad4gd/water-quality/properties/Mn-manganese> a skos:Concept,
-        sosa:ObservableProperty ;
-    rdfs:seeAlso <https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=Manganese&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false>,
-        <https://wq.moenv.gov.tw/EWQP/en/Encyclopedia/NounDefinition/Pedia_45.aspx> ;
-    owl:sameAs <http://aims.fao.org/aos/agrovoc/c_4570>,
-        <http://eurovoc.europa.eu/1779>,
-        <http://purl.org/bncf/tid/25173>,
-        <http://zbw.eu/stw/descriptor/14301-2>,
-        <https://d-nb.info/gnd/4037315-0>,
-        <https://dbpedia.org/page/Manganese>,
-        <https://lod.nal.usda.gov/nalt/33435>,
-        <https://saref.etsi.org/saref4watr/Manganese>,
-        <https://sns.uba.de/umthes/de/concepts/_00016555.html> ;
-    skos:definition "Manganese is a chemical element with the symbol Mn and atomic number 25. It is a hard, brittle, silvery metal, often found in minerals in combination with iron. Manganese is a transition metal with a multifaceted array of industrial alloy uses, particularly in stainless steels. It improves strength, workability, and resistance to wear. Manganese oxide is used as an oxidising agent; as a rubber additive; and in glass making, fertilisers, and ceramics. Manganese sulfate can be used as a fungicide. [DBPedia]" ;
-    skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
-    skos:prefLabel "Mn (Manganese)" .
 
 <https://w3id.org/ad4gd/water-quality/properties/NH3-ammonia> a skos:Concept,
         sosa:ObservableProperty ;
@@ -128,29 +64,6 @@
     skos:definition "Ammonia is an inorganic compound of nitrogen and hydrogen with the formula NH3. A stable binary hydride, and the simplest pnictogen hydride, ammonia is a colourless gas with a distinct pungent smell. Biologically, it is a common nitrogenous waste, particularly among aquatic organisms, and it contributes significantly to the nutritional needs of terrestrial organisms by serving as a precursor to 45 percent of the world's food and fertilizers. Around 70% of ammonia is used to make fertilisers in various forms and composition, such as urea and Diammonium phosphate. Ammonia in pure form is also applied directly into the soil. [DBPedia]" ;
     skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
     skos:prefLabel "NH3 (Ammonia)" .
-
-<https://w3id.org/ad4gd/water-quality/properties/NH4-ammonia-nitrogen> a skos:Concept,
-        sosa:ObservableProperty ;
-    rdfs:seeAlso <https://wq.moenv.gov.tw/EWQP/en/Encyclopedia/NounDefinition/Pedia_08.aspx> ;
-    skos:definition "Organic nitrogenous compounds are mainly from the decomposition of feces and animal and plant remains. In the decomposition process, amino acids are formed first and then ammonia nitrogen, nitrite nitrogen and nitrate nitrogen form in sequence. Thus, if ammonia nitrogen exists in a body of water, it indicates the water has not been polluted for long. [Environmental Water Quality Information]" ;
-    skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
-    skos:prefLabel "NH4 (Ammonia Nitrogen)" .
-
-<https://w3id.org/ad4gd/water-quality/properties/NO2-N-nitrite-nitrogen> a skos:Concept,
-        sosa:ObservableProperty ;
-    rdfs:seeAlso <https://wq.moenv.gov.tw/EWQP/en/Encyclopedia/NounDefinition/Pedia_27.aspx>,
-        <https://wqa.org/resources/nitrites-nitrates/> ;
-    skos:definition "Most nitrogenous materials in natural waters tend to be converted to nitrate, so all sources of combined nitrogen, particularly organic nitrogen and ammonia, should be considered as potential nitrate sources. Primary sources of organic nitrates include human sewage and livestock manure, especially from feedlots. The primary inorganic nitrates which may contaminate drinking water are potassium nitrate and ammonium nitrate both of which are widely used as fertilizers. [Water Quality Association]" ;
-    skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
-    skos:prefLabel "NO2-N (Nitrite Nitrogen)" .
-
-<https://w3id.org/ad4gd/water-quality/properties/NO3-N-nitrate-nitrogen> a skos:Concept,
-        sosa:ObservableProperty ;
-    rdfs:seeAlso <https://wq.moenv.gov.tw/EWQP/en/Encyclopedia/NounDefinition/Pedia_31.aspx> ;
-    owl:sameAs <http://aims.fao.org/aos/agrovoc/c_0e5d9815> ;
-    skos:definition "Nitrate nitrogen is the final product of nitrification in the nitrogen cycle. Thus, the amount of nitrate nitrogen can indicate the degree of pollution of the water. When there is too much nitrate nitrogen existing in the rivers, lakes or reservoirs, it could cause mass reproduction of algae and lead to eutrophication of water bodies. [Environmental Water Quality Information]" ;
-    skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
-    skos:prefLabel "NO3-N (Nitrate Nitrogen)" .
 
 <https://w3id.org/ad4gd/water-quality/properties/NO3-nitrate> a skos:Concept,
         sosa:ObservableProperty ;
@@ -180,39 +93,33 @@
     skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
     skos:prefLabel "ORP (Oxidation-Reduction Potential)" .
 
-<https://w3id.org/ad4gd/water-quality/properties/PO4-orthophosphate> a skos:Concept,
-        sosa:ObservableProperty ;
-    rdfs:seeAlso <https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=orthoPhosphate&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false> ;
-    owl:sameAs <https://dbpedia.org/page/Phosphate>,
-        <https://sns.uba.de/umthes/de/concepts/_00019272.html> ;
-    skos:definition "In chemistry, a phosphate is an anion, salt, functional group or ester derived from a phosphoric acid. It most commonly means orthophosphate, a derivative of orthophosphoric acid H3PO4. The phosphate or orthophosphate ion [PO4]3− is derived from phosphoric acid by the removal of three protons H+. Removal of one or two protons gives the dihydrogen phosphate ion [H2PO4]− and the hydrogen phosphate ion [HPO4]2− ion, respectively. These names are also used for salts of those anions, such as ammonium dihydrogen phosphate and trisodium phosphate. * H3PO4Phosphoricacid * [H2PO4]−Dihydrogenphosphate * [DBPedia]" ;
-    skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
-    skos:prefLabel "PO4 (Orthophosphate)" .
-
-<https://w3id.org/ad4gd/water-quality/properties/SO4-sulphate> a skos:Concept,
-        sosa:ObservableProperty ;
-    rdfs:seeAlso <https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/doc/spec.md>,
-        <https://wq.moenv.gov.tw/EWQP/en/Encyclopedia/NounDefinition/Pedia_20.aspx> ;
-    owl:sameAs <http://aims.fao.org/aos/agrovoc/c_7510>,
-        <http://www.eionet.europa.eu/gemet/concept/8190>,
-        <https://sns.uba.de/umthes/de/concepts/_00028731.html> ;
-    skos:definition "The sulfate or sulphate ion is a polyatomic anion with the empirical formula SO2−4. Salts, acid derivatives, and peroxides of sulfate are widely used in industry. Sulfates occur widely in everyday life. Sulfates are salts of sulfuric acid and many are prepared from that acid. [DBPedia]" ;
-    skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
-    skos:prefLabel "SO4 (Sulphate)" .
-
-<https://w3id.org/ad4gd/water-quality/properties/TNb-total-bound-nitrogen> a skos:Concept,
+<https://w3id.org/ad4gd/water-quality/properties/TNb-total-nitrogen-bound> a skos:Concept,
         sosa:ObservableProperty ;
     rdfs:seeAlso <https://www.iso.org/obp/ui/#iso:std:iso:23697:-1:ed-1:v1:en> ;
     owl:sameAs <https://sns.uba.de/umthes/de/concepts/_00011173.html> ;
     skos:definition "Total bound nitrogen (ST-TNb) includes all inorganic forms, nitric nitrogen, nitrous nitrogen, ammoniacal nitrogen and all organic forms of nitrogen in a water sample. Nitrate in particular is one of the fundamental nutrients of algae which, in the presence of sufficient quantities of phosphates and other favourable conditions, determine the eutrophication of water. The main sources of nitrogen are both natural and anthropogenic. Of the anthropogenic sources, particular importance can be attributed to domestic wastewater and the use of fertilizers in agriculture. Reduction of nitrogen load is carried out in domestic and industrial wastewater treatment plants through special denitrification processes. The presence of significant concentrations of nitrogenous substances in water can indicate pollution and pose a risk to health and environment. [ISO]" ;
     skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
-    skos:prefLabel "TNb (Total Bound Nitrogen)" .
+    skos:prefLabel "TNb (Total Nitrogen Bound)" .
 
 <https://w3id.org/ad4gd/water-quality/properties/algae> a skos:Concept,
         sosa:ObservableProperty ;
     skos:definition "Algae" ;
     skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
     skos:prefLabel "Algae" .
+
+<https://w3id.org/ad4gd/water-quality/properties/ammonia-concentration> a skos:Concept,
+        sosa:ObservableProperty ;
+    rdfs:seeAlso <https://wq.moenv.gov.tw/EWQP/en/Encyclopedia/NounDefinition/Pedia_08.aspx> ;
+    skos:definition "Organic nitrogenous compounds are mainly from the decomposition of feces and animal and plant remains. In the decomposition process, amino acids are formed first and then ammonia nitrogen, nitrite nitrogen and nitrate nitrogen form in sequence. Thus, if ammonia nitrogen exists in a body of water, it indicates the water has not been polluted for long. [Environmental Water Quality Information]" ;
+    skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
+    skos:prefLabel "Ammonia Concentration" .
+
+<https://w3id.org/ad4gd/water-quality/properties/ammonium-concentration> a skos:Concept,
+        sosa:ObservableProperty ;
+    rdfs:seeAlso <https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/doc/spec.md> ;
+    skos:definition "NH4[number]: Concentration of ammonium. [Smart Data Models]" ;
+    skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
+    skos:prefLabel "Ammonium Concentration" .
 
 <https://w3id.org/ad4gd/water-quality/properties/animals-in-near-the-water> a skos:Concept,
         sosa:ObservableProperty ;
@@ -238,6 +145,77 @@
     skos:definition "Direct Normal Irradiance" ;
     skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
     skos:prefLabel "Direct Normal Irradiance" .
+
+<https://w3id.org/ad4gd/water-quality/properties/dissolved-boron-concentration> a skos:Concept,
+        sosa:ObservableProperty ;
+    rdfs:seeAlso <https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/doc/spec.md> ;
+    owl:sameAs <http://purl.org/bncf/tid/31249>,
+        <http://www.eionet.europa.eu/gemet/concept/965>,
+        <https://d-nb.info/gnd/4007709-3>,
+        <https://dbpedia.org/page/Boron>,
+        <https://lod.nal.usda.gov/nalt/18678>,
+        <https://saref.etsi.org/saref4watr/Boron>,
+        <https://sns.uba.de/umthes/de/concepts/_00005488.html>,
+        <https://vocabularyserver.com/cnr/ml/earth/en/xml.php?skosTema=52040> ;
+    skos:definition "Boron is a chemical element with the symbol B and atomic number 5. In its crystalline form it is a brittle, dark, lustrous metalloid; in its amorphous form it is a brown powder. As the lightest element of the boron group it has three valence electrons for forming covalent bonds, resulting in many compounds such as boric acid, the mineral sodium borate, and the ultra-hard crystals of boron carbide and boron nitride. [DBPedia]" ;
+    skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
+    skos:prefLabel "Dissolved Boron Concentration" .
+
+<https://w3id.org/ad4gd/water-quality/properties/dissolved-chloride-concentration> a skos:Concept,
+        sosa:ObservableProperty ;
+    rdfs:seeAlso <https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/doc/spec.md>,
+        <https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=Chloride&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false>,
+        <https://wq.moenv.gov.tw/EWQP/en/Encyclopedia/NounDefinition/Pedia_28.aspx> ;
+    owl:sameAs <http://www.eionet.europa.eu/gemet/concept/1366>,
+        <https://dbpedia.org/page/Chloride>,
+        <https://saref.etsi.org/saref4watr/Chloride>,
+        <https://sns.uba.de/umthes/de/concepts/_00028727.html> ;
+    skos:definition "The chloride ion /ˈklɔːraɪd/ is the anion (negatively charged ion) Cl−. It is formed when the element chlorine (a halogen) gains an electron or when a compound such as hydrogen chloride is dissolved in water or other polar solvents. Chloride salts such as sodium chloride are often very soluble in water. It is an essential electrolyte located in all body fluids responsible for maintaining acid/base balance, transmitting nerve impulses and regulating liquid flow in and out of cells. Less frequently, the word chloride may also form part of the \"common\" name of chemical compounds in which one or more chlorine atoms are covalently bonded. For example, methyl chloride, with the standard name chloromethane (see IUPAC books) is an organic compound with a covalent C−Cl bond in which the chlorine is not an anion. [DBPedia]" ;
+    skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
+    skos:prefLabel "Dissolved Chloride Concentration" .
+
+<https://w3id.org/ad4gd/water-quality/properties/dissolved-iron3-concentration> a skos:Concept,
+        sosa:ObservableProperty ;
+    rdfs:seeAlso <https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/doc/spec.md>,
+        <https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=Iron&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false>,
+        <https://wq.moenv.gov.tw/EWQP/en/Encyclopedia/NounDefinition/Pedia_15.aspx> ;
+    owl:sameAs <http://aims.fao.org/aos/agrovoc/c_3950>,
+        <http://eurovoc.europa.eu/981>,
+        <http://purl.org/bncf/tid/474>,
+        <http://www.eionet.europa.eu/gemet/concept/4498>,
+        <https://d-nb.info/gnd/4014002-7>,
+        <https://lod.nal.usda.gov/nalt/33434>,
+        <https://saref.etsi.org/saref4watr/Iron>,
+        <https://sns.uba.de/umthes/de/concepts/_00028823.html>,
+        <https://vocabularyserver.com/cnr/ml/earth/en/xml.php?skosTema=50410> ;
+    skos:definition "Property of the water indicating its concentration of iron. [Saref4Watr]" ;
+    skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
+    skos:prefLabel "Dissolved Iron3 Concentration" .
+
+<https://w3id.org/ad4gd/water-quality/properties/dissolved-manganese-concentration> a skos:Concept,
+        sosa:ObservableProperty ;
+    rdfs:seeAlso <https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=Manganese&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false>,
+        <https://wq.moenv.gov.tw/EWQP/en/Encyclopedia/NounDefinition/Pedia_45.aspx> ;
+    owl:sameAs <http://aims.fao.org/aos/agrovoc/c_4570>,
+        <http://eurovoc.europa.eu/1779>,
+        <http://purl.org/bncf/tid/25173>,
+        <http://zbw.eu/stw/descriptor/14301-2>,
+        <https://d-nb.info/gnd/4037315-0>,
+        <https://dbpedia.org/page/Manganese>,
+        <https://lod.nal.usda.gov/nalt/33435>,
+        <https://saref.etsi.org/saref4watr/Manganese>,
+        <https://sns.uba.de/umthes/de/concepts/_00016555.html> ;
+    skos:definition "Manganese is a chemical element with the symbol Mn and atomic number 25. It is a hard, brittle, silvery metal, often found in minerals in combination with iron. Manganese is a transition metal with a multifaceted array of industrial alloy uses, particularly in stainless steels. It improves strength, workability, and resistance to wear. Manganese oxide is used as an oxidising agent; as a rubber additive; and in glass making, fertilisers, and ceramics. Manganese sulfate can be used as a fungicide. [DBPedia]" ;
+    skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
+    skos:prefLabel "Dissolved Manganese Concentration" .
+
+<https://w3id.org/ad4gd/water-quality/properties/dissolved-oxygen-concentration> a skos:Concept,
+        sosa:ObservableProperty ;
+    owl:sameAs <https://dbpedia.org/page/Oxygen_concentration>,
+        <https://sns.uba.de/umthes/de/concepts/_00021376.html> ;
+    skos:definition "Oxygen concentration. [DBPedia]" ;
+    skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
+    skos:prefLabel "Dissolved Oxygen Concentration" .
 
 <https://w3id.org/ad4gd/water-quality/properties/duckweed> a skos:Concept,
         sosa:ObservableProperty ;
@@ -285,20 +263,30 @@
     skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
     skos:prefLabel "Mussels" .
 
-<https://w3id.org/ad4gd/water-quality/properties/orthophosphate-P> a skos:Concept,
+<https://w3id.org/ad4gd/water-quality/properties/nitrate-concentration> a skos:Concept,
         sosa:ObservableProperty ;
-    rdfs:seeAlso <https://www.orsanco.org/data/orthophosphate-as-p/> ;
-    skos:definition "Orthophosphate as P is a parameter of the Bimonthly Water Quality Sampling Program, which is ORSANCO’s long-term water quality monitoring program for the Ohio River. Parameters include ammonia nitrogen, biochemical oxygen demand, bromide, chloride, dissolved organic carbon, dissolved oxygen, total hardness, nitrate/nitrite nitrogen, orthophosphate, pH, specific conductivity, sulfate, temperature, total dissolved solids, total kjeldahl nitrogen, total nitrogen, total organic carbon, phenols, total phosphorus, total suspended solids, and turbidity. [Ohio River Valley Water Sanitation Commission]" ;
+    rdfs:seeAlso <https://wq.moenv.gov.tw/EWQP/en/Encyclopedia/NounDefinition/Pedia_31.aspx> ;
+    owl:sameAs <http://aims.fao.org/aos/agrovoc/c_0e5d9815> ;
+    skos:definition "Nitrate nitrogen is the final product of nitrification in the nitrogen cycle. Thus, the amount of nitrate nitrogen can indicate the degree of pollution of the water. When there is too much nitrate nitrogen existing in the rivers, lakes or reservoirs, it could cause mass reproduction of algae and lead to eutrophication of water bodies. [Environmental Water Quality Information]" ;
     skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
-    skos:prefLabel "Orthophosphate-P" .
+    skos:prefLabel "Nitrate Concentration" .
 
-<https://w3id.org/ad4gd/water-quality/properties/oxygen-concentration> a skos:Concept,
+<https://w3id.org/ad4gd/water-quality/properties/nitrite-concentration> a skos:Concept,
         sosa:ObservableProperty ;
-    owl:sameAs <https://dbpedia.org/page/Oxygen_concentration>,
-        <https://sns.uba.de/umthes/de/concepts/_00021376.html> ;
-    skos:definition "Oxygen concentration. [DBPedia]" ;
+    rdfs:seeAlso <https://wq.moenv.gov.tw/EWQP/en/Encyclopedia/NounDefinition/Pedia_27.aspx>,
+        <https://wqa.org/resources/nitrites-nitrates/> ;
+    skos:definition "Most nitrogenous materials in natural waters tend to be converted to nitrate, so all sources of combined nitrogen, particularly organic nitrogen and ammonia, should be considered as potential nitrate sources. Primary sources of organic nitrates include human sewage and livestock manure, especially from feedlots. The primary inorganic nitrates which may contaminate drinking water are potassium nitrate and ammonium nitrate both of which are widely used as fertilizers. [Water Quality Association]" ;
     skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
-    skos:prefLabel "Oxygen Concentration" .
+    skos:prefLabel "Nitrite Concentration" .
+
+<https://w3id.org/ad4gd/water-quality/properties/orthophosphate-concentration> a skos:Concept,
+        sosa:ObservableProperty ;
+    rdfs:seeAlso <https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=orthoPhosphate&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false> ;
+    owl:sameAs <https://dbpedia.org/page/Phosphate>,
+        <https://sns.uba.de/umthes/de/concepts/_00019272.html> ;
+    skos:definition "In chemistry, a phosphate is an anion, salt, functional group or ester derived from a phosphoric acid. It most commonly means orthophosphate, a derivative of orthophosphoric acid H3PO4. The phosphate or orthophosphate ion [PO4]3− is derived from phosphoric acid by the removal of three protons H+. Removal of one or two protons gives the dihydrogen phosphate ion [H2PO4]− and the hydrogen phosphate ion [HPO4]2− ion, respectively. These names are also used for salts of those anions, such as ammonium dihydrogen phosphate and trisodium phosphate. * H3PO4Phosphoricacid * [H2PO4]−Dihydrogenphosphate * [DBPedia]" ;
+    skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
+    skos:prefLabel "Orthophosphate Concentration" .
 
 <https://w3id.org/ad4gd/water-quality/properties/oxygen-saturation> a skos:Concept,
         sosa:ObservableProperty ;
@@ -375,6 +363,17 @@
     skos:definition "Conductivity or specific conductance of an electrolyte solution is a measure of its ability to conduct electricity. The SI unit of conductivity is siemens per meter (S/m). Conductivity measurements are used routinely in many industrial and environmental applications as a fast, inexpensive and reliable way of measuring the ionic content in a solution. For example, the measurement of product conductivity is a typical way to monitor and continuously trend the performance of water purification systems. In many cases, conductivity is linked directly to the total dissolved solids (TDS). [Wikipedia]" ;
     skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
     skos:prefLabel "Specific Conductivity" .
+
+<https://w3id.org/ad4gd/water-quality/properties/sulphate-concentration> a skos:Concept,
+        sosa:ObservableProperty ;
+    rdfs:seeAlso <https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/doc/spec.md>,
+        <https://wq.moenv.gov.tw/EWQP/en/Encyclopedia/NounDefinition/Pedia_20.aspx> ;
+    owl:sameAs <http://aims.fao.org/aos/agrovoc/c_7510>,
+        <http://www.eionet.europa.eu/gemet/concept/8190>,
+        <https://sns.uba.de/umthes/de/concepts/_00028731.html> ;
+    skos:definition "The sulfate or sulphate ion is a polyatomic anion with the empirical formula SO2−4. Salts, acid derivatives, and peroxides of sulfate are widely used in industry. Sulfates occur widely in everyday life. Sulfates are salts of sulfuric acid and many are prepared from that acid. [DBPedia]" ;
+    skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
+    skos:prefLabel "Sulphate Concentration" .
 
 <https://w3id.org/ad4gd/water-quality/properties/surface-reflectance> a skos:Concept,
         sosa:ObservableProperty ;
@@ -491,16 +490,16 @@
     skos:prefLabel "AD4GD water quality observable properties" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2024-09-03T14:01:55.095356"^^xsd:dateTime ;
-    prov:startedAtTime "2024-09-03T14:01:55.034017"^^xsd:dateTime ;
+    prov:endedAtTime "2024-09-03T15:19:42.682184"^^xsd:dateTime ;
+    prov:startedAtTime "2024-09-03T15:19:42.621297"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:5d7ec018c9392b05680d5d9e6e44010a212b67d3" ;
+            dct:hasVersion "git:e00c22f3c7852049c17647d04ab2996542e4d641" ;
             rdfs:seeAlso <file:///home/runner/work/pilot-1-water-quality/pilot-1-water-quality/generic/properties.yml> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
             dct:hasVersion "0.3.51" ;
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dct:identifier "32e11549-a0df-456e-adc6-ac6d9200d488" ] .
+    prov:wasInformedBy [ dct:identifier "b544d51a-cbf7-4a74-b5aa-5076fd46dd0e" ] .
 

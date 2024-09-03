@@ -21,16 +21,16 @@ manuf:terratransfer a skos:Concept ;
     skos:prefLabel "AD4GD water quality sensor manufacturers" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2024-09-03T14:01:55.032286"^^xsd:dateTime ;
-    prov:startedAtTime "2024-09-03T14:01:54.981891"^^xsd:dateTime ;
+    prov:endedAtTime "2024-09-03T15:19:42.619765"^^xsd:dateTime ;
+    prov:startedAtTime "2024-09-03T15:19:42.568388"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:5d7ec018c9392b05680d5d9e6e44010a212b67d3" ;
+            dct:hasVersion "git:e00c22f3c7852049c17647d04ab2996542e4d641" ;
             rdfs:seeAlso <file:///home/runner/work/pilot-1-water-quality/pilot-1-water-quality/generic/sensor-manufacturers.yml> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
             dct:hasVersion "0.3.51" ;
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dct:identifier "32e11549-a0df-456e-adc6-ac6d9200d488" ] .
+    prov:wasInformedBy [ dct:identifier "b544d51a-cbf7-4a74-b5aa-5076fd46dd0e" ] .
 
