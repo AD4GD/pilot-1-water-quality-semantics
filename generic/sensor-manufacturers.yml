@@ -13,4 +13,13 @@ manufacturers:
   #     - https://en.wikipedia.org/wiki/Term
   #   references:                                       # List of websites with definitions, data sheets, etc. (non-semantic)
   #     - https://en.wikipedia.org/wiki/Term
- 
+
+  in-situ:
+    name: In-Situ
+    references:
+      - https://in-situ.com/en/
+
+  terratransfer:
+    name: TerraTransfer
+    references:
+      - https://www.terratransfer.org/en-gb/
