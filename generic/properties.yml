@@ -1,0 +1,457 @@
+base: https://w3id.org/ad4gd/water-quality/properties     # Base URI (no trailing slash!)
+label: AD4GD water quality observable properties          # Label for property collection
+## Optional: add description
+# description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+properties:
+
+  ## Format for properties:
+  # id:                                                 # URI slug
+  #   label: Label for the term                         # Required
+  #   description: Term description                     # Optional
+  #   sameAs:                                           # List of "same as" URIs, optional
+  #     - https://another.vocabulary.com/another/term
+  #   seeAlso:                                          # List of websites with definitions (non-semantic)
+  #     - https://en.wikipedia.org/wiki/Term
+  #   hasBroader:                                       # List of terms that are more generic than this one.
+  #     - anotherBroadTerm                              # *Only local ids*
+  #   hasNarrower:                                      # Same as hasBroader, but for linking to more specific terms
+  #     - anotherNarrowTerm
+
+  NO3-N:
+    label: NO3-N (Nitrate Nitrogen)
+    description: Nitrate nitrogen is the final product of nitrification in the nitrogen cycle. Thus, the amount of nitrate nitrogen can indicate the degree of pollution of the water. When there is too much nitrate nitrogen existing in the rivers, lakes or reservoirs, it could cause mass reproduction of algae and lead to eutrophication of water bodies. [Environmental Water Quality Information]
+    seeAlso:
+      - https://wq.moenv.gov.tw/EWQP/en/Encyclopedia/NounDefinition/Pedia_31.aspx
+    sameAs:
+      - http://aims.fao.org/aos/agrovoc/c_0e5d9815
+
+  NO2-:
+    label: NO2- (Nitrite Nitrogen)
+    description: Most nitrogenous materials in natural waters tend to be converted to nitrate, so all sources of combined nitrogen, particularly organic nitrogen and ammonia, should be considered as potential nitrate sources. Primary sources of organic nitrates include human sewage and livestock manure, especially from feedlots. The primary inorganic nitrates which may contaminate drinking water are potassium nitrate and ammonium nitrate both of which are widely used as fertilizers. [Water Quality Association]
+    seeAlso:
+      - https://wqa.org/resources/nitrites-nitrates/
+      - https://wq.moenv.gov.tw/EWQP/en/Encyclopedia/NounDefinition/Pedia_27.aspx
+
+  NH4:
+    label: NH4 (Ammonia Nitrogen)
+    description: Organic nitrogenous compounds are mainly from the decomposition of feces and animal and plant remains. In the decomposition process, amino acids are formed first and then ammonia nitrogen, nitrite nitrogen and nitrate nitrogen form in sequence. Thus, if ammonia nitrogen exists in a body of water, it indicates the water has not been polluted for long. [Environmental Water Quality Information]
+    seeAlso:
+      - https://wq.moenv.gov.tw/EWQP/en/Encyclopedia/NounDefinition/Pedia_08.aspx
+
+  orthophosphate-P:
+    label: Orthophosphate-P
+    description: Orthophosphate as P is a parameter of the Bimonthly Water Quality Sampling Program, which is ORSANCO’s long-term water quality monitoring program for the Ohio River. Parameters include ammonia nitrogen, biochemical oxygen demand, bromide, chloride, dissolved organic carbon, dissolved oxygen, total hardness, nitrate/nitrite nitrogen, orthophosphate, pH, specific conductivity, sulfate, temperature, total dissolved solids, total kjeldahl nitrogen, total nitrogen, total organic carbon, phenols, total phosphorus, total suspended solids, and turbidity. [Ohio River Valley Water Sanitation Commission]
+    seeAlso:
+      - https://www.orsanco.org/data/orthophosphate-as-p/
+
+  Cl-:
+    label: Cl- (Chloride)
+    description: The chloride ion /ˈklɔːraɪd/ is the anion (negatively charged ion) Cl−. It is formed when the element chlorine (a halogen) gains an electron or when a compound such as hydrogen chloride is dissolved in water or other polar solvents. Chloride salts such as sodium chloride are often very soluble in water. It is an essential electrolyte located in all body fluids responsible for maintaining acid/base balance, transmitting nerve impulses and regulating liquid flow in and out of cells. Less frequently, the word chloride may also form part of the "common" name of chemical compounds in which one or more chlorine atoms are covalently bonded. For example, methyl chloride, with the standard name chloromethane (see IUPAC books) is an organic compound with a covalent C−Cl bond in which the chlorine is not an anion. [DBPedia]
+    seeAlso:
+      - https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/doc/spec.md
+      - https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=Chloride&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false
+      - https://wq.moenv.gov.tw/EWQP/en/Encyclopedia/NounDefinition/Pedia_28.aspx
+    sameAs:
+      - https://saref.etsi.org/saref4watr/Chloride
+      - http://www.eionet.europa.eu/gemet/concept/1366
+      - https://dbpedia.org/page/Chloride
+      - https://sns.uba.de/umthes/de/concepts/_00028727.html
+
+  B-boron:
+    label: B (Boron)
+    description: Boron is a chemical element with the symbol B and atomic number 5. In its crystalline form it is a brittle, dark, lustrous metalloid; in its amorphous form it is a brown powder. As the lightest element of the boron group it has three valence electrons for forming covalent bonds, resulting in many compounds such as boric acid, the mineral sodium borate, and the ultra-hard crystals of boron carbide and boron nitride. [DBPedia]
+    seeAlso:
+      - https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/doc/spec.md
+      -
+    sameAs:
+      - https://saref.etsi.org/saref4watr/Boron
+      - http://www.eionet.europa.eu/gemet/concept/965
+      - https://dbpedia.org/page/Boron
+      - https://sns.uba.de/umthes/de/concepts/_00005488.html
+      - http://purl.org/bncf/tid/31249
+      - https://d-nb.info/gnd/4007709-3
+      - https://lod.nal.usda.gov/nalt/18678
+      - https://vocabularyserver.com/cnr/ml/earth/en/xml.php?skosTema=52040
+
+  Fe:
+    label: Fe (Iron)
+    description:
+      Iron (/ˈaɪən/) is a chemical element with symbol Fe (from Latin: ferrum) and atomic number 26. It is a metal that belongs to the first transition series and group 8 of the periodic table. It is, by mass, the most common element on Earth, right in front of oxygen (32.1% and 30.1%, respectively), forming much of Earth's outer and inner core. It is the fourth most common element in the Earth's crust. [DBPedia]
+    seeAlso:
+      - https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/doc/spec.md
+      - https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=Iron&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false
+      - https://wq.moenv.gov.tw/EWQP/en/Encyclopedia/NounDefinition/Pedia_15.aspx
+    sameAs:
+      - https://saref.etsi.org/saref4watr/Iron
+      - http://www.eionet.europa.eu/gemet/concept/4498
+      - https://dbpedia.org/page/Iron
+      - https://sns.uba.de/umthes/de/concepts/_00028823.html
+      - http://purl.org/bncf/tid/474
+      - http://eurovoc.europa.eu/981
+      - https://d-nb.info/gnd/4014002-7
+      - https://lod.nal.usda.gov/nalt/33434
+      - https://vocabularyserver.com/cnr/ml/earth/en/xml.php?skosTema=50410
+      - http://aims.fao.org/aos/agrovoc/c_3950
+
+  H4O4Si:
+    label: H4O4Si (Silicic acid)
+    description: In chemistry, a silicic acid (/sɪˈlɪsɪk/) is any chemical compound containing the element silicon attached to oxide (=O) and hydroxyl (−OH) groups, with the general formula [H2xSiOx+2]n or, equivalently, [SiOx(OH)4-2x]n. Orthosilicic acid is a representative example. Silicic acids are rarely observed in isolation, but are thought to exist in aqueous solutions, including seawater, and play a role in biomineralization. They are typically colorless weak acids that are sparingly soluble in water. Like the silicate anions, which are their better known conjugate bases, silicic acids are proposed to be oligomeric or polymeric. No simple silicic acid has ever been identified, since these species being primarily of theoretical interest. [DBPedia]
+    sameAs:
+      - https://dbpedia.org/page/Silicic_acid
+
+  Mn:
+    label: Mn (Manganese)
+    description: Manganese is a chemical element with the symbol Mn and atomic number 25. It is a hard, brittle, silvery metal, often found in minerals in combination with iron. Manganese is a transition metal with a multifaceted array of industrial alloy uses, particularly in stainless steels. It improves strength, workability, and resistance to wear. Manganese oxide is used as an oxidising agent; as a rubber additive; and in glass making, fertilisers, and ceramics. Manganese sulfate can be used as a fungicide. [DBPedia]
+    seeAlso:
+      - https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=Manganese&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false
+      - https://wq.moenv.gov.tw/EWQP/en/Encyclopedia/NounDefinition/Pedia_45.aspx
+    sameAs:
+      - https://saref.etsi.org/saref4watr/Manganese
+      - https://dbpedia.org/page/Manganese
+      - https://sns.uba.de/umthes/de/concepts/_00016555.html
+      - http://purl.org/bncf/tid/25173
+      - http://eurovoc.europa.eu/1779
+      - https://d-nb.info/gnd/4037315-0
+      - https://lod.nal.usda.gov/nalt/33435
+      - http://zbw.eu/stw/descriptor/14301-2
+      - http://aims.fao.org/aos/agrovoc/c_4570
+
+  NH3:
+    label: NH3 (Ammonia)
+    description: Ammonia is an inorganic compound of nitrogen and hydrogen with the formula NH3. A stable binary hydride, and the simplest pnictogen hydride, ammonia is a colourless gas with a distinct pungent smell. Biologically, it is a common nitrogenous waste, particularly among aquatic organisms, and it contributes significantly to the nutritional needs of terrestrial organisms by serving as a precursor to 45 percent of the world's food and fertilizers. Around 70% of ammonia is used to make fertilisers in various forms and composition, such as urea and Diammonium phosphate. Ammonia in pure form is also applied directly into the soil. [DBPedia]
+    seeAlso:
+      - https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/doc/spec.md
+      - https://wqa.org/resources/ammonia/
+      - https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=Ammonia&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false
+    sameAs:
+      - http://www.eionet.europa.eu/gemet/concept/375
+      - https://dbpedia.org/page/Ammonia
+      - https://sns.uba.de/umthes/de/concepts/_00001875.html
+      - http://purl.org/bncf/tid/22283
+      - https://d-nb.info/gnd/4001735-7
+      - https://lod.nal.usda.gov/nalt/7925
+      - https://vocabularyserver.com/cnr/ml/earth/en/xml.php?skosTema=64510
+      - http://zbw.eu/stw/descriptor/14636-6
+      - http://aims.fao.org/aos/agrovoc/c_349
+
+  NO3-:
+    label: NO3- (Nitrate)
+    description: Nitrate is a polyatomic ion with the chemical formula NO−3. Salts containing this ion are called nitrates. Nitrates are common components of fertilizers and explosives. Almost all inorganic nitrates are soluble in water. An example of an insoluble nitrate is bismuth oxynitrate. [DBPedia]
+    seeAlso:
+      - https://wqa.org/resources/nitrites-nitrates/
+      - https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=Nitrate&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false
+    sameAs:
+      - https://saref.etsi.org/saref4watr/Nitrate
+      - http://www.eionet.europa.eu/gemet/concept/5593
+      - https://dbpedia.org/page/Nitrate
+      - https://sns.uba.de/umthes/de/concepts/_00028736.html
+      - http://purl.org/bncf/tid/37237
+      - https://lod.nal.usda.gov/nalt/4064
+      - http://zbw.eu/stw/descriptor/14645-5
+      - http://aims.fao.org/aos/agrovoc/c_5187
+
+  PO43-:
+    label: PO43- (Orthophosphate)
+    description: In chemistry, a phosphate is an anion, salt, functional group or ester derived from a phosphoric acid. It most commonly means orthophosphate, a derivative of orthophosphoric acid H3PO4. The phosphate or orthophosphate ion [PO4]3− is derived from phosphoric acid by the removal of three protons H+. Removal of one or two protons gives the dihydrogen phosphate ion [H2PO4]− and the hydrogen phosphate ion [HPO4]2− ion, respectively. These names are also used for salts of those anions, such as ammonium dihydrogen phosphate and trisodium phosphate. * H3PO4Phosphoricacid * [H2PO4]−Dihydrogenphosphate * [DBPedia]
+    seeAlso:
+      - https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=orthoPhosphate&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false
+    sameAs:
+      - https://dbpedia.org/page/Phosphate
+      - https://sns.uba.de/umthes/de/concepts/_00019272.html
+
+  SO42-:
+    label: SO42- (Sulphate)
+    description: The sulfate or sulphate ion is a polyatomic anion with the empirical formula SO2−4. Salts, acid derivatives, and peroxides of sulfate are widely used in industry. Sulfates occur widely in everyday life. Sulfates are salts of sulfuric acid and many are prepared from that acid. [DBPedia]
+    seeAlso:
+      - https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/doc/spec.md
+      - https://wq.moenv.gov.tw/EWQP/en/Encyclopedia/NounDefinition/Pedia_20.aspx
+    sameAs:
+      - http://www.eionet.europa.eu/gemet/concept/8190
+      - https://sns.uba.de/umthes/de/concepts/_00028731.html
+      - http://aims.fao.org/aos/agrovoc/c_7510
+
+  TNb:
+    label: TNb (Total Bound Nitrogen)
+    description: Total bound nitrogen (ST-TNb) includes all inorganic forms, nitric nitrogen, nitrous nitrogen, ammoniacal nitrogen and all organic forms of nitrogen in a water sample. Nitrate in particular is one of the fundamental nutrients of algae which, in the presence of sufficient quantities of phosphates and other favourable conditions, determine the eutrophication of water. The main sources of nitrogen are both natural and anthropogenic. Of the anthropogenic sources, particular importance can be attributed to domestic wastewater and the use of fertilizers in agriculture. Reduction of nitrogen load is carried out in domestic and industrial wastewater treatment plants through special denitrification processes. The presence of significant concentrations of nitrogenous substances in water can indicate pollution and pose a risk to health and environment. [ISO]
+    seeAlso:
+      - https://www.iso.org/obp/ui/#iso:std:iso:23697:-1:ed-1:v1:en
+    sameAs:
+      - https://sns.uba.de/umthes/de/concepts/_00011173.html
+
+  TOC:
+    label: TOC (Total organic carbon)
+    description: Total organic carbon (TOC) is the amount of carbon found in an organic compound and is often used as a non-specific indicator of water quality or cleanliness of pharmaceutical manufacturing equipment. TOC may also refer to the amount of organic carbon in soil, or in a geological formation, particularly the source rock for a petroleum play; 2% is a rough minimum. For marine surface sediments average TOC content is 0.5% in the deep ocean, and 2% along the eastern margins. [DBPedia]
+    seeAlso:
+      - https://saref.etsi.org/saref4watr/TotalOrganicCarbon
+      - https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=Total%20organic%20carbon&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false
+      - https://wq.moenv.gov.tw/EWQP/en/Encyclopedia/NounDefinition/Pedia_13.aspx
+    sameAs:
+      - http://www.eionet.europa.eu/gemet/concept/11779
+      - https://dbpedia.org/page/Total_organic_carbon
+      - https://sns.uba.de/umthes/de/concepts/_00657196.html
+      - https://lod.nal.usda.gov/nalt/325123
+      - http://vocabulary.worldbank.org/thesaurus/1644128
+      - http://aims.fao.org/aos/agrovoc/c_c35fdd26
+
+  TP:
+    label: TP (Total Phosphorus )
+    description: Total phosphorus is a measure of all forms of phosphorus in the water, including dissolved and particulate, organic and inorganic. [Umweltthesaurus]
+    seeAlso:
+      - https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/doc/spec.md
+      - https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=Total%20phosphorus&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false
+    sameAs:
+      - https://sns.uba.de/umthes/de/concepts/_00011161.html
+
+  cO2-oxygen-concentration:
+    label: cO2 (Oxygen Concentration)
+    description: Oxygen concentration. [DBPedia]
+    sameAs:
+      - https://dbpedia.org/page/Oxygen_concentration
+      - https://sns.uba.de/umthes/de/concepts/_00021376.html
+
+  SO2:
+    label: SO2 (Oxygen Saturation)
+    description: Oxygen saturation (symbol SO2) is a relative measure of the concentration of oxygen that is dissolved or carried in a given medium as a proportion of the maximal concentration that can be dissolved in that medium at the given temperature. It can be measured with a dissolved oxygen probe such as an oxygen sensor or an optode in liquid media, usually water. The standard unit of oxygen saturation is percent (%). [DBPedia]
+    seeAlso:
+      - https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=Oxygen%20Saturation&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false
+    sameAs:
+      - https://saref.etsi.org/saref4watr/Oxygen
+      - http://dd.eionet.europa.eu/vocabulary/wise/ObservedProperty/EEA_3131-01-9
+      - http://dd.eionet.europa.eu/vocabulary/wise/WFDQualityElement/QE3-1-3-1
+      - https://dbpedia.org/page/Oxygen_saturation
+      - https://sns.uba.de/umthes/de/concepts/_00021379.html
+
+  water-temperature:
+    label: Water Temperature
+    description: Water temperature is a physical property expressing how hot or cold water is. Temperature is an important factor to consider when assessing water quality. Many fish and other aquatic animals are sensitive to changes in water temperature and require a certain temperature range to survive. If water temperature goes outside that range for too long, they can become sick or die. [EPA Terminology Services]
+    seeAlso:
+      - https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=Water%20temperature&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false
+      - https://wq.moenv.gov.tw/EWQP/en/Encyclopedia/NounDefinition/Pedia_17.aspx
+    sameAs:
+      - https://saref.etsi.org/saref4watr/Temperature
+      - http://dd.eionet.europa.eu/vocabulary/wise/ObservedProperty/EEA_3121-01-5
+      - http://dd.eionet.europa.eu/vocabulary/wise/WFDQualityElement/QE3-1-2-1
+      - https://sns.uba.de/umthes/de/concepts/_00027358.html
+      - https://d-nb.info/gnd/4234773-7
+      - https://lod.nal.usda.gov/nalt/65553
+      - https://vocabularyserver.com/cnr/ml/earth/en/xml.php?skosTema=91090
+      - http://aims.fao.org/aos/agrovoc/c_16063
+
+  water-level:
+    label: Water Level
+    description: The level reached by the surface of a body of water. [EIONET]
+    seeAlso:
+      - https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=Water%20level&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false
+    sameAs:
+      - http://www.eionet.europa.eu/gemet/concept/9190
+      - https://sns.uba.de/umthes/de/concepts/_00027345.html
+      - https://d-nb.info/gnd/4189260-4
+      - https://vocabularyserver.com/cnr/ml/earth/en/xml.php?skosTema=21430
+      - http://aims.fao.org/aos/agrovoc/c_29685
+
+  k-specific-conductance:
+    label: k (Specific Conductance )
+    description: Conductivity or specific conductance of an electrolyte solution is a measure of its ability to conduct electricity. The SI unit of conductivity is siemens per meter (S/m). Conductivity measurements are used routinely in many industrial and environmental applications as a fast, inexpensive and reliable way of measuring the ionic content in a solution. For example, the measurement of product conductivity is a typical way to monitor and continuously trend the performance of water purification systems. In many cases, conductivity is linked directly to the total dissolved solids (TDS). [Wikipedia]
+    seeAlso:
+      - https://en.wikipedia.org/wiki/Conductivity_(electrolytic)
+      - https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=specific%20conductance&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false
+    sameAs:
+      - https://sns.uba.de/umthes/de/concepts/_00016073.html
+
+  TTS:
+    label: TTS (Total Suspended Solids)
+    description: Total suspended solids (TSS) is the dry-weight of suspended particles, that are not dissolved, in a sample of water that can be trapped by a filter that is analyzed using a filtration apparatus known as sintered glass crucible. TSS is a water quality parameter used to assess the quality of a specimen of any type of water or water body, ocean water for example, or wastewater after treatment in a wastewater treatment plant. It is listed as a conventional pollutant in the U.S. Clean Water Act. Total dissolved solids is another parameter acquired through a separate analysis which is also used to determine water quality based on the total substances that are fully dissolved within the water, rather than undissolved suspended particles. [DBPedia]
+    seeAlso:
+      - https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/doc/spec.md
+      - https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=Total%20suspended%20solids&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false
+    sameAs:
+      - https://saref.etsi.org/saref4watr/TotalSuspendedSolids
+      - http://dd.eionet.europa.eu/vocabulary/IEDAnnexIIModule3/EQSWaterPollutantsGlassCode/109
+      - http://dd.eionet.europa.eu/vocabulary/wise/ObservedProperty/EEA_31-02-7
+      - https://dbpedia.org/page/Total_suspended_solids
+      - https://sns.uba.de/umthes/de/concepts/_00022057.html
+      - http://aims.fao.org/aos/agrovoc/c_3c8040e9
+
+  pH:
+    label: pH (Hydrogen Ion Concentration Index)
+    description: In chemistry, pH (/piːˈeɪtʃ/), historically denoting "potential of hydrogen" (or "power of hydrogen"), is a scale used to specify the acidity or basicity of an aqueous solution. Acidic solutions (solutions with higher concentrations of H+ ions) are measured to have lower pH values than basic or alkaline solutions. The pH scale is logarithmic and inversely indicates the concentration of hydrogen ions in the solution. [DBPedia]
+    seeAlso:
+      - https://www.epa.gov/sites/default/files/2014-12/documents/wqsglossary9-2012.pdf
+      - https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=pH&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false
+      - https://wq.moenv.gov.tw/EWQP/en/Encyclopedia/NounDefinition/Pedia_47.aspx
+    sameAs:
+      - http://www.eionet.europa.eu/gemet/concept/47
+      - https://sns.uba.de/umthes/de/concepts/_00019242.html
+      - http://purl.org/bncf/tid/32910
+      - https://d-nb.info/gnd/4189273-2
+      - https://lod.nal.usda.gov/nalt/2772
+      - https://vocabularyserver.com/cnr/ml/earth/en/xml.php?skosTema=33090
+      - http://aims.fao.org/aos/agrovoc/c_5753
+
+  ORP:
+    label: ORP (Oxidation-Reduction Potential)
+    description: Redox potential (also known as oxidation / reduction potential, ORP, pe, , or ) is a measure of the tendency of a chemical species to acquire electrons from or lose electrons to an electrode and thereby be reduced or oxidised respectively. Redox potential is expressed in volts (V). Each species has its own intrinsic redox potential; for example, the more positive the reduction potential (reduction potential is more often used due to general formalism in electrochemistry), the greater the species' affinity for electrons and tendency to be reduced. [DBPedia]
+    seeAlso:
+      - https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=Oxidation-Reduction%20potential&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false
+    sameAs:
+      - https://dbpedia.org/page/Reduction_potential
+      - https://sns.uba.de/umthes/de/concepts/_00020545.html
+      - https://d-nb.info/gnd/4076577-5
+      - https://lod.nal.usda.gov/nalt/56439
+      - http://aims.fao.org/aos/agrovoc/c_6482
+
+  water-hardness:
+    label: Water Hardness
+    description: Water hardness is the amount of dissolved calcium and magnesium in the water. Hard water is high in dissolved minerals, largely calcium and magnesium. [AGROVOC]
+    seeAlso:
+      - https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=Water%20hardness&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false
+      - https://wq.moenv.gov.tw/EWQP/en/Encyclopedia/NounDefinition/Pedia_11.aspx
+    sameAs:
+      - http://www.eionet.europa.eu/gemet/concept/9184
+      - https://sns.uba.de/umthes/de/concepts/_00027253.html
+      - https://lod.nal.usda.gov/nalt/67253
+      - https://vocabularyserver.com/cnr/ml/earth/en/xml.php?skosTema=52920
+      - http://vocabulary.worldbank.org/thesaurus/1612631
+      - http://aims.fao.org/aos/agrovoc/c_25423
+
+  KH:
+    label: KH (Carbonate Hardness)
+    description: Carbonate hardness, is a measure of the water hardness caused by the presence of carbonate (CO2−3) and bicarbonate (HCO−3) anions. Carbonate hardness is usually expressed either in degrees KH (dKH) (from the German "Karbonathärte"), or in parts per million calcium carbonate ( ppm CaCO3 or grams CaCO3 per litre|mg/L). One dKH is equal to 17.848 mg/L (ppm) CaCO3, e.g. one dKH corresponds to the carbonate and bicarbonate ions found in a solution of approximately 17.848 milligrams of calcium carbonate(CaCO3) per litre of water (17.848 ppm). Both measurements (mg/L or KH) are usually expressed as mg/L CaCO3 – meaning the concentration of carbonate expressed as if calcium carbonate were the sole source of carbonate ions. [DBPedia]
+    sameAs:
+      - https://dbpedia.org/page/Carbonate_hardness
+
+  AOX:
+    label: AOX (Adsorbable Organic Halides)
+    description: Adsorbable Organic Halides (AOX) is a measure of the organic halogen load at a sampling site such as soil from a land fill, water, or sewage waste. The procedure measures chlorine, bromine, and iodine as equivalent halogens, but does not measure fluorine levels in the sample. [DBPedia]
+    sameAs:
+      - https://dbpedia.org/page/Adsorbable_organic_halides
+
+  COD:
+    label: COD (Chemical Oxygen Demand)
+    description: In environmental chemistry, the chemical oxygen demand (COD) is an indicative measure of the amount of oxygen that can be consumed by reactions in a measured solution. It is commonly expressed in mass of oxygen consumed over volume of solution which in SI units is milligrams per litre (mg/L). A COD test can be used to easily quantify the amount of organics in water. The most common application of COD is in quantifying the amount of oxidizable pollutants found in surface water (e.g. lakes and rivers) or wastewater. COD is useful in terms of water quality by providing a metric to determine the effect an effluent will have on the receiving body, much like biochemical oxygen demand (BOD). [DBPedia]
+    seeAlso:
+      - https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=chemical%20oxygen%20demand&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false
+    sameAs:
+      - https://dd.eionet.europa.eu/vocabularyconcept/IEDAnnexIIModule3/EQSWaterPollutantsGlassCode/022/view
+      - https://dd.eionet.europa.eu/vocabularyconcept/gemet2/concept/1536/view
+      - https://dbpedia.org/page/Chemical_oxygen_demand
+      - https://sns.uba.de/umthes/de/concepts/_00006030.html
+      - https://lod.nal.usda.gov/nalt/24643
+      - http://aims.fao.org/aos/agrovoc/c_15de0183
+
+  DOC:
+    label: DOC (Dissolved Organic Carbon)
+    description: Dissolved organic carbon (DOC) is the fraction of organic carbon operationally defined as that which can pass through a filter with a pore size typically between 0.22 and 0.7 micrometers. The fraction remaining on the filter is called particulate organic carbon (POC). The marine DOC pool is important for the functioning of marine ecosystems because they are at the interface between the chemical and the biological worlds. DOC fuels marine food webs, and is a major component of the Earth's carbon cycling. [DBPedia]
+    seeAlso:
+      - https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=Dissolved%20organic%20carbon&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false
+    sameAs:
+      - http://www.eionet.europa.eu/gemet/concept/2259
+      - https://dbpedia.org/page/Dissolved_organic_carbon
+      - https://sns.uba.de/umthes/de/concepts/_00500166.html
+      - https://lod.nal.usda.gov/nalt/34079
+      - http://vocabulary.worldbank.org/thesaurus/1644123
+      - http://aims.fao.org/aos/agrovoc/c_02b11638
+
+  evapotranspiration:
+    label: Evapotranspiration
+    description: Water losses from the surface of soils and plants. [EPA Terminology Services]
+    seeAlso:
+      - https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=evapotranspiration&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false
+
+  precipitation:
+    label: Precipitation
+    description: In analytic chemistry, the process of producing a separable solid phase within a liquid medium. [EPA Terminology Services]
+    seeAlso:
+      - https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=precipitation&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false
+    sameAs:
+      - https://saref.etsi.org/saref4watr/Precipitation
+
+  surface-reflectance:
+    label: Surface Reflectance
+    description: Surface reflectance is the amount of light reflected by the surface of the Earth. It is a ratio of surface radiance to surface irradiance, and as such is unitless, with values between 0 and 1. [USGS]
+    seeAlso:
+      - https://www.usgs.gov/landsat-missions/landsat-collection-1-surface-reflectance
+
+  ## No definitions were found for the properties listed below:
+
+  settling-agents:
+    label: Settling Agents
+    description: Settling Agents
+
+  reference-evapotranspiration:
+    label: Reference-Evapotranspiration
+    description: Reference-Evapotranspiration
+
+  wind-speed:
+    label: Wind Speed
+    description: Wind Speed
+
+  direct-normal-irradiance:
+    label: Direct Normal Irradiance
+    description: Direct Normal Irradiance
+
+  ## Qualitative lake water quality parameters - CrowdWater
+
+  lake-usage:
+    label: Lake Usage
+    description: Lake Usage
+
+  lake-access:
+    label: lake-access
+    description:
+
+  shore-properties:
+    label: Shore Properties
+    description: Shore Properties
+
+  go-swimming:
+    label: Go Swimming
+    description: Go Swimming
+
+  water-transparency:
+    label: Water Transparency
+    description:
+
+  water-color:
+    label: Water Color
+    description: Water Color
+
+  lakewater-smell:
+    label: Lakewater Smell
+    description: Lakewater Smell
+
+  lakeshore-vegetation:
+    label: Lakeshore Vegetation
+    description:
+
+  plants-under-water:
+    label: Plants Under Water
+    description: Plants Under Water
+
+  floating-leaf-plants:
+    label: Floating Leaf Plants
+    description: Floating Leaf Plants
+
+  duckweed:
+    label: Duckweed
+    description: Duckweed
+
+  algae:
+    label: Algae
+    description: Algae
+
+  mussels:
+    label: Mussels
+    description: Mussels
+
+  dead-wood-protrudes:
+    label: Dead Wood Protrudes into the Water
+    description: Dead wood protrudes into the water
+
+  animals-in-near-the-water:
+    label: Animals in/near the Water
+    description: Animals in/near the water
+
+  water-level-change:
+    label: Water Level Change
+    description: Water Level Change
