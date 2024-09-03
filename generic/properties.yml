@@ -17,35 +17,36 @@ properties:
   #   hasNarrower:                                      # Same as hasBroader, but for linking to more specific terms
   #     - anotherNarrowTerm
 
-  NO3-N-nitrate-nitrogen:
-    label: NO3-N (Nitrate Nitrogen)
+  nitrate-concentration:
+    label: Nitrate Concentration
     description: Nitrate nitrogen is the final product of nitrification in the nitrogen cycle. Thus, the amount of nitrate nitrogen can indicate the degree of pollution of the water. When there is too much nitrate nitrogen existing in the rivers, lakes or reservoirs, it could cause mass reproduction of algae and lead to eutrophication of water bodies. [Environmental Water Quality Information]
     seeAlso:
       - https://wq.moenv.gov.tw/EWQP/en/Encyclopedia/NounDefinition/Pedia_31.aspx
     sameAs:
       - http://aims.fao.org/aos/agrovoc/c_0e5d9815
 
-  NO2-N-nitrite-nitrogen:
-    label: NO2-N (Nitrite Nitrogen)
+  nitrite-concentration:
+    label: Nitrite Concentration
     description: Most nitrogenous materials in natural waters tend to be converted to nitrate, so all sources of combined nitrogen, particularly organic nitrogen and ammonia, should be considered as potential nitrate sources. Primary sources of organic nitrates include human sewage and livestock manure, especially from feedlots. The primary inorganic nitrates which may contaminate drinking water are potassium nitrate and ammonium nitrate both of which are widely used as fertilizers. [Water Quality Association]
     seeAlso:
       - https://wqa.org/resources/nitrites-nitrates/
       - https://wq.moenv.gov.tw/EWQP/en/Encyclopedia/NounDefinition/Pedia_27.aspx
 
-  NH4-ammonia-nitrogen:
-    label: NH4 (Ammonia Nitrogen)
+  ammonia-concentration:
+    label: Ammonia Concentration
     description: Organic nitrogenous compounds are mainly from the decomposition of feces and animal and plant remains. In the decomposition process, amino acids are formed first and then ammonia nitrogen, nitrite nitrogen and nitrate nitrogen form in sequence. Thus, if ammonia nitrogen exists in a body of water, it indicates the water has not been polluted for long. [Environmental Water Quality Information]
     seeAlso:
       - https://wq.moenv.gov.tw/EWQP/en/Encyclopedia/NounDefinition/Pedia_08.aspx
 
-  orthophosphate-P:
-    label: Orthophosphate-P
-    description: Orthophosphate as P is a parameter of the Bimonthly Water Quality Sampling Program, which is ORSANCO’s long-term water quality monitoring program for the Ohio River. Parameters include ammonia nitrogen, biochemical oxygen demand, bromide, chloride, dissolved organic carbon, dissolved oxygen, total hardness, nitrate/nitrite nitrogen, orthophosphate, pH, specific conductivity, sulfate, temperature, total dissolved solids, total kjeldahl nitrogen, total nitrogen, total organic carbon, phenols, total phosphorus, total suspended solids, and turbidity. [Ohio River Valley Water Sanitation Commission]
+  ammonium-concentration:
+    label: Ammonium Concentration
+    description: |-
+      NH4[number]: Concentration of ammonium. [Smart Data Models]
     seeAlso:
-      - https://www.orsanco.org/data/orthophosphate-as-p/
+      - https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/doc/spec.md
 
-  Cl-chloride:
-    label: Cl- (Chloride)
+  dissolved-chloride-concentration:
+    label: Dissolved Chloride Concentration
     description: The chloride ion /ˈklɔːraɪd/ is the anion (negatively charged ion) Cl−. It is formed when the element chlorine (a halogen) gains an electron or when a compound such as hydrogen chloride is dissolved in water or other polar solvents. Chloride salts such as sodium chloride are often very soluble in water. It is an essential electrolyte located in all body fluids responsible for maintaining acid/base balance, transmitting nerve impulses and regulating liquid flow in and out of cells. Less frequently, the word chloride may also form part of the "common" name of chemical compounds in which one or more chlorine atoms are covalently bonded. For example, methyl chloride, with the standard name chloromethane (see IUPAC books) is an organic compound with a covalent C−Cl bond in which the chlorine is not an anion. [DBPedia]
     seeAlso:
       - https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/doc/spec.md
@@ -57,8 +58,8 @@ properties:
       - https://dbpedia.org/page/Chloride
       - https://sns.uba.de/umthes/de/concepts/_00028727.html
 
-  B-boron:
-    label: B (Boron)
+  dissolved-boron-concentration:
+    label: Dissolved Boron Concentration
     description: Boron is a chemical element with the symbol B and atomic number 5. In its crystalline form it is a brittle, dark, lustrous metalloid; in its amorphous form it is a brown powder. As the lightest element of the boron group it has three valence electrons for forming covalent bonds, resulting in many compounds such as boric acid, the mineral sodium borate, and the ultra-hard crystals of boron carbide and boron nitride. [DBPedia]
     seeAlso:
       - https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/doc/spec.md
@@ -73,10 +74,10 @@ properties:
       - https://lod.nal.usda.gov/nalt/18678
       - https://vocabularyserver.com/cnr/ml/earth/en/xml.php?skosTema=52040
 
-  Fe-iron:
-    label: Fe (Iron)
+  dissolved-iron3-concentration:
+    label: Dissolved Iron3 Concentration
     description:
-      Iron (/ˈaɪən/) is a chemical element with symbol Fe (from Latin: ferrum) and atomic number 26. It is a metal that belongs to the first transition series and group 8 of the periodic table. It is, by mass, the most common element on Earth, right in front of oxygen (32.1% and 30.1%, respectively), forming much of Earth's outer and inner core. It is the fourth most common element in the Earth's crust. [DBPedia]
+      Property of the water indicating its concentration of iron. [Saref4Watr]
     seeAlso:
       - https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/doc/spec.md
       - https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=Iron&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false
@@ -84,7 +85,6 @@ properties:
     sameAs:
       - https://saref.etsi.org/saref4watr/Iron
       - http://www.eionet.europa.eu/gemet/concept/4498
-      - https://dbpedia.org/page/Iron
       - https://sns.uba.de/umthes/de/concepts/_00028823.html
       - http://purl.org/bncf/tid/474
       - http://eurovoc.europa.eu/981
@@ -99,8 +99,8 @@ properties:
     sameAs:
       - https://dbpedia.org/page/Silicic_acid
 
-  Mn-manganese:
-    label: Mn (Manganese)
+  dissolved-manganese-concentration:
+    label: Dissolved Manganese Concentration
     description: Manganese is a chemical element with the symbol Mn and atomic number 25. It is a hard, brittle, silvery metal, often found in minerals in combination with iron. Manganese is a transition metal with a multifaceted array of industrial alloy uses, particularly in stainless steels. It improves strength, workability, and resistance to wear. Manganese oxide is used as an oxidising agent; as a rubber additive; and in glass making, fertilisers, and ceramics. Manganese sulfate can be used as a fungicide. [DBPedia]
     seeAlso:
       - https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=Manganese&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false
@@ -150,8 +150,8 @@ properties:
       - http://zbw.eu/stw/descriptor/14645-5
       - http://aims.fao.org/aos/agrovoc/c_5187
 
-  PO4-orthophosphate:
-    label: PO4 (Orthophosphate)
+  orthophosphate-concentration:
+    label: Orthophosphate Concentration
     description: In chemistry, a phosphate is an anion, salt, functional group or ester derived from a phosphoric acid. It most commonly means orthophosphate, a derivative of orthophosphoric acid H3PO4. The phosphate or orthophosphate ion [PO4]3− is derived from phosphoric acid by the removal of three protons H+. Removal of one or two protons gives the dihydrogen phosphate ion [H2PO4]− and the hydrogen phosphate ion [HPO4]2− ion, respectively. These names are also used for salts of those anions, such as ammonium dihydrogen phosphate and trisodium phosphate. * H3PO4Phosphoricacid * [H2PO4]−Dihydrogenphosphate * [DBPedia]
     seeAlso:
       - https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=orthoPhosphate&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false
@@ -159,8 +159,8 @@ properties:
       - https://dbpedia.org/page/Phosphate
       - https://sns.uba.de/umthes/de/concepts/_00019272.html
 
-  SO4-sulphate:
-    label: SO4 (Sulphate)
+  sulphate-concentration:
+    label: Sulphate Concentration
     description: The sulfate or sulphate ion is a polyatomic anion with the empirical formula SO2−4. Salts, acid derivatives, and peroxides of sulfate are widely used in industry. Sulfates occur widely in everyday life. Sulfates are salts of sulfuric acid and many are prepared from that acid. [DBPedia]
     seeAlso:
       - https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/doc/spec.md
@@ -170,8 +170,8 @@ properties:
       - https://sns.uba.de/umthes/de/concepts/_00028731.html
       - http://aims.fao.org/aos/agrovoc/c_7510
 
-  TNb-total-bound-nitrogen:
-    label: TNb (Total Bound Nitrogen)
+  TNb-total-nitrogen-bound:
+    label: TNb (Total Nitrogen Bound)
     description: Total bound nitrogen (ST-TNb) includes all inorganic forms, nitric nitrogen, nitrous nitrogen, ammoniacal nitrogen and all organic forms of nitrogen in a water sample. Nitrate in particular is one of the fundamental nutrients of algae which, in the presence of sufficient quantities of phosphates and other favourable conditions, determine the eutrophication of water. The main sources of nitrogen are both natural and anthropogenic. Of the anthropogenic sources, particular importance can be attributed to domestic wastewater and the use of fertilizers in agriculture. Reduction of nitrogen load is carried out in domestic and industrial wastewater treatment plants through special denitrification processes. The presence of significant concentrations of nitrogenous substances in water can indicate pollution and pose a risk to health and environment. [ISO]
     seeAlso:
       - https://www.iso.org/obp/ui/#iso:std:iso:23697:-1:ed-1:v1:en
@@ -202,8 +202,8 @@ properties:
     sameAs:
       - https://sns.uba.de/umthes/de/concepts/_00011161.html
 
-  oxygen-concentration:
-    label: Oxygen Concentration
+  dissolved-oxygen-concentration:
+    label: Dissolved Oxygen Concentration
     description: Oxygen concentration. [DBPedia]
     sameAs:
       - https://dbpedia.org/page/Oxygen_concentration
@@ -341,16 +341,17 @@ properties:
 
   DOC-dissolved-organic-carbon:
     label: DOC (Dissolved Organic Carbon)
-    description: Dissolved organic carbon (DOC) is the fraction of organic carbon operationally defined as that which can pass through a filter with a pore size typically between 0.22 and 0.7 micrometers. The fraction remaining on the filter is called particulate organic carbon (POC). The marine DOC pool is important for the functioning of marine ecosystems because they are at the interface between the chemical and the biological worlds. DOC fuels marine food webs, and is a major component of the Earth's carbon cycling. [DBPedia]
+    description: The fraction of total organic carbon (all carbon atoms covalently bonded in organic molecules) in water that passes through a 0.45 micron pore-diameter filter.
     seeAlso:
       - https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=Dissolved%20organic%20carbon&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false
     sameAs:
       - http://www.eionet.europa.eu/gemet/concept/2259
-      - https://dbpedia.org/page/Dissolved_organic_carbon
       - https://sns.uba.de/umthes/de/concepts/_00500166.html
       - https://lod.nal.usda.gov/nalt/34079
       - http://vocabulary.worldbank.org/thesaurus/1644123
       - http://aims.fao.org/aos/agrovoc/c_02b11638
+    relatedMatch:
+      - https://dbpedia.org/page/Dissolved_organic_carbon
 
   potential-evapotranspiration:
     label: Potential-Evapotranspiration

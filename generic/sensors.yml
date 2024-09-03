@@ -16,11 +16,11 @@ sensors:
   #   references:                                       # List of websites with definitions, data sheets, etc. (non-semantic)
   #     - https://en.wikipedia.org/wiki/Term
   #   observed_properties:                              # List of properties that this sensor observes
-  #     - pm2.5                                         #   option 1: just the id from properties.yml
-  #     - name: pm10                                    #   option 2: object with "name" as the id of the property
-  #       unit: unit:MicroGM-PER-M3                     #     optionally, a unit from QUDT, with prefix "unit:" (https://www.qudt.org/doc/DOC_VOCAB-UNITS.html)
+  #     - cO2-oxygen-concentration                      #   option 1: just the id from properties.yml
+  #     - name: cO2-oxygen-concentration                #   option 2: object with "name" as the id of the property
+  #       unit: unit:MilliGM-PER-L                      #     optionally, a unit from QUDT, with prefix "unit:" (https://www.qudt.org/doc/DOC_VOCAB-UNITS.html)
   #       procedure_steps:                              #     optionally, a set of procedure steps from procedures.yml
-  #         - pm-humidity-correction
+  #         - step1
 
   AQUATOS-web-LTX:
     name: AQUATOS web LTX
@@ -35,7 +35,7 @@ sensors:
     observed_properties:
       - name: water-temperature
         unit: unit:DEG_C
-      - name: oxygen-concentration
+      - name: dissolved-oxygen-concentration
         unit: unit:MilliGM-PER-L
       - name: oxygen-saturation
         unit: unit:PER-PERCENT
@@ -54,7 +54,7 @@ sensors:
     observed_properties:
       - name: water-temperature
         unit: unit:DEG_C
-      - name: oxygen-concentration
+      - name: dissolved-oxygen-concentration
         unit: unit:MilliGM-PER-L
       - name: oxygen-saturation
         unit: unit:PER-PERCENT
@@ -73,7 +73,7 @@ sensors:
     observed_properties:
       - name: water-temperature
         unit: unit:DEG_C
-      - name: oxygen-concentration
+      - name: dissolved-oxygen-concentration
         unit: unit:MilliGM-PER-L
       - name: oxygen-saturation
         unit: unit:PER-PERCENT
