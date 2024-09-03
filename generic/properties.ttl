@@ -7,7 +7,7 @@
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://w3id.org/ad4gd/water-quality/properties/AOX> a skos:Concept,
+<https://w3id.org/ad4gd/water-quality/properties/AOX-adsorbable-organic-halides> a skos:Concept,
         sosa:ObservableProperty ;
     owl:sameAs <https://dbpedia.org/page/Adsorbable_organic_halides> ;
     skos:definition "Adsorbable Organic Halides (AOX) is a measure of the organic halogen load at a sampling site such as soil from a land fill, water, or sewage waste. The procedure measures chlorine, bromine, and iodine as equivalent halogens, but does not measure fluorine levels in the sample. [DBPedia]" ;
@@ -29,7 +29,7 @@
     skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
     skos:prefLabel "B (Boron)" .
 
-<https://w3id.org/ad4gd/water-quality/properties/COD> a skos:Concept,
+<https://w3id.org/ad4gd/water-quality/properties/COD-chemical-oxygen-demand> a skos:Concept,
         sosa:ObservableProperty ;
     rdfs:seeAlso <https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=chemical%20oxygen%20demand&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false> ;
     owl:sameAs <http://aims.fao.org/aos/agrovoc/c_15de0183>,
@@ -42,7 +42,7 @@
     skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
     skos:prefLabel "COD (Chemical Oxygen Demand)" .
 
-<https://w3id.org/ad4gd/water-quality/properties/Cl-> a skos:Concept,
+<https://w3id.org/ad4gd/water-quality/properties/Cl-chloride> a skos:Concept,
         sosa:ObservableProperty ;
     rdfs:seeAlso <https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/doc/spec.md>,
         <https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=Chloride&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false>,
@@ -55,7 +55,7 @@
     skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
     skos:prefLabel "Cl- (Chloride)" .
 
-<https://w3id.org/ad4gd/water-quality/properties/DOC> a skos:Concept,
+<https://w3id.org/ad4gd/water-quality/properties/DOC-dissolved-organic-carbon> a skos:Concept,
         sosa:ObservableProperty ;
     rdfs:seeAlso <https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=Dissolved%20organic%20carbon&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false> ;
     owl:sameAs <http://aims.fao.org/aos/agrovoc/c_02b11638>,
@@ -68,7 +68,7 @@
     skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
     skos:prefLabel "DOC (Dissolved Organic Carbon)" .
 
-<https://w3id.org/ad4gd/water-quality/properties/Fe> a skos:Concept,
+<https://w3id.org/ad4gd/water-quality/properties/Fe-iron> a skos:Concept,
         sosa:ObservableProperty ;
     rdfs:seeAlso <https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/doc/spec.md>,
         <https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=Iron&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false>,
@@ -87,21 +87,14 @@
     skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
     skos:prefLabel "Fe (Iron)" .
 
-<https://w3id.org/ad4gd/water-quality/properties/H4O4Si> a skos:Concept,
+<https://w3id.org/ad4gd/water-quality/properties/H4O4Si-silicic-acid> a skos:Concept,
         sosa:ObservableProperty ;
     owl:sameAs <https://dbpedia.org/page/Silicic_acid> ;
     skos:definition "In chemistry, a silicic acid (/sɪˈlɪsɪk/) is any chemical compound containing the element silicon attached to oxide (=O) and hydroxyl (−OH) groups, with the general formula [H2xSiOx+2]n or, equivalently, [SiOx(OH)4-2x]n. Orthosilicic acid is a representative example. Silicic acids are rarely observed in isolation, but are thought to exist in aqueous solutions, including seawater, and play a role in biomineralization. They are typically colorless weak acids that are sparingly soluble in water. Like the silicate anions, which are their better known conjugate bases, silicic acids are proposed to be oligomeric or polymeric. No simple silicic acid has ever been identified, since these species being primarily of theoretical interest. [DBPedia]" ;
     skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
-    skos:prefLabel "H4O4Si (Silicic acid)" .
+    skos:prefLabel "H4O4Si (Silicic Acid)" .
 
-<https://w3id.org/ad4gd/water-quality/properties/KH> a skos:Concept,
-        sosa:ObservableProperty ;
-    owl:sameAs <https://dbpedia.org/page/Carbonate_hardness> ;
-    skos:definition "Carbonate hardness, is a measure of the water hardness caused by the presence of carbonate (CO2−3) and bicarbonate (HCO−3) anions. Carbonate hardness is usually expressed either in degrees KH (dKH) (from the German \"Karbonathärte\"), or in parts per million calcium carbonate ( ppm CaCO3 or grams CaCO3 per litre|mg/L). One dKH is equal to 17.848 mg/L (ppm) CaCO3, e.g. one dKH corresponds to the carbonate and bicarbonate ions found in a solution of approximately 17.848 milligrams of calcium carbonate(CaCO3) per litre of water (17.848 ppm). Both measurements (mg/L or KH) are usually expressed as mg/L CaCO3 – meaning the concentration of carbonate expressed as if calcium carbonate were the sole source of carbonate ions. [DBPedia]" ;
-    skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
-    skos:prefLabel "KH (Carbonate Hardness)" .
-
-<https://w3id.org/ad4gd/water-quality/properties/Mn> a skos:Concept,
+<https://w3id.org/ad4gd/water-quality/properties/Mn-manganese> a skos:Concept,
         sosa:ObservableProperty ;
     rdfs:seeAlso <https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=Manganese&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false>,
         <https://wq.moenv.gov.tw/EWQP/en/Encyclopedia/NounDefinition/Pedia_45.aspx> ;
@@ -118,7 +111,7 @@
     skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
     skos:prefLabel "Mn (Manganese)" .
 
-<https://w3id.org/ad4gd/water-quality/properties/NH3> a skos:Concept,
+<https://w3id.org/ad4gd/water-quality/properties/NH3-ammonia> a skos:Concept,
         sosa:ObservableProperty ;
     rdfs:seeAlso <https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/doc/spec.md>,
         <https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=Ammonia&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false>,
@@ -136,22 +129,30 @@
     skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
     skos:prefLabel "NH3 (Ammonia)" .
 
-<https://w3id.org/ad4gd/water-quality/properties/NH4> a skos:Concept,
+<https://w3id.org/ad4gd/water-quality/properties/NH4-ammonia-nitrogen> a skos:Concept,
         sosa:ObservableProperty ;
     rdfs:seeAlso <https://wq.moenv.gov.tw/EWQP/en/Encyclopedia/NounDefinition/Pedia_08.aspx> ;
     skos:definition "Organic nitrogenous compounds are mainly from the decomposition of feces and animal and plant remains. In the decomposition process, amino acids are formed first and then ammonia nitrogen, nitrite nitrogen and nitrate nitrogen form in sequence. Thus, if ammonia nitrogen exists in a body of water, it indicates the water has not been polluted for long. [Environmental Water Quality Information]" ;
     skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
     skos:prefLabel "NH4 (Ammonia Nitrogen)" .
 
-<https://w3id.org/ad4gd/water-quality/properties/NO2-> a skos:Concept,
+<https://w3id.org/ad4gd/water-quality/properties/NO2-N-nitrite-nitrogen> a skos:Concept,
         sosa:ObservableProperty ;
     rdfs:seeAlso <https://wq.moenv.gov.tw/EWQP/en/Encyclopedia/NounDefinition/Pedia_27.aspx>,
         <https://wqa.org/resources/nitrites-nitrates/> ;
     skos:definition "Most nitrogenous materials in natural waters tend to be converted to nitrate, so all sources of combined nitrogen, particularly organic nitrogen and ammonia, should be considered as potential nitrate sources. Primary sources of organic nitrates include human sewage and livestock manure, especially from feedlots. The primary inorganic nitrates which may contaminate drinking water are potassium nitrate and ammonium nitrate both of which are widely used as fertilizers. [Water Quality Association]" ;
     skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
-    skos:prefLabel "NO2- (Nitrite Nitrogen)" .
+    skos:prefLabel "NO2-N (Nitrite Nitrogen)" .
 
-<https://w3id.org/ad4gd/water-quality/properties/NO3-> a skos:Concept,
+<https://w3id.org/ad4gd/water-quality/properties/NO3-N-nitrate-nitrogen> a skos:Concept,
+        sosa:ObservableProperty ;
+    rdfs:seeAlso <https://wq.moenv.gov.tw/EWQP/en/Encyclopedia/NounDefinition/Pedia_31.aspx> ;
+    owl:sameAs <http://aims.fao.org/aos/agrovoc/c_0e5d9815> ;
+    skos:definition "Nitrate nitrogen is the final product of nitrification in the nitrogen cycle. Thus, the amount of nitrate nitrogen can indicate the degree of pollution of the water. When there is too much nitrate nitrogen existing in the rivers, lakes or reservoirs, it could cause mass reproduction of algae and lead to eutrophication of water bodies. [Environmental Water Quality Information]" ;
+    skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
+    skos:prefLabel "NO3-N (Nitrate Nitrogen)" .
+
+<https://w3id.org/ad4gd/water-quality/properties/NO3-nitrate> a skos:Concept,
         sosa:ObservableProperty ;
     rdfs:seeAlso <https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=Nitrate&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false>,
         <https://wqa.org/resources/nitrites-nitrates/> ;
@@ -167,15 +168,7 @@
     skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
     skos:prefLabel "NO3- (Nitrate)" .
 
-<https://w3id.org/ad4gd/water-quality/properties/NO3-N> a skos:Concept,
-        sosa:ObservableProperty ;
-    rdfs:seeAlso <https://wq.moenv.gov.tw/EWQP/en/Encyclopedia/NounDefinition/Pedia_31.aspx> ;
-    owl:sameAs <http://aims.fao.org/aos/agrovoc/c_0e5d9815> ;
-    skos:definition "Nitrate nitrogen is the final product of nitrification in the nitrogen cycle. Thus, the amount of nitrate nitrogen can indicate the degree of pollution of the water. When there is too much nitrate nitrogen existing in the rivers, lakes or reservoirs, it could cause mass reproduction of algae and lead to eutrophication of water bodies. [Environmental Water Quality Information]" ;
-    skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
-    skos:prefLabel "NO3-N (Nitrate Nitrogen)" .
-
-<https://w3id.org/ad4gd/water-quality/properties/ORP> a skos:Concept,
+<https://w3id.org/ad4gd/water-quality/properties/ORP-oxidation-reduction-potential> a skos:Concept,
         sosa:ObservableProperty ;
     rdfs:seeAlso <https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=Oxidation-Reduction%20potential&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false> ;
     owl:sameAs <http://aims.fao.org/aos/agrovoc/c_6482>,
@@ -187,16 +180,16 @@
     skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
     skos:prefLabel "ORP (Oxidation-Reduction Potential)" .
 
-<https://w3id.org/ad4gd/water-quality/properties/PO43-> a skos:Concept,
+<https://w3id.org/ad4gd/water-quality/properties/PO4-orthophosphate> a skos:Concept,
         sosa:ObservableProperty ;
     rdfs:seeAlso <https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=orthoPhosphate&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false> ;
     owl:sameAs <https://dbpedia.org/page/Phosphate>,
         <https://sns.uba.de/umthes/de/concepts/_00019272.html> ;
     skos:definition "In chemistry, a phosphate is an anion, salt, functional group or ester derived from a phosphoric acid. It most commonly means orthophosphate, a derivative of orthophosphoric acid H3PO4. The phosphate or orthophosphate ion [PO4]3− is derived from phosphoric acid by the removal of three protons H+. Removal of one or two protons gives the dihydrogen phosphate ion [H2PO4]− and the hydrogen phosphate ion [HPO4]2− ion, respectively. These names are also used for salts of those anions, such as ammonium dihydrogen phosphate and trisodium phosphate. * H3PO4Phosphoricacid * [H2PO4]−Dihydrogenphosphate * [DBPedia]" ;
     skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
-    skos:prefLabel "PO43- (Orthophosphate)" .
+    skos:prefLabel "PO4 (Orthophosphate)" .
 
-<https://w3id.org/ad4gd/water-quality/properties/SO42-> a skos:Concept,
+<https://w3id.org/ad4gd/water-quality/properties/SO4-sulphate> a skos:Concept,
         sosa:ObservableProperty ;
     rdfs:seeAlso <https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/doc/spec.md>,
         <https://wq.moenv.gov.tw/EWQP/en/Encyclopedia/NounDefinition/Pedia_20.aspx> ;
@@ -205,53 +198,15 @@
         <https://sns.uba.de/umthes/de/concepts/_00028731.html> ;
     skos:definition "The sulfate or sulphate ion is a polyatomic anion with the empirical formula SO2−4. Salts, acid derivatives, and peroxides of sulfate are widely used in industry. Sulfates occur widely in everyday life. Sulfates are salts of sulfuric acid and many are prepared from that acid. [DBPedia]" ;
     skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
-    skos:prefLabel "SO42- (Sulphate)" .
+    skos:prefLabel "SO4 (Sulphate)" .
 
-<https://w3id.org/ad4gd/water-quality/properties/TNb> a skos:Concept,
+<https://w3id.org/ad4gd/water-quality/properties/TNb-total-bound-nitrogen> a skos:Concept,
         sosa:ObservableProperty ;
     rdfs:seeAlso <https://www.iso.org/obp/ui/#iso:std:iso:23697:-1:ed-1:v1:en> ;
     owl:sameAs <https://sns.uba.de/umthes/de/concepts/_00011173.html> ;
     skos:definition "Total bound nitrogen (ST-TNb) includes all inorganic forms, nitric nitrogen, nitrous nitrogen, ammoniacal nitrogen and all organic forms of nitrogen in a water sample. Nitrate in particular is one of the fundamental nutrients of algae which, in the presence of sufficient quantities of phosphates and other favourable conditions, determine the eutrophication of water. The main sources of nitrogen are both natural and anthropogenic. Of the anthropogenic sources, particular importance can be attributed to domestic wastewater and the use of fertilizers in agriculture. Reduction of nitrogen load is carried out in domestic and industrial wastewater treatment plants through special denitrification processes. The presence of significant concentrations of nitrogenous substances in water can indicate pollution and pose a risk to health and environment. [ISO]" ;
     skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
     skos:prefLabel "TNb (Total Bound Nitrogen)" .
-
-<https://w3id.org/ad4gd/water-quality/properties/TOC> a skos:Concept,
-        sosa:ObservableProperty ;
-    rdfs:seeAlso <https://saref.etsi.org/saref4watr/TotalOrganicCarbon>,
-        <https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=Total%20organic%20carbon&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false>,
-        <https://wq.moenv.gov.tw/EWQP/en/Encyclopedia/NounDefinition/Pedia_13.aspx> ;
-    owl:sameAs <http://aims.fao.org/aos/agrovoc/c_c35fdd26>,
-        <http://vocabulary.worldbank.org/thesaurus/1644128>,
-        <http://www.eionet.europa.eu/gemet/concept/11779>,
-        <https://dbpedia.org/page/Total_organic_carbon>,
-        <https://lod.nal.usda.gov/nalt/325123>,
-        <https://sns.uba.de/umthes/de/concepts/_00657196.html> ;
-    skos:definition "Total organic carbon (TOC) is the amount of carbon found in an organic compound and is often used as a non-specific indicator of water quality or cleanliness of pharmaceutical manufacturing equipment. TOC may also refer to the amount of organic carbon in soil, or in a geological formation, particularly the source rock for a petroleum play; 2% is a rough minimum. For marine surface sediments average TOC content is 0.5% in the deep ocean, and 2% along the eastern margins. [DBPedia]" ;
-    skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
-    skos:prefLabel "TOC (Total organic carbon)" .
-
-<https://w3id.org/ad4gd/water-quality/properties/TP> a skos:Concept,
-        sosa:ObservableProperty ;
-    rdfs:seeAlso <https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/doc/spec.md>,
-        <https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=Total%20phosphorus&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false> ;
-    owl:sameAs <https://sns.uba.de/umthes/de/concepts/_00011161.html> ;
-    skos:definition "Total phosphorus is a measure of all forms of phosphorus in the water, including dissolved and particulate, organic and inorganic. [Umweltthesaurus]" ;
-    skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
-    skos:prefLabel "TP (Total Phosphorus )" .
-
-<https://w3id.org/ad4gd/water-quality/properties/TTS> a skos:Concept,
-        sosa:ObservableProperty ;
-    rdfs:seeAlso <https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/doc/spec.md>,
-        <https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=Total%20suspended%20solids&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false> ;
-    owl:sameAs <http://aims.fao.org/aos/agrovoc/c_3c8040e9>,
-        <http://dd.eionet.europa.eu/vocabulary/IEDAnnexIIModule3/EQSWaterPollutantsGlassCode/109>,
-        <http://dd.eionet.europa.eu/vocabulary/wise/ObservedProperty/EEA_31-02-7>,
-        <https://dbpedia.org/page/Total_suspended_solids>,
-        <https://saref.etsi.org/saref4watr/TotalSuspendedSolids>,
-        <https://sns.uba.de/umthes/de/concepts/_00022057.html> ;
-    skos:definition "Total suspended solids (TSS) is the dry-weight of suspended particles, that are not dissolved, in a sample of water that can be trapped by a filter that is analyzed using a filtration apparatus known as sintered glass crucible. TSS is a water quality parameter used to assess the quality of a specimen of any type of water or water body, ocean water for example, or wastewater after treatment in a wastewater treatment plant. It is listed as a conventional pollutant in the U.S. Clean Water Act. Total dissolved solids is another parameter acquired through a separate analysis which is also used to determine water quality based on the total substances that are fully dissolved within the water, rather than undissolved suspended particles. [DBPedia]" ;
-    skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
-    skos:prefLabel "TTS (Total Suspended Solids)" .
 
 <https://w3id.org/ad4gd/water-quality/properties/algae> a skos:Concept,
         sosa:ObservableProperty ;
@@ -265,13 +220,12 @@
     skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
     skos:prefLabel "Animals in/near the Water" .
 
-<https://w3id.org/ad4gd/water-quality/properties/cO2-oxygen-concentration> a skos:Concept,
+<https://w3id.org/ad4gd/water-quality/properties/carbonate-hardness> a skos:Concept,
         sosa:ObservableProperty ;
-    owl:sameAs <https://dbpedia.org/page/Oxygen_concentration>,
-        <https://sns.uba.de/umthes/de/concepts/_00021376.html> ;
-    skos:definition "Oxygen concentration. [DBPedia]" ;
+    owl:sameAs <https://dbpedia.org/page/Carbonate_hardness> ;
+    skos:definition "Carbonate hardness, is a measure of the water hardness caused by the presence of carbonate (CO2−3) and bicarbonate (HCO−3) anions. Carbonate hardness is usually expressed either in degrees KH (dKH) (from the German \"Karbonathärte\"), or in parts per million calcium carbonate ( ppm CaCO3 or grams CaCO3 per litre|mg/L). One dKH is equal to 17.848 mg/L (ppm) CaCO3, e.g. one dKH corresponds to the carbonate and bicarbonate ions found in a solution of approximately 17.848 milligrams of calcium carbonate(CaCO3) per litre of water (17.848 ppm). Both measurements (mg/L or KH) are usually expressed as mg/L CaCO3 – meaning the concentration of carbonate expressed as if calcium carbonate were the sole source of carbonate ions. [DBPedia]" ;
     skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
-    skos:prefLabel "cO2 (Oxygen Concentration)" .
+    skos:prefLabel "Carbonate Hardness" .
 
 <https://w3id.org/ad4gd/water-quality/properties/dead-wood-protrudes> a skos:Concept,
         sosa:ObservableProperty ;
@@ -291,13 +245,6 @@
     skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
     skos:prefLabel "Duckweed" .
 
-<https://w3id.org/ad4gd/water-quality/properties/evapotranspiration> a skos:Concept,
-        sosa:ObservableProperty ;
-    rdfs:seeAlso <https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=evapotranspiration&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false> ;
-    skos:definition "Water losses from the surface of soils and plants. [EPA Terminology Services]" ;
-    skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
-    skos:prefLabel "Evapotranspiration" .
-
 <https://w3id.org/ad4gd/water-quality/properties/floating-leaf-plants> a skos:Concept,
         sosa:ObservableProperty ;
     skos:definition "Floating Leaf Plants" ;
@@ -309,15 +256,6 @@
     skos:definition "Go Swimming" ;
     skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
     skos:prefLabel "Go Swimming" .
-
-<https://w3id.org/ad4gd/water-quality/properties/k-specific-conductance> a skos:Concept,
-        sosa:ObservableProperty ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Conductivity_(electrolytic)>,
-        <https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=specific%20conductance&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false> ;
-    owl:sameAs <https://sns.uba.de/umthes/de/concepts/_00016073.html> ;
-    skos:definition "Conductivity or specific conductance of an electrolyte solution is a measure of its ability to conduct electricity. The SI unit of conductivity is siemens per meter (S/m). Conductivity measurements are used routinely in many industrial and environmental applications as a fast, inexpensive and reliable way of measuring the ionic content in a solution. For example, the measurement of product conductivity is a typical way to monitor and continuously trend the performance of water purification systems. In many cases, conductivity is linked directly to the total dissolved solids (TDS). [Wikipedia]" ;
-    skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
-    skos:prefLabel "k (Specific Conductance )" .
 
 <https://w3id.org/ad4gd/water-quality/properties/lake-access> a skos:Concept,
         sosa:ObservableProperty ;
@@ -354,6 +292,14 @@
     skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
     skos:prefLabel "Orthophosphate-P" .
 
+<https://w3id.org/ad4gd/water-quality/properties/oxygen-concentration> a skos:Concept,
+        sosa:ObservableProperty ;
+    owl:sameAs <https://dbpedia.org/page/Oxygen_concentration>,
+        <https://sns.uba.de/umthes/de/concepts/_00021376.html> ;
+    skos:definition "Oxygen concentration. [DBPedia]" ;
+    skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
+    skos:prefLabel "Oxygen Concentration" .
+
 <https://w3id.org/ad4gd/water-quality/properties/oxygen-saturation> a skos:Concept,
         sosa:ObservableProperty ;
     rdfs:seeAlso <https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=Oxygen%20Saturation&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false> ;
@@ -364,7 +310,7 @@
         <https://sns.uba.de/umthes/de/concepts/_00021379.html> ;
     skos:definition "Oxygen saturation (symbol SO2) is a relative measure of the concentration of oxygen that is dissolved or carried in a given medium as a proportion of the maximal concentration that can be dissolved in that medium at the given temperature. It can be measured with a dissolved oxygen probe such as an oxygen sensor or an optode in liquid media, usually water. The standard unit of oxygen saturation is percent (%). [DBPedia]" ;
     skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
-    skos:prefLabel "Oxygen Saturation / SO2" .
+    skos:prefLabel "Oxygen Saturation" .
 
 <https://w3id.org/ad4gd/water-quality/properties/pH> a skos:Concept,
         sosa:ObservableProperty ;
@@ -380,13 +326,20 @@
         <https://vocabularyserver.com/cnr/ml/earth/en/xml.php?skosTema=33090> ;
     skos:definition "In chemistry, pH (/piːˈeɪtʃ/), historically denoting \"potential of hydrogen\" (or \"power of hydrogen\"), is a scale used to specify the acidity or basicity of an aqueous solution. Acidic solutions (solutions with higher concentrations of H+ ions) are measured to have lower pH values than basic or alkaline solutions. The pH scale is logarithmic and inversely indicates the concentration of hydrogen ions in the solution. [DBPedia]" ;
     skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
-    skos:prefLabel "pH (Hydrogen Ion Concentration Index)" .
+    skos:prefLabel "pH" .
 
 <https://w3id.org/ad4gd/water-quality/properties/plants-under-water> a skos:Concept,
         sosa:ObservableProperty ;
     skos:definition "Plants Under Water" ;
     skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
     skos:prefLabel "Plants Under Water" .
+
+<https://w3id.org/ad4gd/water-quality/properties/potential-evapotranspiration> a skos:Concept,
+        sosa:ObservableProperty ;
+    rdfs:seeAlso <https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=evapotranspiration&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false> ;
+    skos:definition "Water losses from the surface of soils and plants. [EPA Terminology Services]" ;
+    skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
+    skos:prefLabel "Potential-Evapotranspiration" .
 
 <https://w3id.org/ad4gd/water-quality/properties/precipitation> a skos:Concept,
         sosa:ObservableProperty ;
@@ -414,12 +367,59 @@
     skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
     skos:prefLabel "Shore Properties" .
 
+<https://w3id.org/ad4gd/water-quality/properties/specific-conductivity> a skos:Concept,
+        sosa:ObservableProperty ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Conductivity_(electrolytic)>,
+        <https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=specific%20conductance&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false> ;
+    owl:sameAs <https://sns.uba.de/umthes/de/concepts/_00016073.html> ;
+    skos:definition "Conductivity or specific conductance of an electrolyte solution is a measure of its ability to conduct electricity. The SI unit of conductivity is siemens per meter (S/m). Conductivity measurements are used routinely in many industrial and environmental applications as a fast, inexpensive and reliable way of measuring the ionic content in a solution. For example, the measurement of product conductivity is a typical way to monitor and continuously trend the performance of water purification systems. In many cases, conductivity is linked directly to the total dissolved solids (TDS). [Wikipedia]" ;
+    skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
+    skos:prefLabel "Specific Conductivity" .
+
 <https://w3id.org/ad4gd/water-quality/properties/surface-reflectance> a skos:Concept,
         sosa:ObservableProperty ;
     rdfs:seeAlso <https://www.usgs.gov/landsat-missions/landsat-collection-1-surface-reflectance> ;
     skos:definition "Surface reflectance is the amount of light reflected by the surface of the Earth. It is a ratio of surface radiance to surface irradiance, and as such is unitless, with values between 0 and 1. [USGS]" ;
     skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
     skos:prefLabel "Surface Reflectance" .
+
+<https://w3id.org/ad4gd/water-quality/properties/total-organic-carbon> a skos:Concept,
+        sosa:ObservableProperty ;
+    rdfs:seeAlso <https://saref.etsi.org/saref4watr/TotalOrganicCarbon>,
+        <https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=Total%20organic%20carbon&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false>,
+        <https://wq.moenv.gov.tw/EWQP/en/Encyclopedia/NounDefinition/Pedia_13.aspx> ;
+    owl:sameAs <http://aims.fao.org/aos/agrovoc/c_c35fdd26>,
+        <http://vocabulary.worldbank.org/thesaurus/1644128>,
+        <http://www.eionet.europa.eu/gemet/concept/11779>,
+        <https://dbpedia.org/page/Total_organic_carbon>,
+        <https://lod.nal.usda.gov/nalt/325123>,
+        <https://sns.uba.de/umthes/de/concepts/_00657196.html> ;
+    skos:definition "Total organic carbon (TOC) is the amount of carbon found in an organic compound and is often used as a non-specific indicator of water quality or cleanliness of pharmaceutical manufacturing equipment. TOC may also refer to the amount of organic carbon in soil, or in a geological formation, particularly the source rock for a petroleum play; 2% is a rough minimum. For marine surface sediments average TOC content is 0.5% in the deep ocean, and 2% along the eastern margins. [DBPedia]" ;
+    skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
+    skos:prefLabel "Total Organic Carbon" .
+
+<https://w3id.org/ad4gd/water-quality/properties/total-phosphorus> a skos:Concept,
+        sosa:ObservableProperty ;
+    rdfs:seeAlso <https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/doc/spec.md>,
+        <https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=Total%20phosphorus&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false> ;
+    owl:sameAs <https://sns.uba.de/umthes/de/concepts/_00011161.html> ;
+    skos:definition "Total phosphorus is a measure of all forms of phosphorus in the water, including dissolved and particulate, organic and inorganic. [Umweltthesaurus]" ;
+    skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
+    skos:prefLabel "Total Phosphorus" .
+
+<https://w3id.org/ad4gd/water-quality/properties/total-suspended-solids> a skos:Concept,
+        sosa:ObservableProperty ;
+    rdfs:seeAlso <https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/doc/spec.md>,
+        <https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=Total%20suspended%20solids&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false> ;
+    owl:sameAs <http://aims.fao.org/aos/agrovoc/c_3c8040e9>,
+        <http://dd.eionet.europa.eu/vocabulary/IEDAnnexIIModule3/EQSWaterPollutantsGlassCode/109>,
+        <http://dd.eionet.europa.eu/vocabulary/wise/ObservedProperty/EEA_31-02-7>,
+        <https://dbpedia.org/page/Total_suspended_solids>,
+        <https://saref.etsi.org/saref4watr/TotalSuspendedSolids>,
+        <https://sns.uba.de/umthes/de/concepts/_00022057.html> ;
+    skos:definition "Total suspended solids (TSS) is the dry-weight of suspended particles, that are not dissolved, in a sample of water that can be trapped by a filter that is analyzed using a filtration apparatus known as sintered glass crucible. TSS is a water quality parameter used to assess the quality of a specimen of any type of water or water body, ocean water for example, or wastewater after treatment in a wastewater treatment plant. It is listed as a conventional pollutant in the U.S. Clean Water Act. Total dissolved solids is another parameter acquired through a separate analysis which is also used to determine water quality based on the total substances that are fully dissolved within the water, rather than undissolved suspended particles. [DBPedia]" ;
+    skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
+    skos:prefLabel "Total Suspended Solids" .
 
 <https://w3id.org/ad4gd/water-quality/properties/water-color> a skos:Concept,
         sosa:ObservableProperty ;
@@ -491,16 +491,16 @@
     skos:prefLabel "AD4GD water quality observable properties" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2024-09-03T12:39:49.112282"^^xsd:dateTime ;
-    prov:startedAtTime "2024-09-03T12:39:49.011927"^^xsd:dateTime ;
+    prov:endedAtTime "2024-09-03T13:54:08.394751"^^xsd:dateTime ;
+    prov:startedAtTime "2024-09-03T13:54:08.334111"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:61a3a9546b33d6131cbc92b09e11e812a30f075e" ;
+            dct:hasVersion "git:34729b6251674833343cd8559dd3f383200d21db" ;
             rdfs:seeAlso <file:///home/runner/work/pilot-1-water-quality/pilot-1-water-quality/generic/properties.yml> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
             dct:hasVersion "0.3.51" ;
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dct:identifier "52627995-dc6a-4820-970d-43975bc6d484" ] .
+    prov:wasInformedBy [ dct:identifier "6b8eafa1-d5ac-475b-bb4c-c63a401ea11c" ] .
 
