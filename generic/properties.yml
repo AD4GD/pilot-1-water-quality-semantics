@@ -209,8 +209,8 @@ properties:
       - https://dbpedia.org/page/Oxygen_concentration
       - https://sns.uba.de/umthes/de/concepts/_00021376.html
 
-  SO2:
-    label: SO2 (Oxygen Saturation)
+  oxygen-saturation:
+    label: Oxygen Saturation / SO2
     description: Oxygen saturation (symbol SO2) is a relative measure of the concentration of oxygen that is dissolved or carried in a given medium as a proportion of the maximal concentration that can be dissolved in that medium at the given temperature. It can be measured with a dissolved oxygen probe such as an oxygen sensor or an optode in liquid media, usually water. The standard unit of oxygen saturation is percent (%). [DBPedia]
     seeAlso:
       - https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=Oxygen%20Saturation&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false
