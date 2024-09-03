@@ -196,18 +196,6 @@
     skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
     skos:prefLabel "PO43- (Orthophosphate)" .
 
-<https://w3id.org/ad4gd/water-quality/properties/SO2> a skos:Concept,
-        sosa:ObservableProperty ;
-    rdfs:seeAlso <https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=Oxygen%20Saturation&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false> ;
-    owl:sameAs <http://dd.eionet.europa.eu/vocabulary/wise/ObservedProperty/EEA_3131-01-9>,
-        <http://dd.eionet.europa.eu/vocabulary/wise/WFDQualityElement/QE3-1-3-1>,
-        <https://dbpedia.org/page/Oxygen_saturation>,
-        <https://saref.etsi.org/saref4watr/Oxygen>,
-        <https://sns.uba.de/umthes/de/concepts/_00021379.html> ;
-    skos:definition "Oxygen saturation (symbol SO2) is a relative measure of the concentration of oxygen that is dissolved or carried in a given medium as a proportion of the maximal concentration that can be dissolved in that medium at the given temperature. It can be measured with a dissolved oxygen probe such as an oxygen sensor or an optode in liquid media, usually water. The standard unit of oxygen saturation is percent (%). [DBPedia]" ;
-    skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
-    skos:prefLabel "SO2 (Oxygen Saturation)" .
-
 <https://w3id.org/ad4gd/water-quality/properties/SO42-> a skos:Concept,
         sosa:ObservableProperty ;
     rdfs:seeAlso <https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/doc/spec.md>,
@@ -366,6 +354,18 @@
     skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
     skos:prefLabel "Orthophosphate-P" .
 
+<https://w3id.org/ad4gd/water-quality/properties/oxygen-saturation> a skos:Concept,
+        sosa:ObservableProperty ;
+    rdfs:seeAlso <https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=Oxygen%20Saturation&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false> ;
+    owl:sameAs <http://dd.eionet.europa.eu/vocabulary/wise/ObservedProperty/EEA_3131-01-9>,
+        <http://dd.eionet.europa.eu/vocabulary/wise/WFDQualityElement/QE3-1-3-1>,
+        <https://dbpedia.org/page/Oxygen_saturation>,
+        <https://saref.etsi.org/saref4watr/Oxygen>,
+        <https://sns.uba.de/umthes/de/concepts/_00021379.html> ;
+    skos:definition "Oxygen saturation (symbol SO2) is a relative measure of the concentration of oxygen that is dissolved or carried in a given medium as a proportion of the maximal concentration that can be dissolved in that medium at the given temperature. It can be measured with a dissolved oxygen probe such as an oxygen sensor or an optode in liquid media, usually water. The standard unit of oxygen saturation is percent (%). [DBPedia]" ;
+    skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
+    skos:prefLabel "Oxygen Saturation / SO2" .
+
 <https://w3id.org/ad4gd/water-quality/properties/pH> a skos:Concept,
         sosa:ObservableProperty ;
     rdfs:seeAlso <https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=pH&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false>,
@@ -491,16 +491,16 @@
     skos:prefLabel "AD4GD water quality observable properties" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2024-09-03T07:32:29.347749"^^xsd:dateTime ;
-    prov:startedAtTime "2024-09-03T07:32:29.257923"^^xsd:dateTime ;
+    prov:endedAtTime "2024-09-03T12:39:49.112282"^^xsd:dateTime ;
+    prov:startedAtTime "2024-09-03T12:39:49.011927"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:71099abc888e7fe89b181fd90b099625cefb839d" ;
+            dct:hasVersion "git:61a3a9546b33d6131cbc92b09e11e812a30f075e" ;
             rdfs:seeAlso <file:///home/runner/work/pilot-1-water-quality/pilot-1-water-quality/generic/properties.yml> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
             dct:hasVersion "0.3.51" ;
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dct:identifier "df818449-3103-4e8b-9c26-66e7fdf393f0" ] .
+    prov:wasInformedBy [ dct:identifier "52627995-dc6a-4820-970d-43975bc6d484" ] .
 
