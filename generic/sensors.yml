@@ -25,7 +25,7 @@ sensors:
   AQUATOS-web-LTX:
     name: AQUATOS web LTX
     manufacturers:
-      - TerraTransfer
+      - terratransfer
     description: |
       GPRS / UMTS data logger for groundwater, water level and water quality.
       Data logger with storage space for 250,000 measurement data records, monitoring of the device status (battery voltage, tightness (rel.humidity in the logger), operating temperature) Modem for GSM / GPRS and 433MHz short-range radio communication for reading out the data and configuring the logger Highly precise pressure and temperature sensor made of stainless steel Steel or titanium with an accuracy of <= 0.1% FS relative pressure system (absolute pressure systems for periodically flooded measuring points on request) The hardware is optimized for locations without infrastructure Battery life up to 10 years with daily transmission and hourly measurement with double D lithium Cells, optionally up to 3 years with commercially available alkali-manganese D cells, automatic synchronization each time the time of all loggers is transmitted by the server The device can be operated entirely online via an Internet browser and locally via local radio (433 MHz).
