@@ -35,10 +35,10 @@
         <http://www.eionet.europa.eu/gemet/concept/2259>,
         <https://lod.nal.usda.gov/nalt/34079>,
         <https://sns.uba.de/umthes/de/concepts/_00500166.html> ;
-    skos:closeMatch "https://dbpedia.org/page/Dissolved_organic_carbon" ;
     skos:definition "The fraction of total organic carbon (all carbon atoms covalently bonded in organic molecules) in water that passes through a 0.45 micron pore-diameter filter." ;
     skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
-    skos:prefLabel "DOC (Dissolved Organic Carbon)" .
+    skos:prefLabel "DOC (Dissolved Organic Carbon)" ;
+    skos:relatedMatch "https://dbpedia.org/page/Dissolved_organic_carbon" .
 
 <https://w3id.org/ad4gd/water-quality/properties/H4O4Si-silicic-acid> a skos:Concept,
         sosa:ObservableProperty ;
@@ -490,16 +490,16 @@
     skos:prefLabel "AD4GD water quality observable properties" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2024-09-03T15:19:42.682184"^^xsd:dateTime ;
-    prov:startedAtTime "2024-09-03T15:19:42.621297"^^xsd:dateTime ;
+    prov:endedAtTime "2024-09-04T08:46:19.795308"^^xsd:dateTime ;
+    prov:startedAtTime "2024-09-04T08:46:19.735550"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:e00c22f3c7852049c17647d04ab2996542e4d641" ;
+            dct:hasVersion "git:a84bc69e6d21ba99bddd6a0b516686d443770310" ;
             rdfs:seeAlso <file:///home/runner/work/pilot-1-water-quality/pilot-1-water-quality/generic/properties.yml> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
             dct:hasVersion "0.3.51" ;
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dct:identifier "b544d51a-cbf7-4a74-b5aa-5076fd46dd0e" ] .
+    prov:wasInformedBy [ dct:identifier "4d47f187-1ed9-4fa4-97a2-0e09521fa987" ] .
 
