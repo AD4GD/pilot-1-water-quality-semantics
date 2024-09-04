@@ -19,53 +19,95 @@ properties:
 
   nitrate-concentration:
     label: Nitrate Concentration
-    description: Nitrate nitrogen is the final product of nitrification in the nitrogen cycle. Thus, the amount of nitrate nitrogen can indicate the degree of pollution of the water. When there is too much nitrate nitrogen existing in the rivers, lakes or reservoirs, it could cause mass reproduction of algae and lead to eutrophication of water bodies. [Environmental Water Quality Information]
+    description: Property of the water indicating its concentration of nitrate. [SAREF]
     seeAlso:
+      - https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/doc/spec.md
+      - https://wqa.org/resources/nitrites-nitrates/
+      - https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=Nitrate&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false
       - https://wq.moenv.gov.tw/EWQP/en/Encyclopedia/NounDefinition/Pedia_31.aspx
+      - https://www.mysuwanneeriver.com/419/Nitrate-Concentration
     sameAs:
+      - https://saref.etsi.org/saref4watr/Nitrate
+    relatedMatch:
+      - http://www.eionet.europa.eu/gemet/concept/5593
+      - https://dbpedia.org/page/Nitrate
+      - https://sns.uba.de/umthes/de/concepts/_00028736.html
       - http://aims.fao.org/aos/agrovoc/c_0e5d9815
 
   nitrite-concentration:
     label: Nitrite Concentration
-    description: Most nitrogenous materials in natural waters tend to be converted to nitrate, so all sources of combined nitrogen, particularly organic nitrogen and ammonia, should be considered as potential nitrate sources. Primary sources of organic nitrates include human sewage and livestock manure, especially from feedlots. The primary inorganic nitrates which may contaminate drinking water are potassium nitrate and ammonium nitrate both of which are widely used as fertilizers. [Water Quality Association]
+    description: Property of the water indicating its concentration of nitrite. [SAREF]
     seeAlso:
       - https://wqa.org/resources/nitrites-nitrates/
       - https://wq.moenv.gov.tw/EWQP/en/Encyclopedia/NounDefinition/Pedia_27.aspx
+    sameAs:
+      - https://saref.etsi.org/saref4watr/Nitrite
+    relatedMatch:
+      - https://dbpedia.org/page/Nitrite
+      - https://sns.uba.de/umthes/de/concepts/_00018171.html
+      - http://aims.fao.org/aos/agrovoc/c_5190
+      - http://purl.org/bncf/tid/37366
+      - https://lod.nal.usda.gov/nalt/30836
 
   ammonia-concentration:
     label: Ammonia Concentration
-    description: Organic nitrogenous compounds are mainly from the decomposition of feces and animal and plant remains. In the decomposition process, amino acids are formed first and then ammonia nitrogen, nitrite nitrogen and nitrate nitrogen form in sequence. Thus, if ammonia nitrogen exists in a body of water, it indicates the water has not been polluted for long. [Environmental Water Quality Information]
+    description: Property of the water indicating its concentration of ammonia.
     seeAlso:
+      - https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/doc/spec.md
+      - https://wqa.org/resources/ammonia/
       - https://wq.moenv.gov.tw/EWQP/en/Encyclopedia/NounDefinition/Pedia_08.aspx
+#   sameAs:
+#      -
+    relatedMatch:
+      - http://www.eionet.europa.eu/gemet/concept/375
+      - https://dbpedia.org/page/Ammonia
+      - https://sns.uba.de/umthes/de/concepts/_00001875.html
+      - http://aims.fao.org/aos/agrovoc/c_349
+      - http://purl.org/bncf/tid/22283
+      - https://d-nb.info/gnd/4001735-7
+      - https://lod.nal.usda.gov/nalt/7925
+      - https://vocabularyserver.com/cnr/ml/earth/en/xml.php?skosTema=64510
+      - http://zbw.eu/stw/descriptor/14636-6
 
   ammonium-concentration:
     label: Ammonium Concentration
-    description: |-
-      NH4[number]: Concentration of ammonium. [Smart Data Models]
+    description: Property of the water indicating its concentration of ammonium. [SAREF]
     seeAlso:
       - https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/doc/spec.md
+      - https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=ammonium&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false
+    sameAs:
+      - https://saref.etsi.org/saref4watr/Ammonium
+    relatedMatch:
+      - https://dbpedia.org/page/Ammonium
+      - http://aims.fao.org/aos/agrovoc/c_32634
+      - http://purl.org/bncf/tid/31172
+      - https://vocabularyserver.com/cnr/ml/earth/en/xml.php?skosTema=42940
+      - http://www.eionet.europa.eu/gemet/concept/379
 
   dissolved-chloride-concentration:
     label: Dissolved Chloride Concentration
-    description: The chloride ion /ˈklɔːraɪd/ is the anion (negatively charged ion) Cl−. It is formed when the element chlorine (a halogen) gains an electron or when a compound such as hydrogen chloride is dissolved in water or other polar solvents. Chloride salts such as sodium chloride are often very soluble in water. It is an essential electrolyte located in all body fluids responsible for maintaining acid/base balance, transmitting nerve impulses and regulating liquid flow in and out of cells. Less frequently, the word chloride may also form part of the "common" name of chemical compounds in which one or more chlorine atoms are covalently bonded. For example, methyl chloride, with the standard name chloromethane (see IUPAC books) is an organic compound with a covalent C−Cl bond in which the chlorine is not an anion. [DBPedia]
+    description: Property of the water indicating its concentration of chloride. [SAREF]
     seeAlso:
       - https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/doc/spec.md
       - https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=Chloride&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false
       - https://wq.moenv.gov.tw/EWQP/en/Encyclopedia/NounDefinition/Pedia_28.aspx
     sameAs:
       - https://saref.etsi.org/saref4watr/Chloride
+    relatedMatch:
       - http://www.eionet.europa.eu/gemet/concept/1366
       - https://dbpedia.org/page/Chloride
       - https://sns.uba.de/umthes/de/concepts/_00028727.html
+      - http://aims.fao.org/aos/agrovoc/c_1567
+      - https://lod.nal.usda.gov/nalt/7277
 
   dissolved-boron-concentration:
     label: Dissolved Boron Concentration
-    description: Boron is a chemical element with the symbol B and atomic number 5. In its crystalline form it is a brittle, dark, lustrous metalloid; in its amorphous form it is a brown powder. As the lightest element of the boron group it has three valence electrons for forming covalent bonds, resulting in many compounds such as boric acid, the mineral sodium borate, and the ultra-hard crystals of boron carbide and boron nitride. [DBPedia]
+    description: Property of the water indicating its concentration of boron. [SAREF]
     seeAlso:
       - https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/doc/spec.md
-      -
     sameAs:
       - https://saref.etsi.org/saref4watr/Boron
+    relatedMatch:
       - http://www.eionet.europa.eu/gemet/concept/965
       - https://dbpedia.org/page/Boron
       - https://sns.uba.de/umthes/de/concepts/_00005488.html
@@ -76,14 +118,14 @@ properties:
 
   dissolved-iron3-concentration:
     label: Dissolved Iron3 Concentration
-    description:
-      Property of the water indicating its concentration of iron. [Saref4Watr]
+    description: Property of the water indicating its concentration of iron. [SAREF]
     seeAlso:
       - https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/doc/spec.md
       - https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=Iron&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false
       - https://wq.moenv.gov.tw/EWQP/en/Encyclopedia/NounDefinition/Pedia_15.aspx
     sameAs:
       - https://saref.etsi.org/saref4watr/Iron
+    relatedMatch:
       - http://www.eionet.europa.eu/gemet/concept/4498
       - https://sns.uba.de/umthes/de/concepts/_00028823.html
       - http://purl.org/bncf/tid/474
@@ -101,12 +143,13 @@ properties:
 
   dissolved-manganese-concentration:
     label: Dissolved Manganese Concentration
-    description: Manganese is a chemical element with the symbol Mn and atomic number 25. It is a hard, brittle, silvery metal, often found in minerals in combination with iron. Manganese is a transition metal with a multifaceted array of industrial alloy uses, particularly in stainless steels. It improves strength, workability, and resistance to wear. Manganese oxide is used as an oxidising agent; as a rubber additive; and in glass making, fertilisers, and ceramics. Manganese sulfate can be used as a fungicide. [DBPedia]
+    description: Property of the water indicating its concentration of manganese. [SAREF]
     seeAlso:
       - https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=Manganese&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false
       - https://wq.moenv.gov.tw/EWQP/en/Encyclopedia/NounDefinition/Pedia_45.aspx
     sameAs:
       - https://saref.etsi.org/saref4watr/Manganese
+    relatedMatch:
       - https://dbpedia.org/page/Manganese
       - https://sns.uba.de/umthes/de/concepts/_00016555.html
       - http://purl.org/bncf/tid/25173
@@ -116,56 +159,29 @@ properties:
       - http://zbw.eu/stw/descriptor/14301-2
       - http://aims.fao.org/aos/agrovoc/c_4570
 
-  NH3-ammonia:
-    label: NH3 (Ammonia)
-    description: Ammonia is an inorganic compound of nitrogen and hydrogen with the formula NH3. A stable binary hydride, and the simplest pnictogen hydride, ammonia is a colourless gas with a distinct pungent smell. Biologically, it is a common nitrogenous waste, particularly among aquatic organisms, and it contributes significantly to the nutritional needs of terrestrial organisms by serving as a precursor to 45 percent of the world's food and fertilizers. Around 70% of ammonia is used to make fertilisers in various forms and composition, such as urea and Diammonium phosphate. Ammonia in pure form is also applied directly into the soil. [DBPedia]
-    seeAlso:
-      - https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/doc/spec.md
-      - https://wqa.org/resources/ammonia/
-      - https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=Ammonia&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false
-    sameAs:
-      - http://www.eionet.europa.eu/gemet/concept/375
-      - https://dbpedia.org/page/Ammonia
-      - https://sns.uba.de/umthes/de/concepts/_00001875.html
-      - http://purl.org/bncf/tid/22283
-      - https://d-nb.info/gnd/4001735-7
-      - https://lod.nal.usda.gov/nalt/7925
-      - https://vocabularyserver.com/cnr/ml/earth/en/xml.php?skosTema=64510
-      - http://zbw.eu/stw/descriptor/14636-6
-      - http://aims.fao.org/aos/agrovoc/c_349
-
-  NO3-nitrate:
-    label: NO3- (Nitrate)
-    description: Nitrate is a polyatomic ion with the chemical formula NO−3. Salts containing this ion are called nitrates. Nitrates are common components of fertilizers and explosives. Almost all inorganic nitrates are soluble in water. An example of an insoluble nitrate is bismuth oxynitrate. [DBPedia]
-    seeAlso:
-      - https://wqa.org/resources/nitrites-nitrates/
-      - https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=Nitrate&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false
-    sameAs:
-      - https://saref.etsi.org/saref4watr/Nitrate
-      - http://www.eionet.europa.eu/gemet/concept/5593
-      - https://dbpedia.org/page/Nitrate
-      - https://sns.uba.de/umthes/de/concepts/_00028736.html
-      - http://purl.org/bncf/tid/37237
-      - https://lod.nal.usda.gov/nalt/4064
-      - http://zbw.eu/stw/descriptor/14645-5
-      - http://aims.fao.org/aos/agrovoc/c_5187
-
   orthophosphate-concentration:
     label: Orthophosphate Concentration
-    description: In chemistry, a phosphate is an anion, salt, functional group or ester derived from a phosphoric acid. It most commonly means orthophosphate, a derivative of orthophosphoric acid H3PO4. The phosphate or orthophosphate ion [PO4]3− is derived from phosphoric acid by the removal of three protons H+. Removal of one or two protons gives the dihydrogen phosphate ion [H2PO4]− and the hydrogen phosphate ion [HPO4]2− ion, respectively. These names are also used for salts of those anions, such as ammonium dihydrogen phosphate and trisodium phosphate. * H3PO4Phosphoricacid * [H2PO4]−Dihydrogenphosphate * [DBPedia]
+    description: Property of the water indicating its concentration of orthophosphate.
     seeAlso:
       - https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=orthoPhosphate&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false
-    sameAs:
+#    sameAs:
+#      -
+    relatedMatch:
       - https://dbpedia.org/page/Phosphate
       - https://sns.uba.de/umthes/de/concepts/_00019272.html
+      - http://aims.fao.org/aos/agrovoc/c_35986
+      - http://purl.org/bncf/tid/21193
+      - https://d-nb.info/gnd/4134029-2
+      - https://lod.nal.usda.gov/nalt/7280
+      - http://zbw.eu/stw/descriptor/14646-3
 
   sulphate-concentration:
     label: Sulphate Concentration
-    description: The sulfate or sulphate ion is a polyatomic anion with the empirical formula SO2−4. Salts, acid derivatives, and peroxides of sulfate are widely used in industry. Sulfates occur widely in everyday life. Sulfates are salts of sulfuric acid and many are prepared from that acid. [DBPedia]
+    description: Property of the water indicating its concentration of sulphate.
     seeAlso:
       - https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/doc/spec.md
       - https://wq.moenv.gov.tw/EWQP/en/Encyclopedia/NounDefinition/Pedia_20.aspx
-    sameAs:
+    relatedMatch:
       - http://www.eionet.europa.eu/gemet/concept/8190
       - https://sns.uba.de/umthes/de/concepts/_00028731.html
       - http://aims.fao.org/aos/agrovoc/c_7510
@@ -204,10 +220,11 @@ properties:
 
   dissolved-oxygen-concentration:
     label: Dissolved Oxygen Concentration
-    description: Oxygen concentration. [DBPedia]
+    description: Property of the water indicating its concentration of dissolved oxygen.
     sameAs:
-      - https://dbpedia.org/page/Oxygen_concentration
       - https://sns.uba.de/umthes/de/concepts/_00021376.html
+    relatedMatch:
+       - https://dbpedia.org/page/Oxygen_concentration
 
   oxygen-saturation:
     label: Oxygen Saturation
@@ -249,13 +266,29 @@ properties:
       - https://vocabularyserver.com/cnr/ml/earth/en/xml.php?skosTema=21430
       - http://aims.fao.org/aos/agrovoc/c_29685
 
+  water-level-above-sea-level:
+    label: Water Level Above Sea Level
+    description: Property of the water indicating its level above sea level.
+
+  water-level-above-ground-level:
+    label: Water Level Above Ground Level
+    description: Property of the water indicating its level above ground level.
+
+  biochemical-oxygen-demand-5:
+    label: Biochemical Oxygen Demand in 5 Days
+    description: Biochemical oxygen demand (BOD) refers to the amount of dissolved oxygen needed by microbes to break down organic material present in a given water sample at certain temperature over a specific time period. BOD is measured in a water sample during 5 days of incubation at 20℃, known as BOD5. BOD represents the amount of organic matter which can be decomposed by aquatic organisms. It also indirectly represents the degree of organic pollution of the water. [Environmental Water Quality Information]
+    seeAlso:
+      - https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/doc/spec.md
+      - https://www.epa.gov/sites/default/files/2014-12/documents/wqsglossary9-2012.pdf
+      - https://wq.moenv.gov.tw/EWQP/en/Encyclopedia/NounDefinition/Pedia_04.aspx
+
   specific-conductivity:
     label: Specific Conductivity
-    description: Conductivity or specific conductance of an electrolyte solution is a measure of its ability to conduct electricity. The SI unit of conductivity is siemens per meter (S/m). Conductivity measurements are used routinely in many industrial and environmental applications as a fast, inexpensive and reliable way of measuring the ionic content in a solution. For example, the measurement of product conductivity is a typical way to monitor and continuously trend the performance of water purification systems. In many cases, conductivity is linked directly to the total dissolved solids (TDS). [Wikipedia]
+    description: Conductivity of water at 25 degrees Celsius (25 C).
     seeAlso:
       - https://en.wikipedia.org/wiki/Conductivity_(electrolytic)
       - https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=specific%20conductance&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false
-    sameAs:
+    relatedMatch:
       - https://sns.uba.de/umthes/de/concepts/_00016073.html
 
   total-suspended-solids:
@@ -302,17 +335,20 @@ properties:
 
   water-hardness:
     label: Water Hardness
-    description: Water hardness is the amount of dissolved calcium and magnesium in the water. Hard water is high in dissolved minerals, largely calcium and magnesium. [AGROVOC]
+    description: Property of the water indicating its hardness. [SAREF]
     seeAlso:
       - https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=Water%20hardness&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false
       - https://wq.moenv.gov.tw/EWQP/en/Encyclopedia/NounDefinition/Pedia_11.aspx
+      - https://www.epa.gov/sites/default/files/2014-12/documents/wqsglossary9-2012.pdf
     sameAs:
-      - http://www.eionet.europa.eu/gemet/concept/9184
+      - https://saref.etsi.org/saref4watr/Hardness
       - https://sns.uba.de/umthes/de/concepts/_00027253.html
       - https://lod.nal.usda.gov/nalt/67253
       - https://vocabularyserver.com/cnr/ml/earth/en/xml.php?skosTema=52920
       - http://vocabulary.worldbank.org/thesaurus/1612631
       - http://aims.fao.org/aos/agrovoc/c_25423
+    relatedMatch:
+      - http://www.eionet.europa.eu/gemet/concept/9184
 
   carbonate-hardness:
     label: Carbonate Hardness
@@ -355,9 +391,10 @@ properties:
 
   potential-evapotranspiration:
     label: Potential-Evapotranspiration
-    description: Water losses from the surface of soils and plants. [EPA Terminology Services]
+    description: Evapotranspration from land surface and plants that weather models assumes for this location. Available soil water is considered. 1 mm evapotranspiration per hour equals 1 liter of water per spare meter. [Open Meteo]
     seeAlso:
       - https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=evapotranspiration&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false
+      - https://open-meteo.com/en/docs
 
   precipitation:
     label: Precipitation
