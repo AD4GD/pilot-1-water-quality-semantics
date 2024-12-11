@@ -493,3 +493,13 @@ properties:
   water-level-change:
     label: Water Level Change
     description: Water Level Change
+
+  ## CrowdWater - two new properties
+
+  litter-in-water:
+    label: Litter in Water
+    description: Litter in Water
+
+  lake-dries-out:
+    label: Lake Dries Out
+    description: Lake Dries Out
