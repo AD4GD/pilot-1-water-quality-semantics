@@ -235,6 +235,12 @@
     skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
     skos:prefLabel "lake-access" .
 
+<https://w3id.org/ad4gd/water-quality/properties/lake-dries-out> a skos:Concept,
+        sosa:ObservableProperty ;
+    skos:definition "Lake Dries Out" ;
+    skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
+    skos:prefLabel "Lake Dries Out" .
+
 <https://w3id.org/ad4gd/water-quality/properties/lake-usage> a skos:Concept,
         sosa:ObservableProperty ;
     skos:definition "Lake Usage" ;
@@ -251,6 +257,12 @@
     skos:definition "Lakewater Smell" ;
     skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
     skos:prefLabel "Lakewater Smell" .
+
+<https://w3id.org/ad4gd/water-quality/properties/litter-in-water> a skos:Concept,
+        sosa:ObservableProperty ;
+    skos:definition "Litter in Water" ;
+    skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
+    skos:prefLabel "Litter in Water" .
 
 <https://w3id.org/ad4gd/water-quality/properties/mussels> a skos:Concept,
         sosa:ObservableProperty ;
@@ -519,16 +531,16 @@
     skos:prefLabel "AD4GD water quality observable properties" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2024-09-04T13:59:21.342222"^^xsd:dateTime ;
-    prov:startedAtTime "2024-09-04T13:59:21.280606"^^xsd:dateTime ;
+    prov:endedAtTime "2024-12-11T14:33:55.566357"^^xsd:dateTime ;
+    prov:startedAtTime "2024-12-11T14:33:55.500618"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:1be029119577db46854f618ee24591569411d7a2" ;
-            rdfs:seeAlso <file:///home/runner/work/pilot-1-water-quality/pilot-1-water-quality/generic/properties.yml> ] ;
+            dct:hasVersion "git:2940529f323196fe58cbf7fa5691ca714e8f00a5" ;
+            rdfs:seeAlso <file:///home/runner/work/pilot-1-water-quality-semantics/pilot-1-water-quality-semantics/generic/properties.yml> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
-            dct:hasVersion "0.3.51" ;
+            dct:hasVersion "0.3.56" ;
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dct:identifier "38d2429c-b3ac-48c3-8815-790619fc65a0" ] .
+    prov:wasInformedBy [ dct:identifier "822b3c60-caa1-4d52-8e59-3604483b696b" ] .
 
