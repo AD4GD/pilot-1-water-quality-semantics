@@ -40,3 +40,4 @@ context:
     broadMatch: skos:broadMatch
     narrowMatch: skos:narrowMatch
     exactMatch: skos:exactMatch
+    sources: dct:source
