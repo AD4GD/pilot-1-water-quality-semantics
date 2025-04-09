@@ -531,16 +531,16 @@
     skos:prefLabel "AD4GD water quality observable properties" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2025-04-09T10:10:31.954000"^^xsd:dateTime ;
-    prov:startedAtTime "2025-04-09T10:10:31.851687"^^xsd:dateTime ;
+    prov:endedAtTime "2025-04-09T10:12:47.931408"^^xsd:dateTime ;
+    prov:startedAtTime "2025-04-09T10:12:47.865374"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:f3aa0217eafc8875a5fcb307ad648b7369b2a045" ;
+            dct:hasVersion "git:4c9dc9e111d0b9d77f7cf491703736ba370c93f0" ;
             rdfs:seeAlso <file:///home/runner/work/pilot-1-water-quality-semantics/pilot-1-water-quality-semantics/generic/properties.yml> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
             dct:hasVersion "0.4" ;
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dct:identifier "320b6d33-0e31-4d63-884d-7d6350f54b72" ] .
+    prov:wasInformedBy [ dct:identifier "02672ee0-37ea-40d6-99f3-a3aa14179fb7" ] .
 
