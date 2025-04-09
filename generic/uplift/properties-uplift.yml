@@ -40,4 +40,9 @@ context:
     broadMatch: skos:broadMatch
     narrowMatch: skos:narrowMatch
     exactMatch: skos:exactMatch
-    sources: dct:source
+    sources:
+      '@id': dct:source
+      '@type': '@id'
+      '@context':  
+        'label': rdfs:label
+        'url': '@id'
