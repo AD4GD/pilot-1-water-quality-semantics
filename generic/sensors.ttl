@@ -23,10 +23,10 @@ From: https://www.terratransfer.org/en-gb/produktseite
     skos:prefLabel "AQUATOS web LTX" ;
     sosa:observes [ qudt:hasUnit unit:MilliGM-PER-L ;
             skos:broader ad4gd-prop:dissolved-oxygen-concentration ],
-        [ qudt:hasUnit unit:DEG_C ;
-            skos:broader ad4gd-prop:water-temperature ],
         [ qudt:hasUnit unit:PER-PERCENT ;
-            skos:broader ad4gd-prop:oxygen-saturation ] ;
+            skos:broader ad4gd-prop:oxygen-saturation ],
+        [ qudt:hasUnit unit:DEG_C ;
+            skos:broader ad4gd-prop:water-temperature ] ;
     sdo:manufacturer manuf:terratransfer .
 
 <https://w3id.org/ad4gd/water-quality/sensors/RDO-BLUE> a owl:Class,
@@ -42,10 +42,10 @@ From: https://in-situ.com/en/rdo-blue?srsltid=AfmBOopT_OyPjlmbNd4pY3b1FSVmG9Fxdn
     skos:prefLabel "RDO BLUE" ;
     sosa:observes [ qudt:hasUnit unit:DEG_C ;
             skos:broader ad4gd-prop:water-temperature ],
-        [ qudt:hasUnit unit:MilliGM-PER-L ;
-            skos:broader ad4gd-prop:dissolved-oxygen-concentration ],
         [ qudt:hasUnit unit:PER-PERCENT ;
-            skos:broader ad4gd-prop:oxygen-saturation ] ;
+            skos:broader ad4gd-prop:oxygen-saturation ],
+        [ qudt:hasUnit unit:MilliGM-PER-L ;
+            skos:broader ad4gd-prop:dissolved-oxygen-concentration ] ;
     sdo:manufacturer manuf:in-situ .
 
 <https://w3id.org/ad4gd/water-quality/sensors/RDO-PRO-X> a owl:Class,
@@ -59,12 +59,12 @@ From: https://in-situ.com/en/rdo-pro-x-dissolved-oxygen-probe?srsltid=AfmBOooRYW
     rdfs:subClassOf sosa:Sensor ;
     skos:inScheme <https://w3id.org/ad4gd/water-quality/sensors> ;
     skos:prefLabel "In-Situ RDO PRO-X" ;
-    sosa:observes [ qudt:hasUnit unit:MilliGM-PER-L ;
-            skos:broader ad4gd-prop:dissolved-oxygen-concentration ],
-        [ qudt:hasUnit unit:DEG_C ;
+    sosa:observes [ qudt:hasUnit unit:DEG_C ;
             skos:broader ad4gd-prop:water-temperature ],
         [ qudt:hasUnit unit:PER-PERCENT ;
-            skos:broader ad4gd-prop:oxygen-saturation ] ;
+            skos:broader ad4gd-prop:oxygen-saturation ],
+        [ qudt:hasUnit unit:MilliGM-PER-L ;
+            skos:broader ad4gd-prop:dissolved-oxygen-concentration ] ;
     sdo:manufacturer manuf:in-situ .
 
 <https://w3id.org/ad4gd/water-quality/sensors> a skos:ConceptScheme ;
@@ -72,16 +72,16 @@ From: https://in-situ.com/en/rdo-pro-x-dissolved-oxygen-probe?srsltid=AfmBOooRYW
     skos:prefLabel "AD4GD water quality sensors" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2024-12-11T14:33:55.440155"^^xsd:dateTime ;
-    prov:startedAtTime "2024-12-11T14:33:55.350116"^^xsd:dateTime ;
+    prov:endedAtTime "2025-04-09T10:10:32.087240"^^xsd:dateTime ;
+    prov:startedAtTime "2025-04-09T10:10:32.030038"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:2940529f323196fe58cbf7fa5691ca714e8f00a5" ;
+            dct:hasVersion "git:f3aa0217eafc8875a5fcb307ad648b7369b2a045" ;
             rdfs:seeAlso <file:///home/runner/work/pilot-1-water-quality-semantics/pilot-1-water-quality-semantics/generic/sensors.yml> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 sdo:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
-            dct:hasVersion "0.3.56" ;
+            dct:hasVersion "0.4" ;
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dct:identifier "822b3c60-caa1-4d52-8e59-3604483b696b" ] .
+    prov:wasInformedBy [ dct:identifier "320b6d33-0e31-4d63-884d-7d6350f54b72" ] .
 
