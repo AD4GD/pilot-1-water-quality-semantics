@@ -16,10 +16,17 @@ properties:
   #     - anotherBroadTerm                              # *Only local ids*
   #   hasNarrower:                                      # Same as hasBroader, but for linking to more specific terms
   #     - anotherNarrowTerm
+  #   sources:
+  #     - https://example.com/419/Nitrate-Concentratio
+  #     - label: My source
+  #       url: https://example.com
 
   nitrate-concentration:
     label: Nitrate Concentration
-    description: Property of the water indicating its concentration of nitrate. [SAREF]
+    description: Property of the water indicating its concentration of nitrate.
+    sources:
+      - label: SAREF extension for water
+        url: https://saref.etsi.org/saref4watr/Nitrate
     seeAlso:
       - https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/doc/spec.md
       - https://wqa.org/resources/nitrites-nitrates/
@@ -36,7 +43,10 @@ properties:
 
   nitrite-concentration:
     label: Nitrite Concentration
-    description: Property of the water indicating its concentration of nitrite. [SAREF]
+    description: Property of the water indicating its concentration of nitrite.
+    sources:
+      - label: SAREF extension for water
+        url: https://saref.etsi.org/saref4watr/Nitrite
     seeAlso:
       - https://wqa.org/resources/nitrites-nitrates/
       - https://wq.moenv.gov.tw/EWQP/en/Encyclopedia/NounDefinition/Pedia_27.aspx
@@ -52,6 +62,9 @@ properties:
   ammonia-concentration:
     label: Ammonia Concentration
     description: Property of the water indicating its concentration of ammonia.
+    sources:
+      - label: AD4GD
+        url: https://ad4gd.eu/
     seeAlso:
       - https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/doc/spec.md
       - https://wqa.org/resources/ammonia/
@@ -71,7 +84,10 @@ properties:
 
   ammonium-concentration:
     label: Ammonium Concentration
-    description: Property of the water indicating its concentration of ammonium. [SAREF]
+    description: Property of the water indicating its concentration of ammonium.
+    sources:
+      - label: SAREF extension for water
+        url: https://saref.etsi.org/saref4watr/Ammonium
     seeAlso:
       - https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/doc/spec.md
       - https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=ammonium&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false
@@ -86,7 +102,10 @@ properties:
 
   dissolved-chloride-concentration:
     label: Dissolved Chloride Concentration
-    description: Property of the water indicating its concentration of chloride. [SAREF]
+    description: Property of the water indicating its concentration of chloride.
+    sources:
+      - label: SAREF extension for water
+        url: https://saref.etsi.org/saref4watr/Chloride
     seeAlso:
       - https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/doc/spec.md
       - https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=Chloride&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false
@@ -102,7 +121,10 @@ properties:
 
   dissolved-boron-concentration:
     label: Dissolved Boron Concentration
-    description: Property of the water indicating its concentration of boron. [SAREF]
+    description: Property of the water indicating its concentration of boron.
+    sources:
+      - label: SAREF extension for water
+        url: https://saref.etsi.org/saref4watr/Boron
     seeAlso:
       - https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/doc/spec.md
     sameAs:
@@ -118,7 +140,10 @@ properties:
 
   dissolved-iron3-concentration:
     label: Dissolved Iron3 Concentration
-    description: Property of the water indicating its concentration of iron. [SAREF]
+    description: Property of the water indicating its concentration of iron.
+    sources:
+      - label: SAREF extension for water
+        url: https://saref.etsi.org/saref4watr/Iron
     seeAlso:
       - https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/doc/spec.md
       - https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=Iron&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false
@@ -137,13 +162,19 @@ properties:
 
   H4O4Si-silicic-acid:
     label: H4O4Si (Silicic Acid)
-    description: In chemistry, a silicic acid (/sɪˈlɪsɪk/) is any chemical compound containing the element silicon attached to oxide (=O) and hydroxyl (−OH) groups, with the general formula [H2xSiOx+2]n or, equivalently, [SiOx(OH)4-2x]n. Orthosilicic acid is a representative example. Silicic acids are rarely observed in isolation, but are thought to exist in aqueous solutions, including seawater, and play a role in biomineralization. They are typically colorless weak acids that are sparingly soluble in water. Like the silicate anions, which are their better known conjugate bases, silicic acids are proposed to be oligomeric or polymeric. No simple silicic acid has ever been identified, since these species being primarily of theoretical interest. [DBPedia]
+    description: In chemistry, a silicic acid (/sɪˈlɪsɪk/) is any chemical compound containing the element silicon attached to oxide (=O) and hydroxyl (−OH) groups, with the general formula [H2xSiOx+2]n or, equivalently, [SiOx(OH)4-2x]n. Orthosilicic acid is a representative example. Silicic acids are rarely observed in isolation, but are thought to exist in aqueous solutions, including seawater, and play a role in biomineralization. They are typically colorless weak acids that are sparingly soluble in water. Like the silicate anions, which are their better known conjugate bases, silicic acids are proposed to be oligomeric or polymeric. No simple silicic acid has ever been identified, since these species being primarily of theoretical interest.
+    sources:
+      - label: DBPedia
+        url: https://dbpedia.org/page/Silicic_acid
     sameAs:
       - https://dbpedia.org/page/Silicic_acid
 
   dissolved-manganese-concentration:
     label: Dissolved Manganese Concentration
-    description: Property of the water indicating its concentration of manganese. [SAREF]
+    description: Property of the water indicating its concentration of manganese.
+    sources:
+      - label: SAREF extension for water
+        url: https://saref.etsi.org/saref4watr/Manganese
     seeAlso:
       - https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=Manganese&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false
       - https://wq.moenv.gov.tw/EWQP/en/Encyclopedia/NounDefinition/Pedia_45.aspx
@@ -162,6 +193,9 @@ properties:
   orthophosphate-concentration:
     label: Orthophosphate Concentration
     description: Property of the water indicating its concentration of orthophosphate.
+    sources:
+      - label: AD4GD
+        url: https://ad4gd.eu/
     seeAlso:
       - https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=orthoPhosphate&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false
 #    sameAs:
@@ -178,6 +212,9 @@ properties:
   sulphate-concentration:
     label: Sulphate Concentration
     description: Property of the water indicating its concentration of sulphate.
+    sources:
+      - label: AD4GD
+        url: https://ad4gd.eu/
     seeAlso:
       - https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/doc/spec.md
       - https://wq.moenv.gov.tw/EWQP/en/Encyclopedia/NounDefinition/Pedia_20.aspx
@@ -188,15 +225,19 @@ properties:
 
   TNb-total-nitrogen-bound:
     label: TNb (Total Nitrogen Bound)
-    description: Total bound nitrogen (ST-TNb) includes all inorganic forms, nitric nitrogen, nitrous nitrogen, ammoniacal nitrogen and all organic forms of nitrogen in a water sample. Nitrate in particular is one of the fundamental nutrients of algae which, in the presence of sufficient quantities of phosphates and other favourable conditions, determine the eutrophication of water. The main sources of nitrogen are both natural and anthropogenic. Of the anthropogenic sources, particular importance can be attributed to domestic wastewater and the use of fertilizers in agriculture. Reduction of nitrogen load is carried out in domestic and industrial wastewater treatment plants through special denitrification processes. The presence of significant concentrations of nitrogenous substances in water can indicate pollution and pose a risk to health and environment. [ISO]
-    seeAlso:
-      - https://www.iso.org/obp/ui/#iso:std:iso:23697:-1:ed-1:v1:en
+    description: Total bound nitrogen (ST-TNb) includes all inorganic forms, nitric nitrogen, nitrous nitrogen, ammoniacal nitrogen and all organic forms of nitrogen in a water sample. Nitrate in particular is one of the fundamental nutrients of algae which, in the presence of sufficient quantities of phosphates and other favourable conditions, determine the eutrophication of water. The main sources of nitrogen are both natural and anthropogenic. Of the anthropogenic sources, particular importance can be attributed to domestic wastewater and the use of fertilizers in agriculture. Reduction of nitrogen load is carried out in domestic and industrial wastewater treatment plants through special denitrification processes. The presence of significant concentrations of nitrogenous substances in water can indicate pollution and pose a risk to health and environment.
+    sources:
+      - label: ISO 23697-1:2023(en)
+        url: https://www.iso.org/obp/ui/#iso:std:iso:23697:-1:ed-1:v1:en
     sameAs:
-      - https://sns.uba.de/umthes/de/concepts/_00011173.html
+      - https://www.iso.org/obp/ui/#iso:std:iso:23697:-1:ed-1:v1:en
 
   total-organic-carbon:
     label: Total Organic Carbon
-    description: Total organic carbon (TOC) is the amount of carbon found in an organic compound and is often used as a non-specific indicator of water quality or cleanliness of pharmaceutical manufacturing equipment. TOC may also refer to the amount of organic carbon in soil, or in a geological formation, particularly the source rock for a petroleum play; 2% is a rough minimum. For marine surface sediments average TOC content is 0.5% in the deep ocean, and 2% along the eastern margins. [DBPedia]
+    description: Total organic carbon (TOC) is the amount of carbon found in an organic compound and is often used as a non-specific indicator of water quality or cleanliness of pharmaceutical manufacturing equipment. TOC may also refer to the amount of organic carbon in soil, or in a geological formation, particularly the source rock for a petroleum play; 2% is a rough minimum. For marine surface sediments average TOC content is 0.5% in the deep ocean, and 2% along the eastern margins.
+    sources:
+      - label: DBPedia
+        url: https://dbpedia.org/page/Total_organic_carbon
     seeAlso:
       - https://saref.etsi.org/saref4watr/TotalOrganicCarbon
       - https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=Total%20organic%20carbon&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false
@@ -211,7 +252,10 @@ properties:
 
   total-phosphorus:
     label: Total Phosphorus
-    description: Total phosphorus is a measure of all forms of phosphorus in the water, including dissolved and particulate, organic and inorganic. [Umweltthesaurus]
+    description: Total phosphorus is a measure of all forms of phosphorus in the water, including dissolved and particulate, organic and inorganic.
+    sources:
+      - label: Smart Data Models
+        url: https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/doc/spec.md
     seeAlso:
       - https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/doc/spec.md
       - https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=Total%20phosphorus&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false
@@ -221,6 +265,9 @@ properties:
   dissolved-oxygen-concentration:
     label: Dissolved Oxygen Concentration
     description: Property of the water indicating its concentration of dissolved oxygen.
+    sources:
+      - label: AD4GD
+        url: https://ad4gd.eu/
     sameAs:
       - https://sns.uba.de/umthes/de/concepts/_00021376.html
     relatedMatch:
@@ -228,7 +275,10 @@ properties:
 
   oxygen-saturation:
     label: Oxygen Saturation
-    description: Oxygen saturation (symbol SO2) is a relative measure of the concentration of oxygen that is dissolved or carried in a given medium as a proportion of the maximal concentration that can be dissolved in that medium at the given temperature. It can be measured with a dissolved oxygen probe such as an oxygen sensor or an optode in liquid media, usually water. The standard unit of oxygen saturation is percent (%). [DBPedia]
+    description: Oxygen saturation (symbol SO2) is a relative measure of the concentration of oxygen that is dissolved or carried in a given medium as a proportion of the maximal concentration that can be dissolved in that medium at the given temperature. It can be measured with a dissolved oxygen probe such as an oxygen sensor or an optode in liquid media, usually water. The standard unit of oxygen saturation is percent (%).
+    sources:
+      - label: DBPedia
+        url: https://dbpedia.org/page/Oxygen_saturation
     seeAlso:
       - https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=Oxygen%20Saturation&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false
     sameAs:
@@ -240,7 +290,10 @@ properties:
 
   water-temperature:
     label: Water Temperature
-    description: Water temperature is a physical property expressing how hot or cold water is. Temperature is an important factor to consider when assessing water quality. Many fish and other aquatic animals are sensitive to changes in water temperature and require a certain temperature range to survive. If water temperature goes outside that range for too long, they can become sick or die. [EPA Terminology Services]
+    description: Water temperature is a physical property expressing how hot or cold water is. Temperature is an important factor to consider when assessing water quality. Many fish and other aquatic animals are sensitive to changes in water temperature and require a certain temperature range to survive. If water temperature goes outside that range for too long, they can become sick or die.
+    sources:
+      - label: EPA Terminology Services
+        url: https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=Water%20temperature&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false
     seeAlso:
       - https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=Water%20temperature&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false
       - https://wq.moenv.gov.tw/EWQP/en/Encyclopedia/NounDefinition/Pedia_17.aspx
@@ -256,7 +309,10 @@ properties:
 
   water-level:
     label: Water Level
-    description: The level reached by the surface of a body of water. [EIONET]
+    description: The level reached by the surface of a body of water.
+    sources:
+      - label: EIONET
+        url: http://www.eionet.europa.eu/gemet/concept/9190
     seeAlso:
       - https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=Water%20level&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false
     sameAs:
@@ -266,17 +322,29 @@ properties:
       - https://vocabularyserver.com/cnr/ml/earth/en/xml.php?skosTema=21430
       - http://aims.fao.org/aos/agrovoc/c_29685
 
+  gauge-datum:
+    label: Gauge Datum
+    description: Elevation of the zero of the gauge (3.40) to which the level of the liquid surface is referred.
+    sources:
+      - label: ISO 772:2022(en)
+        url: https://www.iso.org/obp/ui/#iso:std:iso:772:ed-6:v1:en
+    seeAlso:
+      - https://www.iso.org/obp/ui/#iso:std:iso:772:ed-6:v1:en
+      - https://www.nchm.gov.bt/attachment/ckfinder/userfiles/files/PR-HWRSD-01%20(Hydrological%20Observation).pdf
+
   water-level-above-sea-level:
     label: Water Level Above Sea Level
+    sources:
+      - label: AD4GD
+        url: https://ad4gd.eu/
     description: Property of the water indicating its level above sea level.
-
-  water-level-above-ground-level:
-    label: Water Level Above Ground Level
-    description: Property of the water indicating its level above ground level.
 
   biochemical-oxygen-demand-5:
     label: Biochemical Oxygen Demand in 5 Days
-    description: Biochemical oxygen demand (BOD) refers to the amount of dissolved oxygen needed by microbes to break down organic material present in a given water sample at certain temperature over a specific time period. BOD is measured in a water sample during 5 days of incubation at 20℃, known as BOD5. BOD represents the amount of organic matter which can be decomposed by aquatic organisms. It also indirectly represents the degree of organic pollution of the water. [Environmental Water Quality Information]
+    sources:
+      - label: Environmental Water Quality Information
+        url: https://wq.moenv.gov.tw/EWQP/en/Encyclopedia/NounDefinition/Pedia_04.aspx
+    description: Biochemical oxygen demand (BOD) refers to the amount of dissolved oxygen needed by microbes to break down organic material present in a given water sample at certain temperature over a specific time period. BOD is measured in a water sample during 5 days of incubation at 20℃, known as BOD5. BOD represents the amount of organic matter which can be decomposed by aquatic organisms. It also indirectly represents the degree of organic pollution of the water.
     seeAlso:
       - https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/doc/spec.md
       - https://www.epa.gov/sites/default/files/2014-12/documents/wqsglossary9-2012.pdf
@@ -285,6 +353,9 @@ properties:
   specific-conductivity:
     label: Specific Conductivity
     description: Conductivity of water at 25 degrees Celsius (25 C).
+    sources:
+      - label: AD4GD
+        url: https://ad4gd.eu/
     seeAlso:
       - https://en.wikipedia.org/wiki/Conductivity_(electrolytic)
       - https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=specific%20conductance&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false
@@ -293,7 +364,10 @@ properties:
 
   total-suspended-solids:
     label: Total Suspended Solids
-    description: Total suspended solids (TSS) is the dry-weight of suspended particles, that are not dissolved, in a sample of water that can be trapped by a filter that is analyzed using a filtration apparatus known as sintered glass crucible. TSS is a water quality parameter used to assess the quality of a specimen of any type of water or water body, ocean water for example, or wastewater after treatment in a wastewater treatment plant. It is listed as a conventional pollutant in the U.S. Clean Water Act. Total dissolved solids is another parameter acquired through a separate analysis which is also used to determine water quality based on the total substances that are fully dissolved within the water, rather than undissolved suspended particles. [DBPedia]
+    description: Total suspended solids (TSS) is the dry-weight of suspended particles, that are not dissolved, in a sample of water that can be trapped by a filter that is analyzed using a filtration apparatus known as sintered glass crucible. TSS is a water quality parameter used to assess the quality of a specimen of any type of water or water body, ocean water for example, or wastewater after treatment in a wastewater treatment plant. It is listed as a conventional pollutant in the U.S. Clean Water Act. Total dissolved solids is another parameter acquired through a separate analysis which is also used to determine water quality based on the total substances that are fully dissolved within the water, rather than undissolved suspended particles.
+    sources:
+      - label: DBPedia
+        url: https://dbpedia.org/page/Total_suspended_solids
     seeAlso:
       - https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/doc/spec.md
       - https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=Total%20suspended%20solids&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false
@@ -307,12 +381,16 @@ properties:
 
   pH:
     label: pH
-    description: In chemistry, pH (/piːˈeɪtʃ/), historically denoting "potential of hydrogen" (or "power of hydrogen"), is a scale used to specify the acidity or basicity of an aqueous solution. Acidic solutions (solutions with higher concentrations of H+ ions) are measured to have lower pH values than basic or alkaline solutions. The pH scale is logarithmic and inversely indicates the concentration of hydrogen ions in the solution. [DBPedia]
+    description: In chemistry, pH (/piːˈeɪtʃ/), historically denoting "potential of hydrogen" (or "power of hydrogen"), is a scale used to specify the acidity or basicity of an aqueous solution. Acidic solutions (solutions with higher concentrations of H+ ions) are measured to have lower pH values than basic or alkaline solutions. The pH scale is logarithmic and inversely indicates the concentration of hydrogen ions in the solution.
+    sources:
+      - label: DBPedia
+        url: https://dbpedia.org/page/PH
     seeAlso:
       - https://www.epa.gov/sites/default/files/2014-12/documents/wqsglossary9-2012.pdf
       - https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=pH&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false
       - https://wq.moenv.gov.tw/EWQP/en/Encyclopedia/NounDefinition/Pedia_47.aspx
     sameAs:
+      - https://dbpedia.org/page/PH
       - http://www.eionet.europa.eu/gemet/concept/47
       - https://sns.uba.de/umthes/de/concepts/_00019242.html
       - http://purl.org/bncf/tid/32910
@@ -323,7 +401,10 @@ properties:
 
   ORP-oxidation-reduction-potential:
     label: ORP (Oxidation-Reduction Potential)
-    description: Redox potential (also known as oxidation / reduction potential, ORP, pe, , or ) is a measure of the tendency of a chemical species to acquire electrons from or lose electrons to an electrode and thereby be reduced or oxidised respectively. Redox potential is expressed in volts (V). Each species has its own intrinsic redox potential; for example, the more positive the reduction potential (reduction potential is more often used due to general formalism in electrochemistry), the greater the species' affinity for electrons and tendency to be reduced. [DBPedia]
+    description: Redox potential (also known as oxidation / reduction potential, ORP, pe, , or ) is a measure of the tendency of a chemical species to acquire electrons from or lose electrons to an electrode and thereby be reduced or oxidised respectively. Redox potential is expressed in volts (V). Each species has its own intrinsic redox potential; for example, the more positive the reduction potential (reduction potential is more often used due to general formalism in electrochemistry), the greater the species' affinity for electrons and tendency to be reduced.
+    sources:
+      - label: DBPedia
+        url: https://dbpedia.org/page/Reduction_potential
     seeAlso:
       - https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=Oxidation-Reduction%20potential&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false
     sameAs:
@@ -335,7 +416,10 @@ properties:
 
   water-hardness:
     label: Water Hardness
-    description: Property of the water indicating its hardness. [SAREF]
+    description: Property of the water indicating its hardness.
+    sources:
+      - label: SAREF extension for water
+        url: https://saref.etsi.org/saref4watr/Hardness
     seeAlso:
       - https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=Water%20hardness&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false
       - https://wq.moenv.gov.tw/EWQP/en/Encyclopedia/NounDefinition/Pedia_11.aspx
@@ -352,19 +436,28 @@ properties:
 
   carbonate-hardness:
     label: Carbonate Hardness
-    description: Carbonate hardness, is a measure of the water hardness caused by the presence of carbonate (CO2−3) and bicarbonate (HCO−3) anions. Carbonate hardness is usually expressed either in degrees KH (dKH) (from the German "Karbonathärte"), or in parts per million calcium carbonate ( ppm CaCO3 or grams CaCO3 per litre|mg/L). One dKH is equal to 17.848 mg/L (ppm) CaCO3, e.g. one dKH corresponds to the carbonate and bicarbonate ions found in a solution of approximately 17.848 milligrams of calcium carbonate(CaCO3) per litre of water (17.848 ppm). Both measurements (mg/L or KH) are usually expressed as mg/L CaCO3 – meaning the concentration of carbonate expressed as if calcium carbonate were the sole source of carbonate ions. [DBPedia]
+    description: Carbonate hardness, is a measure of the water hardness caused by the presence of carbonate (CO2−3) and bicarbonate (HCO−3) anions. Carbonate hardness is usually expressed either in degrees KH (dKH) (from the German "Karbonathärte"), or in parts per million calcium carbonate ( ppm CaCO3 or grams CaCO3 per litre|mg/L). One dKH is equal to 17.848 mg/L (ppm) CaCO3, e.g. one dKH corresponds to the carbonate and bicarbonate ions found in a solution of approximately 17.848 milligrams of calcium carbonate(CaCO3) per litre of water (17.848 ppm). Both measurements (mg/L or KH) are usually expressed as mg/L CaCO3 – meaning the concentration of carbonate expressed as if calcium carbonate were the sole source of carbonate ions.
+    sources:
+      - label: DBPedia
+        url: https://dbpedia.org/page/Carbonate_hardness
     sameAs:
       - https://dbpedia.org/page/Carbonate_hardness
 
   AOX-adsorbable-organic-halides:
     label: AOX (Adsorbable Organic Halides)
-    description: Adsorbable Organic Halides (AOX) is a measure of the organic halogen load at a sampling site such as soil from a land fill, water, or sewage waste. The procedure measures chlorine, bromine, and iodine as equivalent halogens, but does not measure fluorine levels in the sample. [DBPedia]
+    description: Adsorbable Organic Halides (AOX) is a measure of the organic halogen load at a sampling site such as soil from a land fill, water, or sewage waste. The procedure measures chlorine, bromine, and iodine as equivalent halogens, but does not measure fluorine levels in the sample.
+    sources:
+      - label: DBPedia
+        url: https://dbpedia.org/page/Adsorbable_organic_halides
     sameAs:
       - https://dbpedia.org/page/Adsorbable_organic_halides
 
   COD-chemical-oxygen-demand:
     label: COD (Chemical Oxygen Demand)
-    description: In environmental chemistry, the chemical oxygen demand (COD) is an indicative measure of the amount of oxygen that can be consumed by reactions in a measured solution. It is commonly expressed in mass of oxygen consumed over volume of solution which in SI units is milligrams per litre (mg/L). A COD test can be used to easily quantify the amount of organics in water. The most common application of COD is in quantifying the amount of oxidizable pollutants found in surface water (e.g. lakes and rivers) or wastewater. COD is useful in terms of water quality by providing a metric to determine the effect an effluent will have on the receiving body, much like biochemical oxygen demand (BOD). [DBPedia]
+    description: In environmental chemistry, the chemical oxygen demand (COD) is an indicative measure of the amount of oxygen that can be consumed by reactions in a measured solution. It is commonly expressed in mass of oxygen consumed over volume of solution which in SI units is milligrams per litre (mg/L). A COD test can be used to easily quantify the amount of organics in water. The most common application of COD is in quantifying the amount of oxidizable pollutants found in surface water (e.g. lakes and rivers) or wastewater. COD is useful in terms of water quality by providing a metric to determine the effect an effluent will have on the receiving body, much like biochemical oxygen demand (BOD).
+    sources:
+      - label: DBPedia
+        url: https://dbpedia.org/page/Chemical_oxygen_demand
     seeAlso:
       - https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=chemical%20oxygen%20demand&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false
     sameAs:
@@ -378,6 +471,9 @@ properties:
   DOC-dissolved-organic-carbon:
     label: DOC (Dissolved Organic Carbon)
     description: The fraction of total organic carbon (all carbon atoms covalently bonded in organic molecules) in water that passes through a 0.45 micron pore-diameter filter.
+    sources:
+      - label: EIONET
+        url: http://www.eionet.europa.eu/gemet/concept/2259
     seeAlso:
       - https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=Dissolved%20organic%20carbon&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false
     sameAs:
@@ -391,14 +487,20 @@ properties:
 
   potential-evapotranspiration:
     label: Potential-Evapotranspiration
-    description: Evapotranspration from land surface and plants that weather models assumes for this location. Available soil water is considered. 1 mm evapotranspiration per hour equals 1 liter of water per spare meter. [Open Meteo]
+    description: Evapotranspration from land surface and plants that weather models assumes for this location. Available soil water is considered. 1 mm evapotranspiration per hour equals 1 liter of water per spare meter.
+    sources:
+      - label: Open Meteo
+        url: https://open-meteo.com/en/docs
     seeAlso:
       - https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=evapotranspiration&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false
       - https://open-meteo.com/en/docs
 
   precipitation:
     label: Precipitation
-    description: In analytic chemistry, the process of producing a separable solid phase within a liquid medium. [EPA Terminology Services]
+    description: In analytic chemistry, the process of producing a separable solid phase within a liquid medium.
+    sources:
+      - label: EPA Terminology Services
+        url: https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=precipitation&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false
     seeAlso:
       - https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=precipitation&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false
     sameAs:
@@ -406,100 +508,222 @@ properties:
 
   surface-reflectance:
     label: Surface Reflectance
-    description: Surface reflectance is the amount of light reflected by the surface of the Earth. It is a ratio of surface radiance to surface irradiance, and as such is unitless, with values between 0 and 1. [USGS]
+    description: Surface reflectance is the amount of light reflected by the surface of the Earth. It is a ratio of surface radiance to surface irradiance, and as such is unitless, with values between 0 and 1.
+    sources:
+      - label: USGS
+        url: https://www.usgs.gov/landsat-missions/landsat-collection-1-surface-reflectance
     seeAlso:
       - https://www.usgs.gov/landsat-missions/landsat-collection-1-surface-reflectance
 
-  ## No definitions were found for the properties listed below:
-
-  settling-agents:
-    label: Settling Agents
-    description: Settling Agents
-
   reference-evapotranspiration:
     label: Reference-Evapotranspiration
-    description: Reference-Evapotranspiration
+    description: ET0 Reference Evapotranspiration of a well watered grass field. Based on FAO-56 Penman-Monteith equations ET0 is calculated from temperature, wind speed, humidity and solar radiation. Unlimited soil water is assumed. ET0 is commonly used to estimate the required irrigation for plants.
+    sources:
+      - label: Open Meteo
+        url: https://open-meteo.com/en/docs
+    seeAlso:
+      - https://open-meteo.com/en/docs
 
   wind-speed:
     label: Wind Speed
-    description: Wind Speed
+    description: Wind speed at different heights above ground. Wind speed on 10 meters is the standard level.
+    sources:
+      - label: Open Meteo
+        url: https://open-meteo.com/en/docs
+    seeAlso:
+      - https://open-meteo.com/en/docs
 
   direct-normal-irradiance:
     label: Direct Normal Irradiance
-    description: Direct Normal Irradiance
+    description: Direct solar radiation as average of the preceding hour on the horizontal plane and the normal plane (perpendicular to the sun).
+    sources:
+      - label: Open Meteo
+        url: https://open-meteo.com/en/docs
+    seeAlso:
+      - https://open-meteo.com/en/docs
 
-  ## Qualitative lake water quality parameters - CrowdWater
+  ## Qualitative water quality parameters for lakes - CrowdWater app
 
   lake-usage:
     label: Lake Usage
-    description: Lake Usage
+    description: |
+        Question: How is the lake being used?
+        Options label: Lake usage
+        Options: Bathing; Dog bathing place; Water sports; Fishing; Shore usage (Picknicks, sunbathing,...); No visible usage
+        Multiple response question
+    sources:
+      - label: CrowdWater
+        url: https://crowdwater.ch/en/start/
 
   lake-access:
-    label: lake-access
-    description:
+    label: Lake Access
+    description: |
+        Question: Is the lake shore accessible?
+        Options: Yes; No
+        Single response question
+    sources:
+      - label: CrowdWater
+        url: https://crowdwater.ch/en/start/
 
   shore-properties:
     label: Shore Properties
-    description: Shore Properties
-
-  go-swimming:
-    label: Go Swimming
-    description: Go Swimming
-
-  water-transparency:
-    label: Water Transparency
-    description:
-
-  water-color:
-    label: Water Color
-    description: Water Color
-
-  lakewater-smell:
-    label: Lakewater Smell
-    description: Lakewater Smell
-
-  lakeshore-vegetation:
-    label: Lakeshore Vegetation
-    description:
-
-  plants-under-water:
-    label: Plants Under Water
-    description: Plants Under Water
-
-  floating-leaf-plants:
-    label: Floating Leaf Plants
-    description: Floating Leaf Plants
-
-  duckweed:
-    label: Duckweed
-    description: Duckweed
-
-  algae:
-    label: Algae
-    description: Algae
-
-  mussels:
-    label: Mussels
-    description: Mussels
-
-  dead-wood-protrudes:
-    label: Dead Wood Protrudes into the Water
-    description: Dead wood protrudes into the water
-
-  animals-in-near-the-water:
-    label: Animals in/near the Water
-    description: Animals in/near the water
-
-  water-level-change:
-    label: Water Level Change
-    description: Water Level Change
-
-  ## CrowdWater - two new properties
+    description: |
+        Question: What is the condition of the shore?
+        Options: Natural; Partially built up; Built up
+        Single response question
+    sources:
+      - label: CrowdWater
+        url: https://crowdwater.ch/en/start/
 
   litter-in-water:
     label: Litter in Water
-    description: Litter in Water
+    description: |
+        Question: Is there litter in the water?
+        Options: No litter; Some litter, but not prominent; Abundant litter
+        Single response question
+    sources:
+      - label: CrowdWater
+        url: https://crowdwater.ch/en/start/
+
+  go-swimming:
+    label: Go Swimming
+    description: |
+        Question: Would you swim in the water?
+        Options: Yes; No
+        Single response question
+    sources:
+      - label: CrowdWater
+        url: https://crowdwater.ch/en/start/
+
+  water-transparency:
+    label: Water Transparency
+    description: |
+        Question: How deep can you see?
+        Options label: Water transparency 
+        Options: a few cm; 20 – 50 cm; 50 cm – 1 m; deeper than 1 m
+        Single response question
+    sources:
+      - label: CrowdWater
+        url: https://crowdwater.ch/en/start/
+
+  water-color:
+    label: Water Color
+    description: |
+        Question: How would you describe the water color?
+        Options label: Water colour
+        Options: Clear (no color); Green; Beige (like cappuccino); Brown (like black tea); Gray or milky; Reddish; Blue
+        Single response question
+    sources:
+      - label: CrowdWater
+        url: https://crowdwater.ch/en/start/
+    relatedMatch:
+      - https://saref.etsi.org/saref4watr/Colour
+      
+  lakewater-smell:
+    label: Lakewater Smell
+    description: |
+        Question: Does the water have a smell?
+        Options label: Lakewater smell
+        Options: No smell; Rotten eggs; Moldy; Fishy; Other sewage smell; Other noticeable Smell
+        Single response question
+    sources:
+      - label: CrowdWater
+        url: https://crowdwater.ch/en/start/
+    relatedMatch:
+      - https://saref.etsi.org/saref4watr/Odour
+      
+  lakeshore-vegetation:
+    label: Lakeshore Vegetation
+    description: |
+        Question: Which lakeshore vegetation can be identified?
+        Options label: Lakeshore vegetation
+        Options: Reeds; Trees; Grass; Other; None
+        Multiple response question
+    sources:
+      - label: CrowdWater
+        url: https://crowdwater.ch/en/start/
+
+  plants-under-water:
+    label: Plants Under Water
+    description: |
+        Question: Are plants under water recognizable?
+        Options: Yes; No
+        Single response question
+    sources:
+      - label: CrowdWater
+        url: https://crowdwater.ch/en/start/
+
+  floating-leaf-plants:
+    label: Floating Leaf Plants
+    description: |
+        Question: Are floating leaf plants (e.g. water lilies) recognizable?
+        Options: Yes; No
+        Single response question
+    sources:
+      - label: CrowdWater
+        url: https://crowdwater.ch/en/start/
+
+  duckweed:
+    label: Duckweed
+    description: |
+        App question: How much of the water surface is covered with duckweed?
+        Options label: Duckweed
+        Options: 0; approx. 1/4; approx. half; approx. 3/4; Complete
+        Single response question
+    sources:
+      - label: CrowdWater
+        url: https://crowdwater.ch/en/start/
+
+  mussels:
+    label: Mussels
+    description: |
+        App question: Do you see mussels on the shore?
+        Options: Large mussels; Triangular mussel; Others; No mussels visible
+        Single response question
+    sources:
+      - label: CrowdWater
+        url: https://crowdwater.ch/en/start/
+
+  dead-wood-protrudes:
+    label: Dead Wood Protrudes into the Water
+    description: |
+        App question: Is dead wood protruding from the shore into the water?
+        Options label: Dead wood protrudes into the water
+        Options: Yes, a lot; Yes, a little; No
+        Single response question
+    sources:
+      - label: CrowdWater
+        url: https://crowdwater.ch/en/start/
+
+  animals-in-near-the-water:
+    label: Animals in/near the Water
+    description: |
+        App question: What animals do you see in/near the water?
+        Options label: Animals in/near the water
+        Options: Fish; Amphibians; Dragonflies; Water birds; No animals visible
+        Multiple response question
+    sources:
+      - label: CrowdWater
+        url: https://crowdwater.ch/en/start/
+
+  water-level-change:
+    label: Water Level Change
+    description: |
+        App question: Are there water level changes in the lake?
+        Options label: Water level change
+        Options: Yes, large; Yes, small; No; No idea
+        Single response question
+    sources:
+      - label: CrowdWater
+        url: https://crowdwater.ch/en/start/
 
   lake-dries-out:
     label: Lake Dries Out
-    description: Lake Dries Out
+    description: |
+        App question: Does the lake sometimes dry out?
+        Options label: Lake sometimes dries out
+        Options: Yes; No; I don’t know
+        Single response question
+    sources:
+      - label: CrowdWater
+        url: https://crowdwater.ch/en/start/
