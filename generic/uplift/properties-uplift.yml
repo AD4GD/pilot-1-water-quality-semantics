@@ -44,7 +44,7 @@ context:
       '@id': dct:source
       '@type': '@id'
       '@context':  
-        'label': rdfs:label
+        'label': skos:prefLabel
         'url':
           '@id': 'rdfs:seeAlso'
           '@type': '@id'
