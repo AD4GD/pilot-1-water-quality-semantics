@@ -45,4 +45,7 @@ context:
       '@type': '@id'
       '@context':  
         'label': rdfs:label
-        'url': '@id'
+        'url':
+          '@id': 'rdfs:seeAlso'
+          '@type': '@id'
+        
