@@ -15,18 +15,17 @@
         skos:Concept ;
     dct:description """GPRS / UMTS data logger for groundwater, water level and water quality.
 Data logger with storage space for 250,000 measurement data records, monitoring of the device status (battery voltage, tightness (rel.humidity in the logger), operating temperature) Modem for GSM / GPRS and 433MHz short-range radio communication for reading out the data and configuring the logger Highly precise pressure and temperature sensor made of stainless steel Steel or titanium with an accuracy of <= 0.1% FS relative pressure system (absolute pressure systems for periodically flooded measuring points on request) The hardware is optimized for locations without infrastructure Battery life up to 10 years with daily transmission and hourly measurement with double D lithium Cells, optionally up to 3 years with commercially available alkali-manganese D cells, automatic synchronization each time the time of all loggers is transmitted by the server The device can be operated entirely online via an Internet browser and locally via local radio (433 MHz).
-From: https://www.terratransfer.org/en-gb/produktseite
 """ ;
     rdfs:seeAlso <https://www.terratransfer.org/en-gb/produktseite> ;
     rdfs:subClassOf sosa:Sensor ;
     skos:inScheme <https://w3id.org/ad4gd/water-quality/sensors> ;
     skos:prefLabel "AQUATOS web LTX" ;
-    sosa:observes [ qudt:hasUnit unit:PER-PERCENT ;
-            skos:broader ad4gd-prop:oxygen-saturation ],
+    sosa:observes [ qudt:hasUnit unit:DEG_C ;
+            skos:broader ad4gd-prop:water-temperature ],
         [ qudt:hasUnit unit:MilliGM-PER-L ;
             skos:broader ad4gd-prop:dissolved-oxygen-concentration ],
-        [ qudt:hasUnit unit:DEG_C ;
-            skos:broader ad4gd-prop:water-temperature ] ;
+        [ qudt:hasUnit unit:PER-PERCENT ;
+            skos:broader ad4gd-prop:oxygen-saturation ] ;
     sdo:manufacturer manuf:terratransfer .
 
 <https://w3id.org/ad4gd/water-quality/sensors/RDO-BLUE> a owl:Class,
@@ -34,18 +33,17 @@ From: https://www.terratransfer.org/en-gb/produktseite
     dct:description """RDO® Blue uses In-Situ’s patented Optical Rugged Dissolved Oxygen technology, an EPA-approved dissolved oxygen measurement method ideal for measuring DO and temperature in even the harshest environments. Suitable for handheld use or long-term deployment in fresh water or saltwater, this low-maintenance dissolved oxygen probe offers robust performance at a lower cost than other DO meters.
 RDO Blue requires no calibration or conditioning prior to deployment and doesn’t use membranes. The replaceable RDO Smart Sensor Cap stores calibration coefficients for automatic, error-free setup. And a unique, three-layer system provides unmatched chemical and abrasion resistance.
 Use included Modbus/RS485 communication protocol to easily integrate with PLC systems or telemetry with HydroVu data services for real-time feedback and process control.
-From: https://in-situ.com/en/rdo-blue?srsltid=AfmBOopT_OyPjlmbNd4pY3b1FSVmG9FxdnD_N-aDSYEuJ_SmeijcKWAB
 """ ;
     rdfs:seeAlso <https://in-situ.com/en/rdo-blue?srsltid=AfmBOopT_OyPjlmbNd4pY3b1FSVmG9FxdnD_N-aDSYEuJ_SmeijcKWAB> ;
     rdfs:subClassOf sosa:Sensor ;
     skos:inScheme <https://w3id.org/ad4gd/water-quality/sensors> ;
     skos:prefLabel "RDO BLUE" ;
-    sosa:observes [ qudt:hasUnit unit:MilliGM-PER-L ;
-            skos:broader ad4gd-prop:dissolved-oxygen-concentration ],
-        [ qudt:hasUnit unit:PER-PERCENT ;
+    sosa:observes [ qudt:hasUnit unit:PER-PERCENT ;
             skos:broader ad4gd-prop:oxygen-saturation ],
         [ qudt:hasUnit unit:DEG_C ;
-            skos:broader ad4gd-prop:water-temperature ] ;
+            skos:broader ad4gd-prop:water-temperature ],
+        [ qudt:hasUnit unit:MilliGM-PER-L ;
+            skos:broader ad4gd-prop:dissolved-oxygen-concentration ] ;
     sdo:manufacturer manuf:in-situ .
 
 <https://w3id.org/ad4gd/water-quality/sensors/RDO-PRO-X> a owl:Class,
@@ -53,16 +51,15 @@ From: https://in-situ.com/en/rdo-blue?srsltid=AfmBOopT_OyPjlmbNd4pY3b1FSVmG9Fxdn
     dct:description """The RDO PRO-X Dissolved Oxygen Probe uses optical technology (EPA-approved RDO technology for Clean Water Act programs) to measure dissolved oxygen and temperature in demanding process environments. This durable probe requires no calibration or conditioning prior to deployment and does not use membranes. The replaceable RDO Smart Sensor Cap stores calibration coefficients for automatic, error-free setup.
 Use flexible communication protocols (4-20 mA, Modbus/RS485, or SDI-12) and easily integrate with PLC systems, telemetry systems and/or HydroVu Data services for real-time feedback within your system.
 With the RDO PRO-X, NPDES permit holders can monitor influent, effluent and treatment processes and respond quickly to oxygen and temperature changes for more accurate and efficient process control.
-From: https://in-situ.com/en/rdo-pro-x-dissolved-oxygen-probe?srsltid=AfmBOooRYWCHh7T-8kVtuft8fejtcQjlMbzdjgF_KBMWSMrkNeOU5Zez
 """ ;
     rdfs:seeAlso <https://in-situ.com/en/rdo-pro-x-dissolved-oxygen-probe?srsltid=AfmBOooRYWCHh7T-8kVtuft8fejtcQjlMbzdjgF_KBMWSMrkNeOU5Zez> ;
     rdfs:subClassOf sosa:Sensor ;
     skos:inScheme <https://w3id.org/ad4gd/water-quality/sensors> ;
     skos:prefLabel "In-Situ RDO PRO-X" ;
-    sosa:observes [ qudt:hasUnit unit:MilliGM-PER-L ;
-            skos:broader ad4gd-prop:dissolved-oxygen-concentration ],
-        [ qudt:hasUnit unit:PER-PERCENT ;
+    sosa:observes [ qudt:hasUnit unit:PER-PERCENT ;
             skos:broader ad4gd-prop:oxygen-saturation ],
+        [ qudt:hasUnit unit:MilliGM-PER-L ;
+            skos:broader ad4gd-prop:dissolved-oxygen-concentration ],
         [ qudt:hasUnit unit:DEG_C ;
             skos:broader ad4gd-prop:water-temperature ] ;
     sdo:manufacturer manuf:in-situ .
@@ -72,16 +69,16 @@ From: https://in-situ.com/en/rdo-pro-x-dissolved-oxygen-probe?srsltid=AfmBOooRYW
     skos:prefLabel "AD4GD water quality sensors" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2025-04-28T09:25:55.276890"^^xsd:dateTime ;
-    prov:startedAtTime "2025-04-28T09:25:55.218056"^^xsd:dateTime ;
+    prov:endedAtTime "2025-05-06T16:02:04.751662"^^xsd:dateTime ;
+    prov:startedAtTime "2025-05-06T16:02:04.655800"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:ada04aa29a3ef0ba357e1e142082e4b9759d24f2" ;
+            dct:hasVersion "git:4e936ba6914a1bfd805ea4ddb39b159cbb4e13e2" ;
             rdfs:seeAlso <file:///home/runner/work/pilot-1-water-quality/pilot-1-water-quality/rainbow-data/generic/sensors.yml> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 sdo:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
             dct:hasVersion "0.4" ;
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dct:identifier "ec6edff3-12c5-4168-a1ca-9d67abfe89f0" ] .
+    prov:wasInformedBy [ dct:identifier "7920d98f-ab0d-4a65-884f-be3f02286fd6" ] .
 
