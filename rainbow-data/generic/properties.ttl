@@ -697,16 +697,16 @@ Single response question
     skos:prefLabel "AD4GD water quality observable properties" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2025-05-06T16:02:04.894604"^^xsd:dateTime ;
-    prov:startedAtTime "2025-05-06T16:02:04.816586"^^xsd:dateTime ;
+    prov:endedAtTime "2025-05-06T16:08:52.002406"^^xsd:dateTime ;
+    prov:startedAtTime "2025-05-06T16:08:51.927852"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:4e936ba6914a1bfd805ea4ddb39b159cbb4e13e2" ;
+            dct:hasVersion "git:e2b525394326ccae3936d23d08c923db0c55d407" ;
             rdfs:seeAlso <file:///home/runner/work/pilot-1-water-quality/pilot-1-water-quality/rainbow-data/generic/properties.yml> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
             dct:hasVersion "0.4" ;
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dct:identifier "7920d98f-ab0d-4a65-884f-be3f02286fd6" ] .
+    prov:wasInformedBy [ dct:identifier "67ad8a21-6b99-4b8b-99aa-b75760c2da7f" ] .
 
