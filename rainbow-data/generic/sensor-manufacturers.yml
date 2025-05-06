@@ -7,19 +7,34 @@ manufacturers:
 
   ## Format for manufacturers:
   # id:                                                 # URI slug
-  #   label: Label for the term                         # Required
-  #   description: Term description                     # Optional
-  #   seeAlso:                                          # List of websites with definitions / links (non-semantic)
+  #   label:                                            # Label for the term, required
+  #   description:                                      # Term description, optional
+  #   sources:                                          # Websites from which the description was acquired (non-semantic), optional
+  #     - https://example.com/description
+  #     - label: My source
+  #       url: https://example.com/description
+  #   references:                                       # List of websites with definitions, data sheets, etc. (non-semantic), optional
   #     - https://en.wikipedia.org/wiki/Term
-  #   references:                                       # List of websites with definitions, data sheets, etc. (non-semantic)
+  #   seeAlso:                                          # List of websites with definitions (non-semantic), optional
   #     - https://en.wikipedia.org/wiki/Term
 
+  
   in-situ:
     name: In-Situ
+    description: |
+      At In-Situ, we develop instrumentation and software designed to simplify and improve water monitoring. Our innovative solutions enable customers to easily collect, access and manage high-quality water monitoring and control data, so they’re able to adapt quickly to ecological, regulatory and workforce challenges. Our products are used in a wide array of groundwater, surface water, coastal, drinking water and wastewater applications.
+    sources:
+      - label: In-Situ
+        url: https://in-situ.com/en/about-us
     references:
       - https://in-situ.com/en/
-
+  
   terratransfer:
     name: TerraTransfer
+    description: |
+      TerraTransfer GmbH develops systems for monitoring measurement data with a focus on the areas of level and groundwater, flood protection, climatology and soil science, as well as industrial measurement variables (pressures, temperatures). The measurement data can also be accessed from the smartphone at any time via mobile websites. All internet data loggers can be operated online. All data loggers have a local radio module (e.g. 433MHz). In this way, the devices can be conveniently operated locally, but can also exchange data very reliably with one another during operation. A variety of different sensors can be controlled. Depending on the type, a data logger can operate up to 48 individual sensors. If you are looking for a special solution that you have not yet discovered on our website, please contact us. We would be happy to make you an individual offer!
+    sources:
+      - label: TerraTransfer
+        url: https://www.terratransfer.org/en-gb/newpage
     references:
       - https://www.terratransfer.org/en-gb/
