@@ -6,20 +6,24 @@ properties:
 
   ## Format for properties:
   # id:                                                 # URI slug
-  #   label: Label for the term                         # Required
-  #   description: Term description                     # Optional
+  #   label:                                            # Label for the term, required
+  #   description:                                      # Term description, optional
+  #   sources:                                          # Websites from which the description was acquired (non-semantic), optional
+  #     - https://example.com/description
+  #     - label: My source
+  #       url: https://example.com/description
+  #   references:                                       # List of websites with definitions, data sheets, etc. (non-semantic), optional
+  #     - https://en.wikipedia.org/wiki/Term
   #   sameAs:                                           # List of "same as" URIs, optional
   #     - https://another.vocabulary.com/another/term
-  #   seeAlso:                                          # List of websites with definitions (non-semantic)
+  #   seeAlso:                                          # List of websites with definitions (non-semantic), optional
   #     - https://en.wikipedia.org/wiki/Term
-  #   hasBroader:                                       # List of terms that are more generic than this one.
+  #   hasBroader:                                       # List of terms that are more generic than this one, optional
   #     - anotherBroadTerm                              # *Only local ids*
-  #   hasNarrower:                                      # Same as hasBroader, but for linking to more specific terms
+  #   hasNarrower:                                      # Same as hasBroader, but for linking to more specific terms, optional
   #     - anotherNarrowTerm
-  #   sources:
-  #     - https://example.com/419/Nitrate-Concentratio
-  #     - label: My source
-  #       url: https://example.com
+  #   relatedMatch:                                     # List of related matches (skos:relatedMatch), optional
+  #     - https://another.vocabulary.com/another/term   
 
   nitrate-concentration:
     label: Nitrate Concentration
@@ -63,8 +67,8 @@ properties:
     label: Ammonia Concentration
     description: Property of the water indicating its concentration of ammonia.
     sources:
-      - label: AD4GD
-        url: https://ad4gd.eu/
+      - label: KWB
+        url: https://www.kompetenz-wasser.de/en
     seeAlso:
       - https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/doc/spec.md
       - https://wqa.org/resources/ammonia/
@@ -194,8 +198,8 @@ properties:
     label: Orthophosphate Concentration
     description: Property of the water indicating its concentration of orthophosphate.
     sources:
-      - label: AD4GD
-        url: https://ad4gd.eu/
+      - label: KWB
+        url: https://www.kompetenz-wasser.de/en
     seeAlso:
       - https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=orthoPhosphate&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false
 #    sameAs:
@@ -213,8 +217,8 @@ properties:
     label: Sulphate Concentration
     description: Property of the water indicating its concentration of sulphate.
     sources:
-      - label: AD4GD
-        url: https://ad4gd.eu/
+      - label: KWB
+        url: https://www.kompetenz-wasser.de/en
     seeAlso:
       - https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/doc/spec.md
       - https://wq.moenv.gov.tw/EWQP/en/Encyclopedia/NounDefinition/Pedia_20.aspx
@@ -266,8 +270,8 @@ properties:
     label: Dissolved Oxygen Concentration
     description: Property of the water indicating its concentration of dissolved oxygen.
     sources:
-      - label: AD4GD
-        url: https://ad4gd.eu/
+      - label: KWB
+        url: https://www.kompetenz-wasser.de/en
     sameAs:
       - https://sns.uba.de/umthes/de/concepts/_00021376.html
     relatedMatch:
@@ -335,8 +339,8 @@ properties:
   water-level-above-sea-level:
     label: Water Level Above Sea Level
     sources:
-      - label: AD4GD
-        url: https://ad4gd.eu/
+      - label: KWB
+        url: https://www.kompetenz-wasser.de/en
     description: Property of the water indicating its level above sea level.
 
   biochemical-oxygen-demand-5:
@@ -354,8 +358,8 @@ properties:
     label: Specific Conductivity
     description: Conductivity of water at 25 degrees Celsius (25 C).
     sources:
-      - label: AD4GD
-        url: https://ad4gd.eu/
+      - label: KWB
+        url: https://www.kompetenz-wasser.de/en
     seeAlso:
       - https://en.wikipedia.org/wiki/Conductivity_(electrolytic)
       - https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=specific%20conductance&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false
