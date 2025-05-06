@@ -7,11 +7,15 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 manuf:in-situ a skos:Concept ;
+    dct:description """At In-Situ, we develop instrumentation and software designed to simplify and improve water monitoring. Our innovative solutions enable customers to easily collect, access and manage high-quality water monitoring and control data, so they’re able to adapt quickly to ecological, regulatory and workforce challenges. Our products are used in a wide array of groundwater, surface water, coastal, drinking water and wastewater applications.
+""" ;
     rdfs:seeAlso <https://in-situ.com/en/> ;
     skos:inScheme <https://w3id.org/ad4gd/water-quality/sensor-manufacturers> ;
     skos:prefLabel "In-Situ" .
 
 manuf:terratransfer a skos:Concept ;
+    dct:description """TerraTransfer GmbH develops systems for monitoring measurement data with a focus on the areas of level and groundwater, flood protection, climatology and soil science, as well as industrial measurement variables (pressures, temperatures). The measurement data can also be accessed from the smartphone at any time via mobile websites. All internet data loggers can be operated online. All data loggers have a local radio module (e.g. 433MHz). In this way, the devices can be conveniently operated locally, but can also exchange data very reliably with one another during operation. A variety of different sensors can be controlled. Depending on the type, a data logger can operate up to 48 individual sensors. If you are looking for a special solution that you have not yet discovered on our website, please contact us. We would be happy to make you an individual offer!
+""" ;
     rdfs:seeAlso <https://www.terratransfer.org/en-gb/> ;
     skos:inScheme <https://w3id.org/ad4gd/water-quality/sensor-manufacturers> ;
     skos:prefLabel "TerraTransfer" .
@@ -21,16 +25,16 @@ manuf:terratransfer a skos:Concept ;
     skos:prefLabel "AD4GD water quality sensor manufacturers" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2025-05-06T16:08:51.925251"^^xsd:dateTime ;
-    prov:startedAtTime "2025-05-06T16:08:51.836879"^^xsd:dateTime ;
+    prov:endedAtTime "2025-05-06T16:10:56.201553"^^xsd:dateTime ;
+    prov:startedAtTime "2025-05-06T16:10:56.142681"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:e2b525394326ccae3936d23d08c923db0c55d407" ;
+            dct:hasVersion "git:3c3169610951bb9b03939fe27e445c39539de645" ;
             rdfs:seeAlso <file:///home/runner/work/pilot-1-water-quality/pilot-1-water-quality/rainbow-data/generic/sensor-manufacturers.yml> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
             dct:hasVersion "0.4" ;
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dct:identifier "67ad8a21-6b99-4b8b-99aa-b75760c2da7f" ] .
+    prov:wasInformedBy [ dct:identifier "440db2be-6a13-4bdd-9d03-53c8a39480e7" ] .
 

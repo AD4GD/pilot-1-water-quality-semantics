@@ -20,12 +20,12 @@ Data logger with storage space for 250,000 measurement data records, monitoring 
     rdfs:subClassOf sosa:Sensor ;
     skos:inScheme <https://w3id.org/ad4gd/water-quality/sensors> ;
     skos:prefLabel "AQUATOS web LTX" ;
-    sosa:observes [ qudt:hasUnit unit:MilliGM-PER-L ;
-            skos:broader ad4gd-prop:dissolved-oxygen-concentration ],
-        [ qudt:hasUnit unit:DEG_C ;
+    sosa:observes [ qudt:hasUnit unit:DEG_C ;
             skos:broader ad4gd-prop:water-temperature ],
         [ qudt:hasUnit unit:PER-PERCENT ;
-            skos:broader ad4gd-prop:oxygen-saturation ] ;
+            skos:broader ad4gd-prop:oxygen-saturation ],
+        [ qudt:hasUnit unit:MilliGM-PER-L ;
+            skos:broader ad4gd-prop:dissolved-oxygen-concentration ] ;
     sdo:manufacturer manuf:terratransfer .
 
 <https://w3id.org/ad4gd/water-quality/sensors/RDO-BLUE> a owl:Class,
@@ -38,12 +38,12 @@ Use included Modbus/RS485 communication protocol to easily integrate with PLC sy
     rdfs:subClassOf sosa:Sensor ;
     skos:inScheme <https://w3id.org/ad4gd/water-quality/sensors> ;
     skos:prefLabel "RDO BLUE" ;
-    sosa:observes [ qudt:hasUnit unit:PER-PERCENT ;
-            skos:broader ad4gd-prop:oxygen-saturation ],
-        [ qudt:hasUnit unit:MilliGM-PER-L ;
+    sosa:observes [ qudt:hasUnit unit:MilliGM-PER-L ;
             skos:broader ad4gd-prop:dissolved-oxygen-concentration ],
         [ qudt:hasUnit unit:DEG_C ;
-            skos:broader ad4gd-prop:water-temperature ] ;
+            skos:broader ad4gd-prop:water-temperature ],
+        [ qudt:hasUnit unit:PER-PERCENT ;
+            skos:broader ad4gd-prop:oxygen-saturation ] ;
     sdo:manufacturer manuf:in-situ .
 
 <https://w3id.org/ad4gd/water-quality/sensors/RDO-PRO-X> a owl:Class,
@@ -56,12 +56,12 @@ With the RDO PRO-X, NPDES permit holders can monitor influent, effluent and trea
     rdfs:subClassOf sosa:Sensor ;
     skos:inScheme <https://w3id.org/ad4gd/water-quality/sensors> ;
     skos:prefLabel "In-Situ RDO PRO-X" ;
-    sosa:observes [ qudt:hasUnit unit:DEG_C ;
-            skos:broader ad4gd-prop:water-temperature ],
+    sosa:observes [ qudt:hasUnit unit:MilliGM-PER-L ;
+            skos:broader ad4gd-prop:dissolved-oxygen-concentration ],
         [ qudt:hasUnit unit:PER-PERCENT ;
             skos:broader ad4gd-prop:oxygen-saturation ],
-        [ qudt:hasUnit unit:MilliGM-PER-L ;
-            skos:broader ad4gd-prop:dissolved-oxygen-concentration ] ;
+        [ qudt:hasUnit unit:DEG_C ;
+            skos:broader ad4gd-prop:water-temperature ] ;
     sdo:manufacturer manuf:in-situ .
 
 <https://w3id.org/ad4gd/water-quality/sensors> a skos:ConceptScheme ;
@@ -69,16 +69,16 @@ With the RDO PRO-X, NPDES permit holders can monitor influent, effluent and trea
     skos:prefLabel "AD4GD water quality sensors" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2025-05-06T16:08:52.087937"^^xsd:dateTime ;
-    prov:startedAtTime "2025-05-06T16:08:52.025848"^^xsd:dateTime ;
+    prov:endedAtTime "2025-05-06T16:10:56.138087"^^xsd:dateTime ;
+    prov:startedAtTime "2025-05-06T16:10:56.043501"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:e2b525394326ccae3936d23d08c923db0c55d407" ;
+            dct:hasVersion "git:3c3169610951bb9b03939fe27e445c39539de645" ;
             rdfs:seeAlso <file:///home/runner/work/pilot-1-water-quality/pilot-1-water-quality/rainbow-data/generic/sensors.yml> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 sdo:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
             dct:hasVersion "0.4" ;
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dct:identifier "67ad8a21-6b99-4b8b-99aa-b75760c2da7f" ] .
+    prov:wasInformedBy [ dct:identifier "440db2be-6a13-4bdd-9d03-53c8a39480e7" ] .
 

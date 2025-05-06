@@ -81,8 +81,8 @@
 
 <https://w3id.org/ad4gd/water-quality/properties/ammonia-concentration> a skos:Concept,
         sosa:ObservableProperty ;
-    dct:source [ skos:prefLabel "AD4GD" ;
-            foaf:homepage <https://ad4gd.eu/> ] ;
+    dct:source [ skos:prefLabel "KWB" ;
+            foaf:homepage <https://www.kompetenz-wasser.de/en> ] ;
     rdfs:seeAlso <https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/doc/spec.md>,
         <https://wq.moenv.gov.tw/EWQP/en/Encyclopedia/NounDefinition/Pedia_08.aspx>,
         <https://wqa.org/resources/ammonia/> ;
@@ -243,8 +243,8 @@ Single response question
 
 <https://w3id.org/ad4gd/water-quality/properties/dissolved-oxygen-concentration> a skos:Concept,
         sosa:ObservableProperty ;
-    dct:source [ skos:prefLabel "AD4GD" ;
-            foaf:homepage <https://ad4gd.eu/> ] ;
+    dct:source [ skos:prefLabel "KWB" ;
+            foaf:homepage <https://www.kompetenz-wasser.de/en> ] ;
     owl:sameAs <https://sns.uba.de/umthes/de/concepts/_00021376.html> ;
     skos:definition "Property of the water indicating its concentration of dissolved oxygen." ;
     skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
@@ -413,8 +413,8 @@ Single response question
 
 <https://w3id.org/ad4gd/water-quality/properties/orthophosphate-concentration> a skos:Concept,
         sosa:ObservableProperty ;
-    dct:source [ skos:prefLabel "AD4GD" ;
-            foaf:homepage <https://ad4gd.eu/> ] ;
+    dct:source [ skos:prefLabel "KWB" ;
+            foaf:homepage <https://www.kompetenz-wasser.de/en> ] ;
     rdfs:seeAlso <https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=orthoPhosphate&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false> ;
     skos:definition "Property of the water indicating its concentration of orthophosphate." ;
     skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
@@ -513,8 +513,8 @@ Single response question
 
 <https://w3id.org/ad4gd/water-quality/properties/specific-conductivity> a skos:Concept,
         sosa:ObservableProperty ;
-    dct:source [ skos:prefLabel "AD4GD" ;
-            foaf:homepage <https://ad4gd.eu/> ] ;
+    dct:source [ skos:prefLabel "KWB" ;
+            foaf:homepage <https://www.kompetenz-wasser.de/en> ] ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Conductivity_(electrolytic)>,
         <https://sor.epa.gov/sor_internet/registry/termreg/searchandretrieve/termsandacronyms/search.do?search=&term=specific%20conductance&matchCriteria=Exact&checkedAcronym=true&checkedTerm=true&hasDefinitions=false> ;
     skos:definition "Conductivity of water at 25 degrees Celsius (25 C)." ;
@@ -524,8 +524,8 @@ Single response question
 
 <https://w3id.org/ad4gd/water-quality/properties/sulphate-concentration> a skos:Concept,
         sosa:ObservableProperty ;
-    dct:source [ skos:prefLabel "AD4GD" ;
-            foaf:homepage <https://ad4gd.eu/> ] ;
+    dct:source [ skos:prefLabel "KWB" ;
+            foaf:homepage <https://www.kompetenz-wasser.de/en> ] ;
     rdfs:seeAlso <https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/doc/spec.md>,
         <https://wq.moenv.gov.tw/EWQP/en/Encyclopedia/NounDefinition/Pedia_20.aspx> ;
     skos:definition "Property of the water indicating its concentration of sulphate." ;
@@ -635,8 +635,8 @@ Single response question
 
 <https://w3id.org/ad4gd/water-quality/properties/water-level-above-sea-level> a skos:Concept,
         sosa:ObservableProperty ;
-    dct:source [ skos:prefLabel "AD4GD" ;
-            foaf:homepage <https://ad4gd.eu/> ] ;
+    dct:source [ skos:prefLabel "KWB" ;
+            foaf:homepage <https://www.kompetenz-wasser.de/en> ] ;
     skos:definition "Property of the water indicating its level above sea level." ;
     skos:inScheme <https://w3id.org/ad4gd/water-quality/properties> ;
     skos:prefLabel "Water Level Above Sea Level" .
@@ -697,16 +697,16 @@ Single response question
     skos:prefLabel "AD4GD water quality observable properties" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2025-05-06T16:08:52.002406"^^xsd:dateTime ;
-    prov:startedAtTime "2025-05-06T16:08:51.927852"^^xsd:dateTime ;
+    prov:endedAtTime "2025-05-06T16:10:56.278284"^^xsd:dateTime ;
+    prov:startedAtTime "2025-05-06T16:10:56.203168"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:e2b525394326ccae3936d23d08c923db0c55d407" ;
+            dct:hasVersion "git:3c3169610951bb9b03939fe27e445c39539de645" ;
             rdfs:seeAlso <file:///home/runner/work/pilot-1-water-quality/pilot-1-water-quality/rainbow-data/generic/properties.yml> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
             dct:hasVersion "0.4" ;
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dct:identifier "67ad8a21-6b99-4b8b-99aa-b75760c2da7f" ] .
+    prov:wasInformedBy [ dct:identifier "440db2be-6a13-4bdd-9d03-53c8a39480e7" ] .
 
