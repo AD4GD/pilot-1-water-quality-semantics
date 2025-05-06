@@ -7,13 +7,19 @@ sensors:
 
   ## Format for sensors:
   # id:                                                 # URI slug
-  #   label: Label for the term                         # Required
+  #   label:                                            # Label for the term, required
   #   manufacturers:                                    # List of manufacturers (omit if unknown or "various")
   #     - manufacturer1                                 #   refers to the key for the manufacturer entry in sensor-manufacturers.yml
-  #   description: Term description                     # Optional
+  #   description:                                      # Term description, optional
+  #   sources:                                          # Websites from which the description was acquired (non-semantic), optional
+  #     - https://example.com/description
+  #     - label: My source
+  #       url: https://example.com/description
+  #   references:                                       # List of websites with definitions, data sheets, etc. (non-semantic), optional
+  #     - https://en.wikipedia.org/wiki/Term
   #   sameAs:                                           # List of "same as" URIs, optional
   #     - https://another.vocabulary.com/another/term
-  #   references:                                       # List of websites with definitions, data sheets, etc. (non-semantic)
+  #   seeAlso:                                          # List of websites with definitions (non-semantic), optional
   #     - https://en.wikipedia.org/wiki/Term
   #   observed_properties:                              # List of properties that this sensor observes
   #     - cO2-oxygen-concentration                      #   option 1: just the id from properties.yml
@@ -29,7 +35,9 @@ sensors:
     description: |
       GPRS / UMTS data logger for groundwater, water level and water quality.
       Data logger with storage space for 250,000 measurement data records, monitoring of the device status (battery voltage, tightness (rel.humidity in the logger), operating temperature) Modem for GSM / GPRS and 433MHz short-range radio communication for reading out the data and configuring the logger Highly precise pressure and temperature sensor made of stainless steel Steel or titanium with an accuracy of <= 0.1% FS relative pressure system (absolute pressure systems for periodically flooded measuring points on request) The hardware is optimized for locations without infrastructure Battery life up to 10 years with daily transmission and hourly measurement with double D lithium Cells, optionally up to 3 years with commercially available alkali-manganese D cells, automatic synchronization each time the time of all loggers is transmitted by the server The device can be operated entirely online via an Internet browser and locally via local radio (433 MHz).
-      From: https://www.terratransfer.org/en-gb/produktseite
+    sources:
+      - label: TerraTransfer
+        url: https://www.terratransfer.org/en-gb/produktseite
     references:
       - https://www.terratransfer.org/en-gb/produktseite
     observed_properties:
@@ -48,7 +56,9 @@ sensors:
       RDO® Blue uses In-Situ’s patented Optical Rugged Dissolved Oxygen technology, an EPA-approved dissolved oxygen measurement method ideal for measuring DO and temperature in even the harshest environments. Suitable for handheld use or long-term deployment in fresh water or saltwater, this low-maintenance dissolved oxygen probe offers robust performance at a lower cost than other DO meters.
       RDO Blue requires no calibration or conditioning prior to deployment and doesn’t use membranes. The replaceable RDO Smart Sensor Cap stores calibration coefficients for automatic, error-free setup. And a unique, three-layer system provides unmatched chemical and abrasion resistance.
       Use included Modbus/RS485 communication protocol to easily integrate with PLC systems or telemetry with HydroVu data services for real-time feedback and process control.
-      From: https://in-situ.com/en/rdo-blue?srsltid=AfmBOopT_OyPjlmbNd4pY3b1FSVmG9FxdnD_N-aDSYEuJ_SmeijcKWAB
+    sources:
+      - label: In-Situ
+        url: https://in-situ.com/en/rdo-blue?srsltid=AfmBOopT_OyPjlmbNd4pY3b1FSVmG9FxdnD_N-aDSYEuJ_SmeijcKWAB
     references:
       - https://in-situ.com/en/rdo-blue?srsltid=AfmBOopT_OyPjlmbNd4pY3b1FSVmG9FxdnD_N-aDSYEuJ_SmeijcKWAB
     observed_properties:
@@ -67,7 +77,9 @@ sensors:
       The RDO PRO-X Dissolved Oxygen Probe uses optical technology (EPA-approved RDO technology for Clean Water Act programs) to measure dissolved oxygen and temperature in demanding process environments. This durable probe requires no calibration or conditioning prior to deployment and does not use membranes. The replaceable RDO Smart Sensor Cap stores calibration coefficients for automatic, error-free setup.
       Use flexible communication protocols (4-20 mA, Modbus/RS485, or SDI-12) and easily integrate with PLC systems, telemetry systems and/or HydroVu Data services for real-time feedback within your system.
       With the RDO PRO-X, NPDES permit holders can monitor influent, effluent and treatment processes and respond quickly to oxygen and temperature changes for more accurate and efficient process control.
-      From: https://in-situ.com/en/rdo-pro-x-dissolved-oxygen-probe?srsltid=AfmBOooRYWCHh7T-8kVtuft8fejtcQjlMbzdjgF_KBMWSMrkNeOU5Zez
+    sources:
+      - label: TerraTransfer
+        url: https://in-situ.com/en/rdo-pro-x-dissolved-oxygen-probe?srsltid=AfmBOooRYWCHh7T-8kVtuft8fejtcQjlMbzdjgF_KBMWSMrkNeOU5Zez
     references:
       - https://in-situ.com/en/rdo-pro-x-dissolved-oxygen-probe?srsltid=AfmBOooRYWCHh7T-8kVtuft8fejtcQjlMbzdjgF_KBMWSMrkNeOU5Zez
     observed_properties:
