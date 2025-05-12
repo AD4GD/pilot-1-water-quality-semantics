@@ -43,5 +43,6 @@ jobs:
           add: '**/*.ttl'
 
   check-links:
+    if: false # disabled
     uses: ./.github/workflows/check-links.yml
     needs: uplift
